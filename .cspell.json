@@ -1,0 +1,12 @@
+{
+  "language": "en",
+  "words": [],
+  "ignorePaths": [
+    "node_modules/**",
+    "package.json",
+    "package-lock.json",
+    "**/*.mp4",
+    "**/*.svg",
+    "accessibility_report"
+  ]
+}
