@@ -1,6 +1,8 @@
 {
   "language": "en",
-  "words": [],
+  "words": [
+    "Minju"
+  ],
   "ignorePaths": [
     "node_modules/**",
     "package.json",
