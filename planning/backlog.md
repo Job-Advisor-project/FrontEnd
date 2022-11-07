@@ -59,7 +59,7 @@ create your own!
 
   - [ ] _there is a "Sustainability" button below search bar which contains
         information about the companies having goal towards environmental
-        services _
+        services_
 
 - I would like to easily access the benefits of the company.
 
