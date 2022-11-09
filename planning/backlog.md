@@ -11,15 +11,17 @@ create your own!
 
 ### As a User
 
-- I would like to see the organization's [Job advisor] name
+- I would like to see the organization's [Job advisor] name so that I can
+  identify the website easily and navigate to the home page from any pages.
 
-  - [ ] _there is a prominent logo at the top of the web page_
+  - [ ] _there is a prominent logo at the top of the web page same as link to
+        the home page in the header_
 
-  - I would like to easily accessing the page/information of the
-    organization(Job advisor).
+- I would like to easily accessing the page/information of the organization(Job
+  advisor).
 
-- [ ] _there should be a navbar to aid visitors in navigate the page in the
-      website._
+  - [ ] _there should be a navbar to aid visitors in navigate the page in the
+        website._
 
 - I would like to know more information about the organization (job advisor)
 
