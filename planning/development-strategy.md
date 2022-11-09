@@ -86,14 +86,9 @@ registration.
 ### Carousel slide
 
 > As a young job seeker, I would like to know the companies provide jobs to
-> freshers.
-
-> As a Job seeker, I would like to see companies promote Gender equality.
-
-> As a experienced Job Seeker,I would like to know more career oppurtunities
-
-> As a Job seeker,- I would like to see companies promote initiative for an
-> environmental impact.
+> freshers,companies promote Gender equality. As a experienced Job Seeker,I
+> would like to know more career oppurtunities As a Job seeker,- I would like to
+> see companies promote initiative for an environmental impact.
 
 ### Carousel slide: HTML
 
