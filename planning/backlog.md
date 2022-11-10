@@ -36,7 +36,7 @@ create your own!
 
 ### As a Job seeker
 
-- I would like to know some infomartaion about the job vacanies without
+- I would like to know some infomartaion about the companies without
   registration
 
   - [ ] _there's is a search bar where user can search using keyword without
