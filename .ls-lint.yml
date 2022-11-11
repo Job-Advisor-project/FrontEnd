@@ -10,7 +10,7 @@ ls:
   .mp4: kebab-case
   .ico: kebab-case
   .js: kebab-case
-  .jsx: kebab-case
+  .jsx: PascalCase
 
 ignore:
   - .git
