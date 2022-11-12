@@ -1,14 +1,6 @@
 ls:
-  .md: kebab-case | regex:[0-9A-Z\-]+
-  .html: kebab-case
-  .css: kebab-case
-  .jpg: kebab-case
-  .jpeg: kebab-case
-  .svg: kebab-case
-  .gif: kebab-case
-  .mp4: kebab-case
-  .ico: kebab-case
-  .jsx: PascalCase
+.js: kebab-case
+.jsx: PascalCase
 
 ignore:
   - .git
