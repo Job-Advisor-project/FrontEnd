@@ -8,7 +8,6 @@ ls:
   .gif: kebab-case
   .mp4: kebab-case
   .ico: kebab-case
-  .js: kebab-case
   .jsx: PascalCase
 
 ignore:
