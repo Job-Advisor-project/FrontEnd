@@ -1,5 +1,4 @@
 ls:
-  .dir: kebab-case
   .md: kebab-case | regex:[0-9A-Z\-]+
   .html: kebab-case
   .css: kebab-case
