@@ -10,7 +10,7 @@ kickstart their career and also search their dream job without registration.
 ## Setup
 
 - [ ] Boilerplate React file
-- [ ] Install the material-ui library to react project ( open-source React
+- [ ] MUI material-ui library is used in the react project ( open-source React
       component library that includes a comprehensive collection of prebuilt
       components that are ready for use in production.)
 - [ ] Strapi used as Backend database (By default, Strapi uses the SQLite for
