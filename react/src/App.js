@@ -1,10 +1,8 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
+import { useCompanies } from "./api/viewModelels/useCompanies";
+import Homepage from "./pages/Home";
 
 export default function App() {
-  return (
-    <div>
-      <Button variant="contained">Hai All</Button>
-    </div>
-  );
+  const { companies } = useCompanies();
+  return <Homepage companies={companies}></Homepage>;
 }
