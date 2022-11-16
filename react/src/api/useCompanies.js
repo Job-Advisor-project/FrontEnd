@@ -16,10 +16,10 @@
 // };
 import { useEffect, useState } from "react";
 
-export const useCompanies = (section) => {
+export const useCompanies = (input) => {
   const [companies, setCompanies] = useState([]);
   useEffect(() => {
-    let url = `http://localhost:1337/api/${section}?fields[0]=id&populate[company][populate][image][fields][0]=formats`;
+    let url = `http://localhost:1337/api/${input}?fields[0]=id&populate[company][populate][image][fields][0]=formats`;
     fetch(url)
       .then((result) => result.json())
       .then((obj) => {
@@ -28,6 +28,6 @@ export const useCompanies = (section) => {
         setCompanies(obj.data);
       })
       .catch(console.warn);
-  }, [section]);
+  }, [input]);
   return { companies };
 };

@@ -1,35 +1,39 @@
-import React, { useState } from "react";
-import { useCompanies } from "../api/useCompanies";
-export default function Carousel() {
-  const [section, setSection] = useState("work-life-balances");
-  useCompanies(section);
-
+export default function Carousel({ onInput }) {
   return (
-    <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-evenly",
+      }}
+    >
       <span
+        style={{ alignSelf: "center", border: "solid", padding: "20px" }}
         onClick={() => {
-          setSection("work-life-balances");
+          onInput("work-life-balances");
         }}
       >
         Work life balance
       </span>
       <span
+        style={{ alignSelf: "center", border: "solid", padding: "20px" }}
         onClick={() => {
-          setSection("diversity-inclusions");
+          onInput("diversity-inclusions");
         }}
       >
         Diversity and inclusion
       </span>
       <span
+        style={{ alignSelf: "center", border: "solid", padding: "20px" }}
         onClick={() => {
-          setSection("benefits-compensations");
+          onInput("benefits-compensations");
         }}
       >
         Benefits and Compensation
       </span>
       <span
+        style={{ alignSelf: "center", border: "solid", padding: "20px" }}
         onClick={() => {
-          setSection("social-responsibilities");
+          onInput("social-responsibilities");
         }}
       >
         Sustainability
