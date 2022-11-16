@@ -1,19 +1,24 @@
 import Carousel from "../components/Carousel";
-import { useCompanies } from "../api/useCompanies";
 import Cards from "../components/CompanyCards";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
 
 export default function Homepage() {
   const [input, setInput] = useState("");
+  const [companyList, setCompanyList] = useState([]);
   const handleInput = (section) => {
     console.log(section);
     setInput(section);
   };
-  const { companies } = useCompanies(input);
+  useEffect(() => {
+    getCompaniesByTagVm(input).then((vm) => {
+      setCompanyList(vm);
+    });
+  }, [input]);
   return (
     <>
       <Carousel onInput={handleInput}></Carousel>
-      <Cards companies={companies}></Cards>
+      <Cards companies={companyList}></Cards>
     </>
   );
 }
