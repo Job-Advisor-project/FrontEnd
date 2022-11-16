@@ -12,7 +12,5 @@ import React from "react";
 import CompanyCards from "./components/CompanyCards";
 
 export default function App() {
-  return (
-  <CompanyCards/>
-  );
+  return <CompanyCards />;
 }
