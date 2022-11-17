@@ -9,8 +9,10 @@
 //--------------------------------------------------------------------
 
 import React from "react";
-import CompanyCards from "./components/CompanyCards";
+import Homepage from "./pages/Home";
+import SearchResult from "./pages/SearchResult";
 
 export default function App() {
-  return <CompanyCards />;
+  return <Homepage></Homepage>;
+  return <SearchResult></SearchResult>;
 }
