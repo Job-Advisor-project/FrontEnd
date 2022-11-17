@@ -1,5 +1,4 @@
-import Cards from "../components/CompanyCards";
-
-export default function Homepage({ companies }) {
-  return <Cards companies={companies}></Cards>;
+import CarouselSlide from "../components/CarouselCards";
+export default function Homepage() {
+  return <CarouselSlide></CarouselSlide>;
 }
