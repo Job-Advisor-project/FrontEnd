@@ -36,7 +36,7 @@ export default function Cards({ companies }) {
               avatar={
                 <Avatar
                   alt="logo"
-                  src={`.${item.attributes.company.data.attributes.image.data.attributes.formats.small.url}`}
+                  // src={`.${item.attributes.company.data.attributes.image.data.attributes.formats.small.url}`}
                   variant="square"
                 ></Avatar>
               }
@@ -54,7 +54,6 @@ export default function Cards({ companies }) {
                 variant="h7"
                 component="div"
               >
-                {" "}
                 Description
               </Typography>
               <Typography

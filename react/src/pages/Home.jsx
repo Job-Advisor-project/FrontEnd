@@ -1,4 +1,4 @@
-import Carousel from "../components/Carousel";
+import CarouselSlide from "../components/CarouselCards";
 import Cards from "../components/CompanyCards";
 import { useEffect, useState } from "react";
 import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
@@ -17,8 +17,13 @@ export default function Homepage() {
   }, [input]);
   return (
     <>
-      <Carousel onInput={handleInput}></Carousel>
+      <CarouselSlide onInput={handleInput}></CarouselSlide>
       <Cards companies={companyList}></Cards>
     </>
   );
 }
+
+// import CarouselSlide from "../components/CarouselCards";
+// export default function Homepage() {
+//   return <CarouselSlide></CarouselSlide>;
+// }
