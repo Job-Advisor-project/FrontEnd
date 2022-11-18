@@ -1,5 +1,4 @@
 import { Paper, Button } from "@mui/material";
-// import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 export default function Item({ item, onSelect }) {
   const navigate = useNavigate();
