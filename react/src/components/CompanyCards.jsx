@@ -12,7 +12,9 @@ export default function Cards({ companies }) {
   return (
     <Box
       sx={{
+        flexDirection: "column",
         display: "flex",
+        alignItems: "stretch",
         m: 5,
         bgcolor: (theme) =>
           theme.palette.mode === "dark" ? "#101010" : "#fff",
@@ -73,6 +75,8 @@ export default function Cards({ companies }) {
   );
 }
 
+//------------------------Tryout W/o Strapi---------------------------------
+
 // import * as React from "react";
 // import Card from "@mui/material/Card";
 // import CardActions from "@mui/material/CardActions";
@@ -87,7 +91,9 @@ export default function Cards({ companies }) {
 //   return (
 //     <Box
 //       sx={{
+//         flexDirection: "column",
 //         display: "flex",
+//         alignItems: "stretch",
 //         m: 5,
 //         bgcolor: (theme) =>
 //           theme.palette.mode === "dark" ? "#101010" : "#fff",
@@ -112,16 +118,14 @@ export default function Cards({ companies }) {
 //           }
 //           title={<Typography variant="h6">Amazon</Typography>}
 //           subheader="Business consulting and services"
+//           subheader2="Business consulting and services"
 //         />
 //         <CardContent>
 //           <Typography gutterBottom variant="h7" component="div">
 //             Description
 //           </Typography>
 //           <Typography variant="body2" color="text.secondary">
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-//             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-//             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-//             aliquip ex ea commodo consequat.
+//             Lorem ipsum .
 //           </Typography>
 //         </CardContent>
 //         <CardActions>
