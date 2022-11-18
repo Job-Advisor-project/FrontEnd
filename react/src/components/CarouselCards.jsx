@@ -1,17 +1,17 @@
-// import React from "react";
-// import Carousel from "react-material-ui-carousel";
-// import slider from "../api/slider.json";
-// import Item from "./Item";
+import React from "react";
+import Carousel from "react-material-ui-carousel";
+import slider from "../api/slider.json";
+import Item from "./Item";
 
-// export default function CarouselSlide({ onInput }) {
-//   return (
-//     <Carousel>
-//       {slider.map((item) => (
-//         <Item key={item.id} item={item} onInput={onInput} />
-//       ))}
-//     </Carousel>
-//   );
-// }
+export default function CarouselSlide({ onInput }) {
+  return (
+    <Carousel>
+      {slider.map((item) => (
+        <Item key={item.id} item={item} onInput={onInput} />
+      ))}
+    </Carousel>
+  );
+}
 
 // export default function Carousel({ onInput }) {
 //   return (
