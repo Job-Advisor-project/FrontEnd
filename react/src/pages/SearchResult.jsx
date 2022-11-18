@@ -1,6 +1,13 @@
-// import Cards from "../components/CompanyCards";
+import Cards from "../components/CompanyCards";
+import React, { useEffect, useState } from "react";
+import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
+export default function SearchResult({ tag }) {
+  const [companyList, setCompanyList] = useState([]);
+  useEffect(() => {
+    getCompaniesByTagVm(tag).then((vm) => {
+      setCompanyList(vm);
+    });
+  }, [tag]);
 
-export default function SearchResult() {
-  return <p>Hi!</p>;
-  // return <Cards companies={companyList}></Cards>;
+  return <Cards companies={companyList}></Cards>;
 }

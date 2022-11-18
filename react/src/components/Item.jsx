@@ -1,10 +1,13 @@
 import { Paper, Button } from "@mui/material";
-
-export default function Item({ item, onInput }) {
+// import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+export default function Item({ item, onSelect }) {
+  const navigate = useNavigate();
   return (
     <Paper
       onClick={() => {
-        onInput(item.collection);
+        onSelect(item.collection);
+        navigate("/searchResult");
       }}
     >
       <img
