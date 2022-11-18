@@ -1,5 +1,6 @@
-import Cards from "../components/CompanyCards";
+// import Cards from "../components/CompanyCards";
 
 export default function SearchResult() {
-  return <Cards></Cards>;
+  return <p>Hi!</p>;
+  // return <Cards companies={companyList}></Cards>;
 }
