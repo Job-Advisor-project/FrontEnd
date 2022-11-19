@@ -32,7 +32,7 @@ export default function Cards({ companies }) {
         companies.map((item) => (
           <Card
             key={item.attributes.company.data.attributes.name}
-            sx={{ px: 3, maxWidth: 10100 }}
+            sx={{ mt: 0.1, px: 3, maxWidth: 10100 }}
           >
             <CardHeader
               avatar={
