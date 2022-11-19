@@ -12,7 +12,9 @@ export default function Cards({ companies }) {
   return (
     <Box
       sx={{
+        flexDirection: "column",
         display: "flex",
+        alignItems: "stretch",
         m: 5,
         bgcolor: (theme) =>
           theme.palette.mode === "dark" ? "#101010" : "#fff",
@@ -36,7 +38,7 @@ export default function Cards({ companies }) {
               avatar={
                 <Avatar
                   alt="logo"
-                  // src={`.${item.attributes.company.data.attributes.image.data.attributes.formats.small.url}`}
+                  src={`.${item.attributes.company.data.attributes.image.data.attributes.formats.thumbnail.url}`}
                   variant="square"
                 ></Avatar>
               }
