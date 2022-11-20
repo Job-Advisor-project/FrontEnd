@@ -4,9 +4,9 @@ import { getCompaniesByTag } from "../companiesByTag";
  * @param {input} string - Selected tag. Needed for api call
  * @returns {obj} Unique list of companies
  **/
-export async function getCompaniesByTagVm(input) {
-  if (input) {
-    const companiesData = await getCompaniesByTag(input);
+export async function getCompaniesByTagVm(tag) {
+  if (tag) {
+    const companiesData = await getCompaniesByTag(tag);
     const uniqueCompanyList = Array.from(
       new Set(
         companiesData.map((a) => a.attributes.company.data.attributes.name)
