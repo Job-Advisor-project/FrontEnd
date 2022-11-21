@@ -15,7 +15,7 @@ export default function Homepage({ onSelect }) {
           alignSelf: "center",
           justifyContent: "center",
           flexDirection: "column",
-          padding: "20px",
+          padding: 20,
         }}
       >
         <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />

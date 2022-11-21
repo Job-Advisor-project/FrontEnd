@@ -3,13 +3,13 @@ import IconButton from "@mui/material/IconButton";
 import TextField from "@mui/material/TextField";
 
 export const SearchBar = ({ setSearchQuery }) => (
-  <form style={{ textAlign: "center" }}>
+  <form>
     <TextField
       sx={{
         textAlign: "center",
         verticalAlign: "middle",
         fontSize: "2",
-        width: "400px",
+        minWidth: "400px",
       }}
       id="search-bar"
       className="text"
