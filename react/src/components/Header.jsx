@@ -11,14 +11,25 @@ const Header = () => {
   // const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <div>
-      <AppBar position="flex" sx={{ background: "#FCD299" }}>
+      <AppBar
+        position="flex"
+        sx={{
+          display: "flex",
+          justifyContent: "right",
+          margin: "0px",
+          backgroundImage: "url(http://localhost:3000/assets/background.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          height: "70",
+        }}
+      >
         <Toolbar>
           <Typography>
             <img
               src="../assets/jobadvisorlogo.jpg"
               alt="jobadvisorlogo"
               width={100}
-              height={70}
+              height={80}
             />
           </Typography>
           <Tabs
@@ -29,11 +40,19 @@ const Header = () => {
             indicatorvalue="primary"
           >
             <RateReviewIcon
-              sx={{ display: { xs: "none", md: "flex" }, mr: -2 }}
+              sx={{
+                display: { xs: "none", md: "flex", color: "black" },
+                mr: -2,
+              }}
             />
             <Tab label="Reviews" />
             <BusinessIcon
-              sx={{ display: { xs: "none", md: "flex" }, mr: -2 }}
+              //color="action"
+              sx={{
+                display: { xs: "none", md: "flex", color: "black" },
+
+                mr: -2,
+              }}
             />
             <Tab label="Companies" />
           </Tabs>
