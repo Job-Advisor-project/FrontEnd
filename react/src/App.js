@@ -1,20 +1,23 @@
-import * as React from "react";
-import { Routes, Route } from "react-router-dom";
-import Homepage from "./pages/Home";
-import Nav from "./pages/Nav";
-import CompanyList from "./pages/CompanyList";
-
-// import SearchResult from "./pages/SearchResult";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home";
+import SearchResult from "./pages/SearchResult";
 
 export default function App() {
+  const [tag, setTag] = useState("work&life");
+
+  const handleSelection = (selectedTag) => {
+    selectedTag && setTag(selectedTag);
+  };
+
   return (
-    <>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/companylist" element={<CompanyList />} />
-      </Routes>
-      {/* <SearchResult></SearchResult> */}
-    </>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage onSelect={handleSelection} />} />
+          <Route path="/searchResult" element={<SearchResult tag={tag} />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
