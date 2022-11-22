@@ -9,7 +9,8 @@ export const SearchBar = ({ setSearchQuery }) => (
         textAlign: "center",
         verticalAlign: "middle",
         fontSize: "2",
-        minWidth: "400px",
+        width: "494px",
+        backgroundColor: "#F9F8F3",
       }}
       id="search-bar"
       className="text"
