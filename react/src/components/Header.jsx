@@ -20,7 +20,7 @@ const Header = () => {
           backgroundImage: "url(http://localhost:3000/assets/background.png)",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          height: "70",
+          height: "100",
         }}
       >
         <Toolbar>
@@ -28,7 +28,7 @@ const Header = () => {
             <img
               src="../assets/jobadvisorlogo.jpg"
               alt="jobadvisorlogo"
-              width={100}
+              width={140}
               height={80}
             />
           </Typography>

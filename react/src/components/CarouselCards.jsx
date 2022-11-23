@@ -8,8 +8,8 @@ export default function CarouselSlide({ onSelect }) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 3, // optional, default to 1.
+      items: 4,
+      slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -29,17 +29,23 @@ export default function CarouselSlide({ onSelect }) {
       showDots={true}
       responsive={responsive}
       infinite={true}
-      autoPlaySpeed={1000}
+      additionalTransfrom={0}
+      arrows
+      autoPlaySpeed={500}
       keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={500}
       containerClass="carousel-container"
+      customTransition="all .5"
+      rewind={false}
+      rewindWithAnimation={false}
+      rtl={false}
+      shouldResetAutoplay
+      //transitionDuration={1000}
       removeArrowOnDeviceType={["tablet", "mobile"]}
-      itemClass={"carousel-item-padding-10-px"}
+      itemClass={"carousel-item-padding-40-px"}
       backgroundImage="url(http://localhost:3000/assets/background.png)"
       backgroundRepeat="no-repeat"
       aspectRatio="1.8"
-      viewportFraction={1.9}
+      viewportFraction={0.4}
       clipBehavior="Clip.none"
     >
       {slider.map((item) => (

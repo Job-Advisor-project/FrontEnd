@@ -17,7 +17,7 @@ export default function Banner() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        height: "490px",
+        height: "400px",
         width: "100%",
       }}
     >
@@ -70,7 +70,7 @@ export default function Banner() {
       <img
         src="../../assets/figma download/pixeltrue-idea-1.png"
         alt="women"
-        style={{ width: "652px", height: "550px" }}
+        style={{ width: "652px", height: "410px" }}
       />
     </Box>
   );
