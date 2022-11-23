@@ -68,7 +68,7 @@ export default function Banner() {
         </div>
       </div>
       <img
-        src="../../assets/figma download/pixeltrue-idea-1.png"
+        src="../../assets/design/edited-idea.png"
         alt="women"
         style={{ width: "652px", height: "550px" }}
       />
