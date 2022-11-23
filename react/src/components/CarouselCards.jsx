@@ -41,7 +41,7 @@ export default function CarouselSlide({ onSelect }) {
       shouldResetAutoplay
       //transitionDuration={1000}
       removeArrowOnDeviceType={["tablet", "mobile"]}
-      itemClass={"carousel-item-padding-40-px"}
+      itemClass="item-container"
       backgroundImage="url(http://localhost:3000/assets/background.png)"
       backgroundRepeat="no-repeat"
       aspectRatio="1.8"

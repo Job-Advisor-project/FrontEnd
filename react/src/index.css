@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.item-container {
+  background-image: "url(http://localhost:3000/assets/background.png)";
+  padding: 7.5px;
+}

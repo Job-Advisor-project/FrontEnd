@@ -5,6 +5,7 @@ export default function Item({ item, onSelect }) {
   const navigate = useNavigate();
   return (
     <Paper
+      //itemClass="item-container"
       width="10%"
       onClick={() => {
         onSelect(item.collection);
