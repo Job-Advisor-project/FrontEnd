@@ -36,8 +36,10 @@ export default function CarouselSlide({ onSelect }) {
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
       itemClass={"carousel-item-padding-10-px"}
+      backgroundImage="url(http://localhost:3000/assets/background.png)"
+      backgroundRepeat="no-repeat"
       aspectRatio="1.8"
-      viewportFraction={0.4}
+      viewportFraction={1.9}
       clipBehavior="Clip.none"
     >
       {slider.map((item) => (

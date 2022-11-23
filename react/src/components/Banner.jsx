@@ -17,7 +17,7 @@ export default function Banner() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        height: "672px",
+        height: "490px",
         width: "100%",
       }}
     >
