@@ -35,7 +35,10 @@ export default function CarouselSlide({ onSelect }) {
       transitionDuration={500}
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
-      itemClass="carousel-item-padding-30-px"
+      itemClass={"carousel-item-padding-10-px"}
+      aspectRatio="1.8"
+      viewportFraction={0.4}
+      clipBehavior="Clip.none"
     >
       {slider.map((item) => (
         <Item key={item.id} item={item} onSelect={onSelect} />
