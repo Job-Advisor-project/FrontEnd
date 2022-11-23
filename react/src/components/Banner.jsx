@@ -1,11 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import { useState } from "react";
 import { SearchBar } from "../components/SearchBar";
-// import { filterData, SearchBar } from "../components/SearchBar";
+import { filterData } from "../components/SearchBar";
 
 export default function Banner() {
   const [searchQuery, setSearchQuery] = useState("");
-  // const dataFiltered = filterData(searchQuery, data);
+  const [data, setData] = useState([]);
+
+  const dataFiltered = filterData(searchQuery, data);
   return (
     <Box
       sx={{
@@ -44,10 +46,13 @@ export default function Banner() {
           lorem ipsum, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut.
         </Typography>
-        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+        <SearchBar
+          searchQuery={searchQuery}
+          setData={setData}
+          setSearchQuery={setSearchQuery}
+        />
         <div style={{ padding: 3 }}>
-          {searchQuery}
-          {/* {dataFiltered.map((d) => (
+          {dataFiltered.map((d) => (
             <div
               className="text"
               style={{
@@ -64,7 +69,7 @@ export default function Banner() {
             >
               {d}
             </div>
-          ))} */}
+          ))}
         </div>
       </div>
       <img

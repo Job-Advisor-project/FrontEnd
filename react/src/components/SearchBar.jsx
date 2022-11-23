@@ -1,8 +1,9 @@
 import { Button } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import TextField from "@mui/material/TextField";
+import { getCompanyListVm } from "../api/viewModelels/companyListVm";
 
-export const SearchBar = ({ setSearchQuery }) => (
+export const SearchBar = ({ setSearchQuery, setData }) => (
   <form>
     <TextField
       sx={{
@@ -17,6 +18,7 @@ export const SearchBar = ({ setSearchQuery }) => (
       onInput={(e) => {
         setSearchQuery(e.target.value);
       }}
+      onChange={() => getCompanyListVm().then((v) => setData(v))}
       label="Search by company name..."
       variant="outlined"
       placeholder="Search..."
@@ -32,10 +34,10 @@ export const SearchBar = ({ setSearchQuery }) => (
     </IconButton>
   </form>
 );
-// export const filterData = (query, data) => {
-//   if (!query) {
-//     return data;
-//   } else {
-//     return data.filter((d) => d.toLowerCase().includes(query));
-//   }
-// };
+export const filterData = (query, data) => {
+  if (!query) {
+    return data;
+  } else {
+    return data.filter((d) => d.toLowerCase().includes(query));
+  }
+};
