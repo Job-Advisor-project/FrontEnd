@@ -13,7 +13,7 @@ export default function Item({ item, onSelect }) {
       <img
         src={item.image}
         alt={item.title}
-        style={{ width: "25%", height: "35vh", display: "flex" }}
+        style={{ width: "25%", display: "flex" }}
       ></img>
 
       <Button display="flex">{item.title}</Button>
