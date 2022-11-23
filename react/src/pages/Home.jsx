@@ -3,7 +3,8 @@ import CarouselSlide from "../components/CarouselCards";
 import Header from "../components/Header";
 export default function Homepage({ onSelect }) {
   return (
-    <> <Header></Header>
+    <>
+      <Header></Header>
       <Banner></Banner>
       <CarouselSlide onSelect={onSelect}></CarouselSlide>
     </>
