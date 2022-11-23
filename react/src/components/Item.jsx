@@ -5,6 +5,8 @@ export default function Item({ item, onSelect }) {
   const navigate = useNavigate();
   return (
     <Paper
+      //itemClass="item-container"
+      width="10%"
       onClick={() => {
         onSelect(item.collection);
         navigate("/searchResult");
@@ -13,7 +15,7 @@ export default function Item({ item, onSelect }) {
       <img
         src={item.image}
         alt={item.title}
-        style={{ width: "25%", display: "flex" }}
+        style={{ width: "55%", display: "flex" }}
       ></img>
 
       <Button display="flex">{item.title}</Button>
