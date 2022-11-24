@@ -1,12 +1,12 @@
 import Banner from "../components/Banner";
 import CarouselSlide from "../components/CarouselCards";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 
-export default function Homepage({ onSelect }) {
+export default function Homepage({ onSelect, setCompany }) {
   return (
     <>
-      <Header></Header>
-      <Banner></Banner>
+      {/* <Header></Header> */}
+      <Banner setCompany={setCompany}></Banner>
       <CarouselSlide onSelect={onSelect}></CarouselSlide>
     </>
   );

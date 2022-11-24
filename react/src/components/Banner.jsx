@@ -2,9 +2,7 @@ import { Box, Typography } from "@mui/material";
 import SearchBar from "./SearchBar";
 // import { useState } from "react";
 
-export default function Banner() {
-  // const [searchQuery, setSearchQuery] = useState("");
-
+export default function Banner({ setCompany }) {
   return (
     <Box
       sx={{
@@ -43,7 +41,7 @@ export default function Banner() {
           lorem ipsum, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut.
         </Typography>
-        <SearchBar></SearchBar>
+        <SearchBar setCompany={setCompany}></SearchBar>
       </div>
       <img
         src="../../assets/figma download/pixeltrue-idea-1.png"
