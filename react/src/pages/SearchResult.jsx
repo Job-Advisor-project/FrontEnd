@@ -4,6 +4,7 @@ import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
 import { Button, Container } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { TagButtons } from "../components/TagButtons";
+import TitleTag from "../components/HeroSection";
 
 export default function SearchResult({ tag }) {
   const [selected, setSelected] = useState(tag);
@@ -18,18 +19,17 @@ export default function SearchResult({ tag }) {
     setSelected(e);
   };
   return (
-    <div>
-      <Container>
-        <TagButtons onClick={handleClick}></TagButtons>
-        <Cards companies={companyList}></Cards>
-        <Button
-          style={{ margin: "15px" }}
-          onClick={() => navigate("/")}
-          variant="contained"
-        >
-          Back
-        </Button>
-      </Container>
-    </div>
+    <Container>
+      <TitleTag tag={tag}></TitleTag>
+      <TagButtons onClick={handleClick}></TagButtons>
+      <Cards companies={companyList}></Cards>
+      <Button
+        style={{ margin: "15px" }}
+        onClick={() => navigate("/")}
+        variant="contained"
+      >
+        Back
+      </Button>
+    </Container>
   );
 }
