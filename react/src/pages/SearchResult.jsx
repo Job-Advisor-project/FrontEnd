@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
 import { Button, Container } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { TitleTag } from "../components/HeroSection";
 import { TagButtons } from "../components/TagButtons";
+import TitleTag from "../components/HeroSection";
 
 export default function SearchResult({ tag }) {
   const [selected, setSelected] = useState(tag);
