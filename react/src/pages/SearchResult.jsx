@@ -20,7 +20,7 @@ export default function SearchResult({ tag }) {
   };
   return (
     <Container>
-      <TitleTag tag={tag}></TitleTag>
+      <TitleTag selected={selected}></TitleTag>
       <TagButtons onClick={handleClick}></TagButtons>
       <Cards companies={companyList}></Cards>
       <Button
