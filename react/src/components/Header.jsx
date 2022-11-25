@@ -17,7 +17,7 @@ const Header = () => {
           display: "flex",
           justifyContent: "right",
           margin: "0px",
-          backgroundImage: "url(http://localhost:3000/assets/background.png)",
+          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           height: "100",

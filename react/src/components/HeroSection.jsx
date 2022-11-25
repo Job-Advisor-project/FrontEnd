@@ -8,7 +8,7 @@ import {
 import Typography from "@mui/material/Typography";
 import slider from "../api/slider.json";
 
-export default function TitleTag({ tag }) {
+export default function TitleTag({ selected }) {
   const Div = styled("div")(({ theme }) => ({
     ...theme.typography.button,
     backgroundColor: theme.palette.background.paper,
@@ -16,8 +16,8 @@ export default function TitleTag({ tag }) {
   }));
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
-  let title = slider.find((item) => item.collection === tag).title;
-  let imgUrl = slider.find((item) => item.collection === tag).image;
+  let title = slider.find((item) => item.collection === selected).title;
+  let imgUrl = slider.find((item) => item.collection === selected).image;
   return title === undefined ? (
     <Box
       sx={{
