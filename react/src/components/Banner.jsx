@@ -10,7 +10,7 @@ export default function Banner({ setCompany }) {
         justifyContent: "right",
         alignItems: "center",
         margin: "0px",
-        backgroundImage: "url(http://localhost:3000/background.png)",
+        backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
