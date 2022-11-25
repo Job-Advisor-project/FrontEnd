@@ -33,7 +33,7 @@ const Header = () => {
             sx={{ marginLeft: "auto" }}
             textcolor="inherit"
             value={value}
-            onChange={(e, value) => setValue(1)}
+            onChange={(e, value) => setValue(value)}
             indicatorvalue="primary"
           >
             <RateReviewIcon
