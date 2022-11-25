@@ -26,7 +26,7 @@ const Header = () => {
         <Toolbar>
           <Typography>
             <img
-              src="../assets/jobadvisorlogo.jpg"
+              src="../assets/ja-logo.png"
               alt="jobadvisorlogo"
               width={140}
               height={80}
