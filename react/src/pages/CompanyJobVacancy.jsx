@@ -6,7 +6,7 @@ export default function CompanyjobVacancy({ company }) {
   const [companyVacancy, setCompanyVacancy] = useState([]);
   useEffect(() => {
     getCompanyVacanciesVm(company).then((vm) => {
-      setCompanyData(vm);
+      setCompanyVacancy(vm);
     });
   }, [company]);
   return companyVacancy.map((comp) => (
