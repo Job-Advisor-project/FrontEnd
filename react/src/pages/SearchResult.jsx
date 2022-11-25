@@ -23,6 +23,7 @@ export default function SearchResult({ tag }) {
       <TitleTag selected={selected}></TitleTag>
       <TagButtons onClick={handleClick}></TagButtons>
       <Cards companies={companyList}></Cards>
+
       <Button
         style={{ margin: "15px" }}
         onClick={() => navigate("/")}
