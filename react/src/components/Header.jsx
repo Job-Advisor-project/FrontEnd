@@ -28,8 +28,8 @@ const Header = () => {
             <img
               src="../assets/ja-logo.png"
               alt="jobadvisorlogo"
-              width={140}
-              height={80}
+              width={190}
+              height={150}
             />
           </Typography>
           <Tabs
@@ -40,6 +40,7 @@ const Header = () => {
             indicatorvalue="primary"
           >
             <RateReviewIcon
+              fontSize="large"
               sx={{
                 display: { xs: "none", md: "flex", color: "black" },
                 mr: -2,
@@ -48,6 +49,7 @@ const Header = () => {
             <Tab label="Reviews" />
             <BusinessIcon
               //color="action"
+              fontSize="large"
               sx={{
                 display: { xs: "none", md: "flex", color: "black" },
 
