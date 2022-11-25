@@ -29,6 +29,30 @@ const Header = () => {
               onClick={() => navigate("/")}
             />
           </Typography>
+          <Tabs
+            sx={{ marginLeft: "auto" }}
+            textcolor="inherit"
+            value={value}
+            onChange={(e, value) => setValue(1)}
+            indicatorvalue="primary"
+          >
+            <RateReviewIcon
+              sx={{
+                display: { xs: "none", md: "flex", color: "black" },
+                mr: -2,
+              }}
+            />
+            <Tab label="Reviews" />
+            <BusinessIcon
+              //color="action"
+              sx={{
+                display: { xs: "none", md: "flex", color: "black" },
+
+                mr: -2,
+              }}
+            />
+            <Tab label="Companies" />
+          </Tabs>
         </Toolbar>
       </AppBar>
     </div>
