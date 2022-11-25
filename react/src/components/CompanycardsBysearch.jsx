@@ -1,11 +1,13 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
+import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import CardHeader from "@mui/material/CardHeader";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
-import { settings } from "../config/config";
+
 export default function CompanycardsBysearch({ companies }) {
   return (
     <Box
@@ -33,21 +35,21 @@ export default function CompanycardsBysearch({ companies }) {
               px: 3,
               backgroundImage:
                 "url(http://localhost:3000/assets/background.png)",
-              maxWidth: 10100000,
+              maxWidth: 1010,
             }}
           >
             <CardHeader
               avatar={
                 <Avatar
                   alt="logo"
-                  src={`${settings.BACKEND_URL}${item.attributes.image.data.attributes.formats.thumbnail.url}`}
+                  src={`.${item.attributes.image.data.attributes.formats.thumbnail.url}`}
                   variant="square"
                 ></Avatar>
               }
               title={
                 <Typography variant="h6">{item.attributes.name}</Typography>
               }
-              subheader={item.attributes.industry}
+              subheader="Business consulting and services"
             />
             <CardContent key={item.attributes.name}>
               <Typography
@@ -59,11 +61,28 @@ export default function CompanycardsBysearch({ companies }) {
                 Location
               </Typography>
               <Typography
+                key={item.attributes.Location}
+                variant="body2"
+                color="text.secondary"
+              >
+                {item.attributes.description}
+              </Typography>
+            </CardContent>
+            <CardContent key={item.attributes.name}>
+              <Typography
+                key={item.attributes.name}
+                gutterBottom
+                variant="h7"
+                component="div"
+              >
+                Industry
+              </Typography>
+              <Typography
                 key={item.attributes.name}
                 variant="body2"
                 color="text.secondary"
               >
-                {item.attributes.location}
+                {item.attributes.industry}
               </Typography>
             </CardContent>
             <CardContent key={item.attributes.name}>
@@ -83,6 +102,9 @@ export default function CompanycardsBysearch({ companies }) {
                 {item.attributes.description}
               </Typography>
             </CardContent>
+            <CardActions>
+              <Button size="small">Read More</Button>
+            </CardActions>
           </Card>
         ))}
     </Box>
