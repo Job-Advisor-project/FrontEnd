@@ -35,7 +35,7 @@ export default function CompanycardsBysearch({ companies }) {
               px: 3,
               backgroundImage:
                 "url(http://localhost:3000/assets/background.png)",
-              maxWidth: 1010,
+              maxWidth: 10100000,
             }}
           >
             <CardHeader
