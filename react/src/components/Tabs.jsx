@@ -12,7 +12,8 @@ import {
   Stack,
   Button,
 } from "@mui/material";
-
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import AddIcon from "@mui/icons-material/Add";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -85,8 +86,12 @@ export default function BasicTabs() {
           }
           action={
             <Stack spacing={3} direction="row" sx={{ mt: 3 }}>
-              <Button variant="contained">Visit Website</Button>
-              <Button variant="contained">Review</Button>
+              <Button variant="contained" startIcon={<ArrowOutwardIcon />}>
+                Visit Website
+              </Button>
+              <Button variant="contained" endIcon={<AddIcon />}>
+                Review
+              </Button>
             </Stack>
           }
         />
