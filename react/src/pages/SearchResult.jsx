@@ -4,7 +4,8 @@ import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
 import { Box } from "@mui/material";
 import { TagButtons } from "../components/TagButtons";
 import TitleTag from "../components/HeroSection";
-import Footer from "../components/footer/Footer";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function SearchResult({ tag, setCompany }) {
   const [selected, setSelected] = useState(tag);
@@ -20,20 +21,12 @@ export default function SearchResult({ tag, setCompany }) {
   };
   return (
     <>
-      <Box
-        sx={{
-          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/cc-bg.png')`,
-          backgroundRepeat: "repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          maxHeight: "auto",
-          maxWidth: "100%",
-        }}
-      >
+      <Header></Header>
+      <Container sx={{ mt: "10px" }}>
         <TitleTag selected={selected}></TitleTag>
-        <TagButtons onClick={handleClick} selected={selected}></TagButtons>
-        <Cards setCompany={setCompany} companies={companyList}></Cards>
-      </Box>
+        <TagButtons onClick={handleClick}></TagButtons>
+        <Cards companies={companyList}></Cards>
+      </Container>
       <Footer></Footer>
     </>
   );
