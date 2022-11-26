@@ -26,7 +26,6 @@ export default function Banner({ setCompany }) {
         backgroundSize: "cover",
         height: "auto",
         maxWidth: "100%",
-        fontSize: "0.875rem",
       }}
     >
       <Grid item md={6} lg={4}>
