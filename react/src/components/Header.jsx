@@ -4,11 +4,11 @@ import AppBar from "@mui/material/AppBar";
 import { Toolbar, Typography, Tabs, Tab } from "@mui/material";
 import BusinessIcon from "@mui/icons-material/Business";
 import RateReviewIcon from "@mui/icons-material/RateReview";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [value, setValue] = useState();
-  //const theme = useTheme();
-  // const isMatch = useMediaQuery(theme.breakpoints.down("md"));
+  const navigate = useNavigate();
   return (
     <div>
       <AppBar
@@ -30,6 +30,7 @@ const Header = () => {
               alt="jobadvisorlogo"
               width={140}
               height={80}
+              onClick={() => navigate("/")}
             />
           </Typography>
           <Tabs
