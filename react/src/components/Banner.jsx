@@ -14,8 +14,8 @@ export default function Banner({ setCompany }) {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        height: "672px",
-        width: "100%",
+        height: "auto",
+        maxWidth: "100%",
       }}
     >
       <div
