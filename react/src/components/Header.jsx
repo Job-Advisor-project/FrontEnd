@@ -1,9 +1,13 @@
 import * as React from "react";
-import Grid from "@mui/material/Grid";
-import { Box, Typography } from "@mui/material";
+import { useState } from "react";
+import AppBar from "@mui/material/AppBar";
+import { Toolbar, Typography, Tabs, Tab } from "@mui/material";
+import BusinessIcon from "@mui/icons-material/Business";
+import RateReviewIcon from "@mui/icons-material/RateReview";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const [value, setValue] = useState();
   const navigate = useNavigate();
   return (
     <div>
@@ -26,6 +30,7 @@ const Header = () => {
               alt="jobadvisorlogo"
               width={140}
               height={80}
+              onClick={() => navigate("/")}
             />
           </Typography>
           <Tabs
