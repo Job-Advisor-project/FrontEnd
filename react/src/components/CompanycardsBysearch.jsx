@@ -1,8 +1,6 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import CardHeader from "@mui/material/CardHeader";
 import Avatar from "@mui/material/Avatar";
@@ -49,7 +47,7 @@ export default function CompanycardsBysearch({ companies }) {
               title={
                 <Typography variant="h6">{item.attributes.name}</Typography>
               }
-              subheader="Business consulting and services"
+              subheader={item.attributes.industry}
             />
             <CardContent key={item.attributes.name}>
               <Typography
@@ -61,11 +59,11 @@ export default function CompanycardsBysearch({ companies }) {
                 Location
               </Typography>
               <Typography
-                key={item.attributes.Location}
+                key={item.attributes.name}
                 variant="body2"
                 color="text.secondary"
               >
-                {item.attributes.description}
+                {item.attributes.location}
               </Typography>
             </CardContent>
             <CardContent key={item.attributes.name}>
@@ -102,9 +100,6 @@ export default function CompanycardsBysearch({ companies }) {
                 {item.attributes.description}
               </Typography>
             </CardContent>
-            <CardActions>
-              <Button size="small">Read More</Button>
-            </CardActions>
           </Card>
         ))}
     </Box>

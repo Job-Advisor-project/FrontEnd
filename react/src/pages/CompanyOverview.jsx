@@ -15,16 +15,18 @@ export default function CompanyOverview({ company }) {
     });
   }, [company]);
   return (
-    <Container>
+    <>
       <Header></Header>
-      <CompanycardsBysearch companies={companyData}></CompanycardsBysearch>
-      <Button
-        style={{ margin: "15px" }}
-        onClick={() => navigate("/")}
-        variant="contained"
-      >
-        Back
-      </Button>
-    </Container>
-  ); //Company Card component might be added instead of <Typography>
+      <Container>
+        <CompanycardsBysearch companies={companyData}></CompanycardsBysearch>
+        <Button
+          style={{ margin: "15px" }}
+          onClick={() => navigate("/")}
+          variant="contained"
+        >
+          Back
+        </Button>
+      </Container>
+    </>
+  );
 }
