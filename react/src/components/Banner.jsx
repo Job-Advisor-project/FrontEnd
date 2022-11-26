@@ -17,8 +17,8 @@ export default function Banner() {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        height: "400px",
-        width: "100%",
+        height: "auto",
+        maxWidth: "100%",
       }}
     >
       <div
