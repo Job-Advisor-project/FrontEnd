@@ -1,13 +1,12 @@
 import Banner from "../components/Banner";
 import CarouselSlide from "../components/CarouselCards";
-import Footer from "../components/footer/Footer";
-import TextSection from "../components/TextSection";
-
-export default function Homepage({ onSelect, setCompany }) {
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+export default function Homepage({ onSelect }) {
   return (
     <>
-      <Banner setCompany={setCompany}></Banner>
-      <TextSection></TextSection>
+      <Header />
+      <Banner></Banner>
       <CarouselSlide onSelect={onSelect}></CarouselSlide>
       <Footer />
     </>
