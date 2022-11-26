@@ -5,7 +5,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import Avatar from "@mui/material/Avatar";
 import { Stack } from "@mui/system";
 
@@ -16,7 +15,6 @@ export default function Footer() {
         sx={{
           flexDirection: "row",
           alignItems: "stretch",
-          mt: 5,
           bgcolor: (theme) =>
             theme.palette.mode === "amber" ? "yellow.50" : "#fffde7",
           color: (theme) =>
@@ -30,7 +28,7 @@ export default function Footer() {
       >
         <Grid container spacing={2} justifyContent="center">
           <Grid item md={6} lg={4}>
-            <Typography sx={{ ml: 13 }}>
+            <Typography sx={{ ml: 10 }}>
               <img
                 src="../assets/ja-logo.png"
                 alt="jobadvisorlogo"
@@ -41,9 +39,6 @@ export default function Footer() {
             <Stack direction="row" spacing={2} sx={{ mx: 7, mb: 3 }}>
               <Avatar sx={{ width: 31, height: 31 }}>
                 <FacebookIcon />
-              </Avatar>
-              <Avatar sx={{ width: 31, height: 31 }}>
-                <YouTubeIcon />
               </Avatar>
               <Avatar sx={{ width: 31, height: 31 }}>
                 <TwitterIcon />
@@ -60,12 +55,11 @@ export default function Footer() {
             <Typography variant="caption1">INFORMATION</Typography>
             <List>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2"></Typography>
+                <Typography lineHeight={2} variant="body2">
+                  About Us
+                </Typography>
               </ListItemText>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2">
-                  About us
-                </Typography>
                 <Typography lineHeight={2} variant="body2">
                   FAQ
                 </Typography>
@@ -109,7 +103,7 @@ export default function Footer() {
           flexDirection: "row",
           textAlign: "center",
           bgcolor: (theme) =>
-            theme.palette.mode === "amber" ? "yellow.50" : "#fffde7",
+            theme.palette.mode === "dark" ? "#101010" : "#fff",
           color: (theme) =>
             theme.palette.mode === "dark" ? "grey.300" : "grey.800",
           border: "1px solid",
