@@ -5,6 +5,8 @@ import { Button, Container } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { TagButtons } from "../components/TagButtons";
 import TitleTag from "../components/HeroSection";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 export default function SearchResult({ tag }) {
   const [selected, setSelected] = useState(tag);
@@ -19,17 +21,14 @@ export default function SearchResult({ tag }) {
     setSelected(e);
   };
   return (
-    <Container>
-      <TitleTag selected={selected}></TitleTag>
-      <TagButtons onClick={handleClick}></TagButtons>
-      <Cards companies={companyList}></Cards>
-      <Button
-        style={{ margin: "15px" }}
-        onClick={() => navigate("/")}
-        variant="contained"
-      >
-        Back
-      </Button>
-    </Container>
+    <>
+      <Header></Header>
+      <Container sx={{ mt: "10px" }}>
+        <TitleTag selected={selected}></TitleTag>
+        <TagButtons onClick={handleClick}></TagButtons>
+        <Cards companies={companyList}></Cards>
+      </Container>
+      <Footer></Footer>
+    </>
   );
 }
