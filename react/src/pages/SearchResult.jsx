@@ -1,7 +1,7 @@
 import Cards from "../components/CompanyCards";
 import React, { useEffect, useState } from "react";
 import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
-import { Box } from "@mui/material";
+import { Container } from "@mui/material";
 import { TagButtons } from "../components/TagButtons";
 import TitleTag from "../components/HeroSection";
 import Footer from "../components/Footer";
