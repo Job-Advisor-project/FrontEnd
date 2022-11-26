@@ -11,6 +11,7 @@ export default function Item({ item, onSelect }) {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
+        height: "292px",
       }}
       onClick={() => {
         onSelect(item.collection);
@@ -20,7 +21,7 @@ export default function Item({ item, onSelect }) {
       <img
         src={item.image}
         alt={item.title}
-        style={{ width: "80%", alignSelf: "stretch" }}
+        style={{ maxWidth: "80%", alignSelf: "center" }}
       ></img>
 
       <Button display="flex">{item.title}</Button>
