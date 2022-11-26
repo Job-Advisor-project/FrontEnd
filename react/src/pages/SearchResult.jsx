@@ -1,8 +1,7 @@
 import Cards from "../components/CompanyCards";
 import React, { useEffect, useState } from "react";
 import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
-import { Button, Container } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Container } from "@mui/material";
 import { TagButtons } from "../components/TagButtons";
 import TitleTag from "../components/HeroSection";
 import Footer from "../components/Footer";
@@ -11,7 +10,7 @@ import Header from "../components/Header";
 export default function SearchResult({ tag }) {
   const [selected, setSelected] = useState(tag);
   const [companyList, setCompanyList] = useState([]);
-  const navigate = useNavigate();
+
   useEffect(() => {
     getCompaniesByTagVm(selected).then((vm) => {
       setCompanyList(vm);
