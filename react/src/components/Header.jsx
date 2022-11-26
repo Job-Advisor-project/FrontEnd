@@ -1,9 +1,12 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import { Toolbar, Typography } from "@mui/material";
+import { Toolbar, Typography, Tabs, Tab } from "@mui/material";
+import BusinessIcon from "@mui/icons-material/Business";
+import RateReviewIcon from "@mui/icons-material/RateReview";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const [value, setValue] = useState();
   const navigate = useNavigate();
   return (
     <div>
@@ -24,8 +27,8 @@ const Header = () => {
             <img
               src="../assets/ja-logo.png"
               alt="jobadvisorlogo"
-              width={130}
-              height={100}
+              width={140}
+              height={80}
               onClick={() => navigate("/")}
             />
           </Typography>
