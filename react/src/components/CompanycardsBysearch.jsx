@@ -49,7 +49,7 @@ export default function CompanycardsBysearch({ companies }) {
               title={
                 <Typography variant="h6">{item.attributes.name}</Typography>
               }
-              subheader="Business consulting and services"
+              subheader={item.attributes.industry}
             />
             <CardContent key={item.attributes.name}>
               <Typography
@@ -61,28 +61,11 @@ export default function CompanycardsBysearch({ companies }) {
                 Location
               </Typography>
               <Typography
-                key={item.attributes.Location}
-                variant="body2"
-                color="text.secondary"
-              >
-                {item.attributes.description}
-              </Typography>
-            </CardContent>
-            <CardContent key={item.attributes.name}>
-              <Typography
-                key={item.attributes.name}
-                gutterBottom
-                variant="h7"
-                component="div"
-              >
-                Industry
-              </Typography>
-              <Typography
                 key={item.attributes.name}
                 variant="body2"
                 color="text.secondary"
               >
-                {item.attributes.industry}
+                {item.attributes.location}
               </Typography>
             </CardContent>
             <CardContent key={item.attributes.name}>
@@ -102,9 +85,6 @@ export default function CompanycardsBysearch({ companies }) {
                 {item.attributes.description}
               </Typography>
             </CardContent>
-            <CardActions>
-              <Button size="small">Read More</Button>
-            </CardActions>
           </Card>
         ))}
     </Box>
