@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+//import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import { Toolbar, Typography, Tabs, Tab } from "@mui/material";
 import BusinessIcon from "@mui/icons-material/Business";
@@ -7,7 +7,7 @@ import RateReviewIcon from "@mui/icons-material/RateReview";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const [value, setValue] = useState();
+  //const [value, setValue] = useState();
   const navigate = useNavigate();
   return (
     <div>
@@ -26,18 +26,18 @@ const Header = () => {
         <Toolbar>
           <Typography>
             <img
-              src="../assets/jobadvisorlogo.jpg"
+              src="../assets/ja-logo.png"
               alt="jobadvisorlogo"
-              width={140}
-              height={80}
+              width={130}
+              height={100}
               onClick={() => navigate("/")}
             />
           </Typography>
           <Tabs
             sx={{ marginLeft: "auto" }}
             textcolor="inherit"
-            value={value}
-            onChange={(e, value) => setValue(value)}
+            // value={value}
+            //onChange={(e, value) => setValue(value)}
             indicatorvalue="primary"
           >
             <RateReviewIcon
