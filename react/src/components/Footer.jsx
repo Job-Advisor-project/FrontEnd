@@ -8,8 +8,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Avatar from "@mui/material/Avatar";
 import { Stack } from "@mui/system";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 
 export default function Footer() {
+  const navigate = useNavigate();
   return (
     <>
       <Box
@@ -60,11 +63,24 @@ export default function Footer() {
             <Typography variant="caption1">INFORMATION</Typography>
             <List>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2">
-                  About Us
-                </Typography>
+                <Typography lineHeight={2} variant="body2"></Typography>
               </ListItemText>
               <ListItemText>
+                <Typography lineHeight={2} variant="body2">
+                  <Button
+                    style={{
+                      backgroundColor: "#5A85C2",
+                      fontWeight: "600",
+                      marginLeft: "5px",
+                    }}
+                    variant="contained"
+                    onClick={() => {
+                      navigate("/aboutus");
+                    }}
+                  >
+                    About us
+                  </Button>
+                </Typography>
                 <Typography lineHeight={2} variant="body2">
                   FAQ
                 </Typography>
