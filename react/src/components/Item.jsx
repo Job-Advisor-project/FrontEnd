@@ -6,12 +6,12 @@ export default function Item({ item, onSelect }) {
   return (
     <Paper
       //itemClass="item-container"
-      width="10%"
       style={{
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        height: "292px",
+        width: "400px",
+        height: "300px",
       }}
       onClick={() => {
         onSelect(item.collection);
@@ -24,7 +24,7 @@ export default function Item({ item, onSelect }) {
         style={{ maxWidth: "80%", alignSelf: "center" }}
       ></img>
 
-      <Button display="flex">{item.title}</Button>
+      <Button color="success">{item.title}</Button>
     </Paper>
   );
 }
