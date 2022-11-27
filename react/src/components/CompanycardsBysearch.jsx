@@ -5,7 +5,6 @@ import Typography from "@mui/material/Typography";
 import CardHeader from "@mui/material/CardHeader";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
-import { settings } from "../config/config";
 
 export default function CompanycardsBysearch({ companies }) {
   return (
