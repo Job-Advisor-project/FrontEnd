@@ -13,10 +13,16 @@ code {
 }
 
 .item-container {
+  background-image: "url(http://localhost:3000/assets/background.png)";
+  display: block;
   justify-content: center;
-  padding: 2px;
+  padding: 0;
+  margin: 0 0;
+}
+.slide-container {
+  /* background-color: red; */
 }
 
 .react-multi-carousel-item {
-  padding-top: 35px;
+  padding: 0;
 }
