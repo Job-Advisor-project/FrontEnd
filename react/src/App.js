@@ -27,7 +27,6 @@ export default function App() {
             path="/companyOverview"
             element={<CompanyOverview company={company} />}
           />
-          <Route path="/aboutus" element={<Aboutus />} />
         </Routes>
       </Router>
     </div>
