@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import CardHeader from "@mui/material/CardHeader";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
+import { settings } from "../config/config";
 
 export default function CompanycardsBysearch({ companies }) {
   return (
@@ -40,7 +41,7 @@ export default function CompanycardsBysearch({ companies }) {
               avatar={
                 <Avatar
                   alt="logo"
-                  src={`.${item.attributes.image.data.attributes.formats.thumbnail.url}`}
+                  src={`https://strapi-production-ed57.up.railway.app${item.attributes.image.data.attributes.formats.thumbnail.url}`}
                   variant="square"
                 ></Avatar>
               }
