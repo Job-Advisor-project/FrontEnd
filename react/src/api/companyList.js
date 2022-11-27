@@ -1,5 +1,7 @@
+import { settings } from "../config/config";
+
 export async function getCompanyList() {
-  let url = `http://localhost:1337/api/companies`;
+  let url = `${settings.BACKEND_URL}/api/companies`;
   const response = await fetch(url);
   const result = await response.json();
   const data = result.data;
