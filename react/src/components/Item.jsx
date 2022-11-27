@@ -24,7 +24,7 @@ export default function Item({ item, onSelect }) {
         style={{ maxWidth: "80%", alignSelf: "center" }}
       ></img>
 
-      <Button color="success">{item.title}</Button>
+      <Button>{item.title}</Button>
     </Paper>
   );
 }
