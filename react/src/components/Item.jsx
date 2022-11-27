@@ -10,8 +10,8 @@ export default function Item({ item, onSelect }) {
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        width: "400px",
-        height: "300px",
+        width: "350px",
+        height: "350px",
       }}
       onClick={() => {
         onSelect(item.collection);
