@@ -4,9 +4,21 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardHeader from "@mui/material/CardHeader";
 import Avatar from "@mui/material/Avatar";
+//import { useNavigate } from "react-router-dom";
+//import { Button } from "@mui/material";
 import Box from "@mui/material/Box";
+import CompanycardsByVacancy from "../components/CompanycardsByVacany";
+import { getCompanyVacanciesVm } from "../api/viewModelels/companyVacancyVm";
+import { useEffect, useState } from "react";
 
 export default function CompanycardsBysearch({ companies }) {
+  const [companyVacancy, setCompanyVacancy] = useState([]);
+  useEffect(() => {
+    getCompanyVacanciesVm(companies).then((vm) => {
+      setCompanyVacancy(vm);
+    });
+  }, [companies]);
+  console.log("inside search component", companyVacancy);
   return (
     <Box
       sx={{
@@ -83,6 +95,12 @@ export default function CompanycardsBysearch({ companies }) {
                 {item.attributes.description}
               </Typography>
             </CardContent>
+            <Typography gutterBottom variant="h5" component="div" color="green">
+              Recently posted jobs
+            </Typography>
+            <CompanycardsByVacancy
+              companies={companyVacancy}
+            ></CompanycardsByVacancy>
           </Card>
         ))}
     </Box>
