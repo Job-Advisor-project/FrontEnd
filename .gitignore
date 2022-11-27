@@ -1,3 +1,4 @@
 node_modules
 accessibility_report
 **/.DS_Store
+/react/src/config/config.js
