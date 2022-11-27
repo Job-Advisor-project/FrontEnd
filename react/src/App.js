@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Team from "./pages/Other/Team";
-import AboutUs from "./pages/Other/AboutUs";
+import Aboutus from "./pages/Aboutus";
 import CompanyOverview from "./pages/CompanyOverview";
 import HomePage from "./pages/Home";
 import SearchResult from "./pages/SearchResult";
@@ -36,12 +35,7 @@ export default function App() {
             path="/companyOverview"
             element={<CompanyOverview company={company} />}
           />
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contactUs" element={<ContactUs />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/termsofUse" element={<TermsofUse />} />
-          <Route path="/careersPage" element={<CareersPage />} />
+          <Route path="/aboutus" element={<Aboutus />} />
         </Routes>
       </Router>
     </div>
