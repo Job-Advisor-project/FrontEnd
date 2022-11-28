@@ -5,7 +5,10 @@ export default function Item({ item, onSelect }) {
   const navigate = useNavigate();
   return (
     <Paper
-      //itemClass="item-container"
+      sx={{
+        margin: "0px",
+        backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
+      }}
       style={{
         display: "flex",
         flexDirection: "column",
