@@ -4,6 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+
 import {
   Card,
   CardHeader,
@@ -14,9 +15,10 @@ import {
 } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import AddIcon from "@mui/icons-material/Add";
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
+import { settings } from "../config/config.dev";
 
+function TabPanel(props, company) {
+  const { children, value, index, ...other } = props;
   return (
     <div
       role="tabpanel"
@@ -47,7 +49,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs() {
+export default function BasicTabs({ company }) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -75,77 +77,113 @@ export default function BasicTabs() {
         fontWeight: "700",
       }}
     >
-      {/* card*/}
-      <Card sx={{ mt: 0.1, px: 2, maxWidth: 10100 }}>
-        <CardHeader
-          avatar={
-            <Avatar
-              variant="square"
-              sx={{ mt: 1, width: 56, height: 56 }}
-            ></Avatar>
-          }
-          action={
-            <Stack spacing={3} direction="row" sx={{ mt: 3 }}>
-              <Button variant="contained" startIcon={<ArrowOutwardIcon />}>
-                Visit Website
-              </Button>
-              <Button variant="contained" endIcon={<AddIcon />}>
-                Review
-              </Button>
-            </Stack>
-          }
-        />
-        <CardActions>
-          {/* tabs */}
-          <Box sx={{ width: "100%" }}>
-            <Box sx={{ borderBottom: 1, borderTop: 1, borderColor: "divider" }}>
-              <Tabs
-                value={value}
-                onChange={handleChange}
-                aria-label="basic tabs example"
+      {company.map((c) => (
+        <Card sx={{ mt: 0.1, px: 2, maxWidth: 10100 }}>
+          <CardHeader
+            // sx={{ bgcolor: "#64d2ae" }}
+            avatar={
+              <Avatar
+                variant="square"
+                src={`${settings.BACKEND_URL}${c.attributes.image.data.attributes.formats.thumbnail.url}`}
+                sx={{ width: 100, height: 100 }}
+              ></Avatar>
+            }
+            action={
+              <Stack spacing={3} direction="row" sx={{ mt: 3 }}>
+                <Button
+                  sx={{ bgcolor: "#5A85C2" }}
+                  variant="contained"
+                  startIcon={<ArrowOutwardIcon />}
+                >
+                  Visit Website
+                </Button>
+                <Button
+                  sx={{ bgcolor: "#5A85C2" }}
+                  variant="contained"
+                  endIcon={<AddIcon />}
+                >
+                  Review
+                </Button>
+              </Stack>
+            }
+          />
+          <CardActions>
+            {/* tabs */}
+            <Box sx={{ width: "100%" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-around",
+                  borderBottom: 1,
+                  borderTop: 1,
+                  borderColor: "divider",
+                }}
               >
-                <Tab label="About" {...a11yProps(0)} />
-                <Tab label="Benefits & Compensation" {...a11yProps(1)} />
-                <Tab label="Sustainability" {...a11yProps(2)} />
-                <Tab label="Work/Life Balance" {...a11yProps(3)} />
-                <Tab label="Review" {...a11yProps(4)} />
-              </Tabs>
+                <Tabs
+                  value={value}
+                  onChange={handleChange}
+                  aria-label="basic tabs example"
+                  // sx={{ display: "flex", textAlign: "center" }}
+                >
+                  <Tab label="About" {...a11yProps(0)} />
+                  {c.attributes.benefits_compensations.data.map(
+                    (w) =>
+                      w.attributes.condition && (
+                        <Tab
+                          label="Benefits & Compensation"
+                          {...a11yProps(1)}
+                        />
+                      )
+                  )}
+                  {c.attributes.social_responsibilities.data.map(
+                    (w) =>
+                      w.attributes.description && (
+                        <Tab label="Sustainability" {...a11yProps(2)} />
+                      )
+                  )}
+                  {/* <Tab label="Sustainability" {...a11yProps(2)} /> */}
+
+                  <Tab label="Work/Life Balance" {...a11yProps(3)} />
+                  <Tab label="Diversity & Inclusion" {...a11yProps(4)} />
+                  <Tab label="Review" {...a11yProps(5)} />
+                </Tabs>
+              </Box>
+              <TabPanel
+                sx={{ display: "flex", flexDirection: "column" }}
+                value={value}
+                index={0}
+              >
+                <Typography variant="h5" gutterBottom>
+                  {c.attributes.name} overview
+                </Typography>
+                <Typography subtitle1="h5" gutterBottom>
+                  {c.attributes.industry}
+                </Typography>
+                <Typography variant="p" gutterBottom>
+                  {c.attributes.description}
+                </Typography>
+              </TabPanel>
+              <TabPanel value={value} index={1}>
+                {c.attributes.benefits_compensations.data.map(
+                  (w) => w.attributes.condition
+                )}
+              </TabPanel>
+              <TabPanel value={value} index={2}></TabPanel>
+              <TabPanel value={value} index={3}>
+                {c.attributes.work_life_balances.data.map(
+                  (w) => w.attributes.workingHours
+                )}
+              </TabPanel>
+              <TabPanel value={value} index={4}>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse.
+              </TabPanel>
+              <TabPanel value={value} index={5}>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse.
+              </TabPanel>
             </Box>
-            <TabPanel value={value} index={0}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </TabPanel>
-            <TabPanel value={value} index={1}>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </TabPanel>
-            <TabPanel value={value} index={2}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </TabPanel>
-            <TabPanel value={value} index={3}>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </TabPanel>
-            <TabPanel value={value} index={4}>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse.
-            </TabPanel>
-          </Box>
-        </CardActions>
-      </Card>
+          </CardActions>
+        </Card>
+      ))}
     </Box>
   );
 }

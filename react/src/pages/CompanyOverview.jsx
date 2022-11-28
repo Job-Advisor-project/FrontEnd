@@ -1,11 +1,9 @@
 //import { Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { getCompanyDataVm } from "../api/viewModelels/companyDataVm";
-import { Container } from "@mui/material";
-import CompanycardsBysearch from "../components/CompanycardsBysearch";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Tabs from "../components/Tabs";
+import BasicTabs from "../components/Tabs";
 
 export default function CompanyOverview({ company }) {
   const [companyData, setCompanyData] = useState([]);
@@ -17,10 +15,7 @@ export default function CompanyOverview({ company }) {
   return (
     <>
       <Header></Header>
-      <Tabs />
-      <Container>
-        <CompanycardsBysearch companies={companyData}></CompanycardsBysearch>
-      </Container>
+      <BasicTabs company={companyData}></BasicTabs>
       <Footer></Footer>
     </>
   );
