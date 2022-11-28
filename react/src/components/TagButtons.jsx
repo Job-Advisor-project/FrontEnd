@@ -1,6 +1,7 @@
 import { Button, Stack } from "@mui/material";
+
 import slider from "../api/slider.json";
-export const TagButtons = ({ onClick }) => {
+export const TagButtons = ({ onClick, selected }) => {
   return (
     <Stack
       direction="row"
@@ -9,15 +10,20 @@ export const TagButtons = ({ onClick }) => {
       flexWrap="wrap"
       margin="20px"
     >
-      {slider.map((item) => (
-        <Button
-          variant="outlined"
-          key={item.name}
-          onClick={() => onClick(item.collection)}
-        >
-          {item.title}
-        </Button>
-      ))}
+      {slider.map(
+        (item) =>
+          selected !== item.collection && (
+            <Button
+              variant="outlined"
+              key={item.name}
+              onClick={() => {
+                onClick(item.collection);
+              }}
+            >
+              {item.title}
+            </Button>
+          )
+      )}
     </Stack>
   );
 };
