@@ -15,12 +15,10 @@ export default function SearchBar({ setCompany }) {
       sx={{
         display: "flex",
         flexDirection: "row",
-        alignItems: "stretch",
-        mt: 5,
-        ml: 10,
+        mt: 7,
       }}
     >
-      <Grid container justifyContent="left">
+      <Grid container sx={{ justifyContent: "center" }}>
         <Grid item xs={6} md={6} lg={8} sx={{ mr: 1 }}>
           <Autocomplete
             disablePortal
@@ -33,7 +31,9 @@ export default function SearchBar({ setCompany }) {
             sx={{ alignSelf: "center" }}
             renderInput={(params) => (
               <TextField
-                sx={{ maxWidth: "100%" }}
+                sx={{
+                  maxWidth: "100%",
+                }}
                 {...params}
                 label="Search by company name..."
                 onClick={() => getCompanyListVm().then((v) => setData(v))}
@@ -60,6 +60,10 @@ export default function SearchBar({ setCompany }) {
           sx={{
             backgroundColor: "#5A85C2",
             display: { xs: "block", sm: "none" },
+          }}
+          onClick={() => {
+            setCompany(inputValue);
+            navigate("/companyOverview");
           }}
         >
           <SearchIcon />
