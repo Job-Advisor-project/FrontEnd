@@ -8,10 +8,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Avatar from "@mui/material/Avatar";
 import { Stack } from "@mui/system";
-import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
-  const navigate = useNavigate();
   return (
     <>
       <Box
