@@ -1,18 +1,12 @@
-import {
-  Box,
-  Grid,
-  Typography,
-  List,
-  ListItemText,
-  Container,
-} from "@mui/material";
-//import SearchBar from "./SearchBar";
+import { Box, Grid, Typography, List, ListItemText } from "@mui/material";
+import SearchBar from "./SearchBar";
+import { useNavigate } from "react-router-dom";
+
 export default function Banner({ setCompany }) {
   const navigate = useNavigate();
   return (
     <Box
       sx={{
-        flexDirection: "row",
         alignItems: "stretch",
         backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
         backgroundRepeat: "no-repeat",
@@ -24,17 +18,19 @@ export default function Banner({ setCompany }) {
         fontWeight: "700",
       }}
     >
+      <Grid item md={6} lg={4}>
+        <Typography sx={{ ml: 11 }}>
+          <img
+            src="../assets/ja-logo.png"
+            alt="jobadvisorlogo"
+            width={170}
+            height={150}
+            onClick={() => navigate("/")}
+          />
+        </Typography>
+      </Grid>
       <Grid container>
-        <Grid item md={6} lg={4}>
-          <Typography>
-            <img
-              src="../../assets/design/edited-idea.png"
-              alt="women"
-              style={{ width: "100%", height: "auto" }}
-            />
-          </Typography>
-        </Grid>
-        <Grid item md={6} lg={6}>
+        <Grid item md={6} lg={6} sx={{ my: 7, mx: 9 }}>
           <Typography variant="h3">
             Find Your Dream Workplace with Us Easily
           </Typography>
@@ -46,7 +42,17 @@ export default function Banner({ setCompany }) {
                 enim ad minim veniam,
               </Typography>
             </ListItemText>
+            <SearchBar setCompany={setCompany}></SearchBar>
           </List>
+        </Grid>
+        <Grid item md={6} lg={4} sx={{ mb: 5 }}>
+          <Typography>
+            <img
+              src="../../assets/design/edited-idea.png"
+              alt="women"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </Typography>
         </Grid>
       </Grid>
     </Box>
