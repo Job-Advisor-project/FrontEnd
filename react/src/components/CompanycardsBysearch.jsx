@@ -40,7 +40,7 @@ export default function CompanycardsBysearch({ companies }) {
               avatar={
                 <Avatar
                   alt="logo"
-                  src={`.${item.attributes.image.data.attributes.formats.thumbnail.url}`}
+                  src={`https://strapi-production-ed57.up.railway.app${item.attributes.image.data.attributes.formats.thumbnail.url}`}
                   variant="square"
                 ></Avatar>
               }
