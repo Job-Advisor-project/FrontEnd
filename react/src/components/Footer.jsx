@@ -57,46 +57,130 @@ export default function Footer() {
             </Stack>
           </Grid>
           <Grid item md={6} lg={2} sx={{ my: 3 }}>
-            <Typography variant="caption1">INFORMATION</Typography>
+            <Typography
+              sx={{
+                fontWeight: "750",
+                fontSize: {
+                  lg: 12,
+                  md: 10,
+                  xs: 8,
+                },
+              }}
+            >
+              INFORMATION
+            </Typography>
             <List>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2"></Typography>
+                <Typography
+                  lineHeight={2}
+                  sx={{
+                    fontSize: {
+                      lg: 12,
+                      md: 10,
+                      xs: 8,
+                    },
+                  }}
+                >
+                  About Us
+                </Typography>
               </ListItemText>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2">
-                  About us
-                </Typography>
-                <Typography lineHeight={2} variant="body2">
+                <Typography
+                  lineHeight={2}
+                  sx={{
+                    fontSize: {
+                      lg: 12,
+                      md: 10,
+                      xs: 8,
+                    },
+                  }}
+                >
                   FAQ
                 </Typography>
               </ListItemText>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2">
+                <Typography
+                  lineHeight={2}
+                  sx={{
+                    fontSize: {
+                      lg: 12,
+                      md: 10,
+                      xs: 8,
+                    },
+                  }}
+                >
                   Privacy &amp; Policy
                 </Typography>
               </ListItemText>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2">
+                <Typography
+                  lineHeight={2}
+                  sx={{
+                    fontSize: {
+                      lg: 12,
+                      md: 10,
+                      xs: 8,
+                    },
+                  }}
+                >
                   Terms &amp; Conditions
                 </Typography>
               </ListItemText>
             </List>
           </Grid>
           <Grid item md={6} lg={2} sx={{ my: 3 }}>
-            <Typography variant="caption1">WORK WITH US</Typography>
+            <Typography
+              sx={{
+                fontWeight: "750",
+                fontSize: {
+                  lg: 12,
+                  md: 10,
+                  xs: 8,
+                },
+              }}
+            >
+              WORK WITH US
+            </Typography>
             <List>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2">
+                <Typography
+                  lineHeight={2}
+                  sx={{
+                    fontSize: {
+                      lg: 12,
+                      md: 10,
+                      xs: 8,
+                    },
+                  }}
+                >
                   Advertiser
                 </Typography>
               </ListItemText>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2">
+                <Typography
+                  lineHeight={2}
+                  sx={{
+                    fontSize: {
+                      lg: 12,
+                      md: 10,
+                      xs: 8,
+                    },
+                  }}
+                >
                   Developers
                 </Typography>
               </ListItemText>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2">
+                <Typography
+                  lineHeight={2}
+                  sx={{
+                    fontSize: {
+                      lg: 12,
+                      md: 10,
+                      xs: 8,
+                    },
+                  }}
+                >
                   Careers
                 </Typography>
               </ListItemText>

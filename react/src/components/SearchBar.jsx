@@ -4,6 +4,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import { getCompanyListVm } from "../api/viewModelels/companyListVm";
 import { Box, Button, Grid } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import SearchIcon from "@mui/icons-material/Search";
 
 export default function SearchBar({ setCompany }) {
   const navigate = useNavigate();
@@ -15,11 +16,12 @@ export default function SearchBar({ setCompany }) {
         display: "flex",
         flexDirection: "row",
         alignItems: "stretch",
-        mt: 3,
+        mt: 5,
+        ml: 10,
       }}
     >
       <Grid container justifyContent="left">
-        <Grid item xs={4} md={6} lg={8} sx={{ mr: 1 }}>
+        <Grid item xs={6} md={6} lg={8} sx={{ mr: 1 }}>
           <Autocomplete
             disablePortal
             inputValue={inputValue}
@@ -40,9 +42,10 @@ export default function SearchBar({ setCompany }) {
           />
         </Grid>
         <Button
-          style={{
+          sx={{
             backgroundColor: "#5A85C2",
             fontWeight: "600",
+            display: { xs: "none", sm: "block" },
           }}
           variant="contained"
           onClick={() => {
@@ -51,6 +54,15 @@ export default function SearchBar({ setCompany }) {
           }}
         >
           Search
+        </Button>
+        <Button
+          variant="contained"
+          sx={{
+            backgroundColor: "#5A85C2",
+            display: { xs: "block", sm: "none" },
+          }}
+        >
+          <SearchIcon />
         </Button>
       </Grid>
     </Box>
