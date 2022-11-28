@@ -1,29 +1,29 @@
-import { Button, Grid } from "@mui/material";
-//import { Box } from "@mui/system";
+import { Button, Stack } from "@mui/material";
 
 import slider from "../api/slider.json";
 export const TagButtons = ({ onClick, selected }) => {
   return (
-    <Grid container sx={{ justifyContent: "center" }}>
-      {slider.map((item) =>
-        selected !== item.collection ? (
-          <Button
-            sx={{ m: 2 }}
-            variant="outlined"
-            key={item.name}
-            onClick={() => {
-              onClick(item.collection);
-            }}
-          >
-            {item.title}
-          </Button>
-        ) : (
-          <Button sx={{ m: 2 }} variant="outlined" disabled key={item.name}>
-            {item.title}
-          </Button>
-        )
+    <Stack
+      direction="row"
+      justifyContent="space-around"
+      alignItems="center"
+      flexWrap="wrap"
+      margin="20px"
+    >
+      {slider.map(
+        (item) =>
+          selected !== item.collection && (
+            <Button
+              variant="outlined"
+              key={item.name}
+              onClick={() => {
+                onClick(item.collection);
+              }}
+            >
+              {item.title}
+            </Button>
+          )
       )}
-    </Grid>
-    // </Stack>
+    </Stack>
   );
 };
