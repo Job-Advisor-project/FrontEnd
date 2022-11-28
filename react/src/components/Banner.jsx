@@ -30,10 +30,11 @@ export default function Banner({ setCompany }) {
         </Typography>
       </Grid>
       <Grid container sx={{ justifyContent: "center" }}>
-        <Grid item md={5} lg={6} sx={{ my: 7, mx: 3 }}>
+        <Grid item md={5} lg={6} sx={{ my: 5, mx: 3 }}>
           <Typography
             sx={{
               textAlign: "center",
+              fontFamily: "sans-serif",
               typography: {
                 md: "h3",
                 sm: "h4",
@@ -48,6 +49,7 @@ export default function Banner({ setCompany }) {
               <Typography
                 lineHeight={2}
                 sx={{
+                  mt: 3,
                   textAlign: "center",
                   typography: { md: "body1", sm: "body2" },
                 }}
