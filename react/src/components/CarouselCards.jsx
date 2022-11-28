@@ -24,8 +24,6 @@ export default function CarouselSlide({ onSelect }) {
   };
   return (
     <Carousel
-      //width="200px"
-      //height="200px"
       swipeable={false}
       draggable={false}
       showDots={false}
@@ -45,7 +43,6 @@ export default function CarouselSlide({ onSelect }) {
       removeArrowOnDeviceType={["tablet", "mobile"]}
       itemClass="item-container"
       sliderClass="slider-container"
-      backgroundImage="url(http://localhost:3000/assets/background.png)"
       backgroundRepeat="no-repeat"
       aspectRatio="1.8"
       viewportFraction={0.4}
