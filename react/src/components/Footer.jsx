@@ -9,7 +9,6 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Avatar from "@mui/material/Avatar";
 import { Stack } from "@mui/system";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@mui/material";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -67,19 +66,7 @@ export default function Footer() {
               </ListItemText>
               <ListItemText>
                 <Typography lineHeight={2} variant="body2">
-                  <Button
-                    style={{
-                      backgroundColor: "#5A85C2",
-                      fontWeight: "600",
-                      marginLeft: "5px",
-                    }}
-                    variant="contained"
-                    onClick={() => {
-                      navigate("/aboutus");
-                    }}
-                  >
-                    About us
-                  </Button>
+                  About us
                 </Typography>
                 <Typography lineHeight={2} variant="body2">
                   FAQ
