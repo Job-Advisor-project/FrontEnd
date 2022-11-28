@@ -13,6 +13,10 @@ code {
 }
 
 .item-container {
-  background-image: "url(http://localhost:3000/assets/background.png)";
-  padding: 7.5px;
+  justify-content: center;
+  padding: 2px;
+}
+
+.react-multi-carousel-item {
+  padding-top: 35px;
 }
