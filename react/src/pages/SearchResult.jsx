@@ -24,7 +24,7 @@ export default function SearchResult({ tag }) {
       <Header></Header>
       <Container sx={{ mt: "10px" }}>
         <TitleTag selected={selected}></TitleTag>
-        <TagButtons onClick={handleClick}></TagButtons>
+        <TagButtons onClick={handleClick} selected={selected}></TagButtons>
         <Cards companies={companyList}></Cards>
       </Container>
       <Footer></Footer>
