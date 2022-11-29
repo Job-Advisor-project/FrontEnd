@@ -60,11 +60,12 @@ export default function Footer() {
             <Typography variant="caption1">INFORMATION</Typography>
             <List>
               <ListItemText>
-                <Typography lineHeight={2} variant="body2">
-                  About Us
-                </Typography>
+                <Typography lineHeight={2} variant="body2"></Typography>
               </ListItemText>
               <ListItemText>
+                <Typography lineHeight={2} variant="body2">
+                  About us
+                </Typography>
                 <Typography lineHeight={2} variant="body2">
                   FAQ
                 </Typography>
