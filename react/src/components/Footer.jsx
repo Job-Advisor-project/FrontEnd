@@ -18,7 +18,7 @@ export default function Footer() {
           alignItems: "stretch",
           mt: 5,
           bgcolor: (theme) =>
-            theme.palette.mode === "amber" ? "yellow.50" : "#fffde7",
+            theme.palette.mode === "amber" ? "yellow.30" : "#fffde7",
           color: (theme) =>
             theme.palette.mode === "dark" ? "grey.300" : "grey.800",
           border: "1px solid",
