@@ -1,6 +1,18 @@
-import { Box, Grid, Typography, List, ListItemText } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  List,
+  ListItemText,
+  styled,
+  Toolbar,
+} from "@mui/material";
 import SearchBar from "./SearchBar";
 import { useNavigate } from "react-router-dom";
+
+const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+  fontFamily: theme.fontFamily,
+}));
 
 export default function Banner({ setCompany }) {
   const navigate = useNavigate();
@@ -15,7 +27,6 @@ export default function Banner({ setCompany }) {
         height: "auto",
         maxWidth: "100%",
         fontSize: "0.875rem",
-        fontWeight: "700",
       }}
     >
       <Grid item md={6} lg={4}>
@@ -29,11 +40,22 @@ export default function Banner({ setCompany }) {
           />
         </Typography>
       </Grid>
-      <Grid container>
-        <Grid item md={6} lg={6} sx={{ my: 7, mx: 9 }}>
-          <Typography variant="h3">
-            Find Your Dream Workplace with Us Easily
-          </Typography>
+      <Grid container sx={{ justifyContent: "center" }}>
+        <Grid item md={5} lg={7} sx={{ my: 5, mx: 3 }}>
+          <StyledToolbar>
+            <Typography
+              sx={{
+                textAlign: "center",
+                typography: {
+                  md: "h3",
+                  sm: "h4",
+                  xs: "h5",
+                },
+              }}
+            >
+              Find Your Dream Workplace with Us Easily
+            </Typography>
+          </StyledToolbar>
           <List>
             <ListItemText>
               <Typography lineHeight={2} variant="body2">
