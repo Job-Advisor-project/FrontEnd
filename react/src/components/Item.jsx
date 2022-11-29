@@ -5,13 +5,16 @@ export default function Item({ item, onSelect }) {
   const navigate = useNavigate();
   return (
     <Paper
-      //itemClass="item-container"
-      width="10%"
+      sx={{
+        margin: "0px",
+        backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
+      }}
       style={{
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        height: "292px",
+        width: "350px",
+        height: "350px",
       }}
       onClick={() => {
         onSelect(item.collection);
@@ -24,7 +27,7 @@ export default function Item({ item, onSelect }) {
         style={{ maxWidth: "80%", alignSelf: "center" }}
       ></img>
 
-      <Button display="flex">{item.title}</Button>
+      <Button>{item.title}</Button>
     </Paper>
   );
 }
