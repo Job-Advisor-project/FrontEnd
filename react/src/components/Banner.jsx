@@ -65,7 +65,7 @@ export default function Banner({ setCompany }) {
         <Grid item md={5} lg={4} sx={{ mb: 5 }}>
           <Typography>
             <img
-              src="../../assets/design/edited-idea.png"
+              src="../../assets/figma download/edited-idea.png"
               alt="women"
               style={{
                 width: "100%",
