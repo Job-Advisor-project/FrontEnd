@@ -38,7 +38,7 @@ export default function Cards({ companies }) {
               avatar={
                 <Avatar
                   alt="logo"
-                  src={`.${item.attributes.company.data.attributes.image.data.attributes.formats.thumbnail.url}`}
+                  src={`https://strapi-production-ed57.up.railway.app${item.attributes.company.data.attributes.image.data.attributes.formats.thumbnail.url}`}
                   variant="square"
                 ></Avatar>
               }

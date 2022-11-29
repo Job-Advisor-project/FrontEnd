@@ -31,9 +31,7 @@ export default function SearchBar({ setCompany }) {
             sx={{ alignSelf: "center" }}
             renderInput={(params) => (
               <TextField
-                sx={{
-                  maxWidth: "100%",
-                }}
+                sx={{ backgroundColor: "white", maxWidth: "100%" }}
                 {...params}
                 label="Search by company name..."
                 onClick={() => getCompanyListVm().then((v) => setData(v))}
