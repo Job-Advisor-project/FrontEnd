@@ -272,7 +272,10 @@ export default function BasicTabs({ company }) {
                       </Typography>
                       <CardMedia
                         component="img"
-                        height="300"
+                        height="400"
+                        sx={{
+                          objectFit: "stretch",
+                        }}
                         image={`https://strapi-production-ed57.up.railway.app${w.attributes.image.data.map(
                           (i) => i.attributes.url
                         )}`}
