@@ -55,6 +55,7 @@ export default function CarouselSlide({ onSelect }) {
   );
 }
 
+//============================minju's comment=============================
 // export default function Carousel({ onInput }) {
 //   return (
 //     <div
