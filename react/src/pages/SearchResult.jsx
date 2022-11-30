@@ -24,7 +24,7 @@ export default function SearchResult({ tag }) {
       {/* <Header></Header> */}
       <Container
         sx={{
-          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/bg-alt.png')`,
+          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/cc-bg.png')`,
           backgroundRepeat: "repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
