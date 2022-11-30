@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AboutUs from "./pages/AboutUs";
 import CompanyOverview from "./pages/CompanyOverview";
 import HomePage from "./pages/Home";
 import SearchResult from "./pages/SearchResult";
-
 export default function App() {
   const [tag, setTag] = useState("work-life-balances");
   const [company, setCompany] = useState("");
@@ -30,6 +30,7 @@ export default function App() {
             path="/companyOverview"
             element={<CompanyOverview company={company} />}
           />
+          <Route path="/aboutUs" element={<AboutUs />} />
         </Routes>
       </Router>
     </div>

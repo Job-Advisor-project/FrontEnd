@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Grid, Typography, List, ListItemText } from "@mui/material";
+import { Grid, Typography, List, ListItemText, Link } from "@mui/material";
 import Box from "@mui/material/Box";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -77,18 +77,7 @@ export default function Footer() {
             </Typography>
             <List>
               <ListItemText>
-                <Typography
-                  lineHeight={2}
-                  sx={{
-                    fontSize: {
-                      lg: 12,
-                      md: 10,
-                      xs: 8,
-                    },
-                  }}
-                >
-                  About Us
-                </Typography>
+                <Link href="/aboutUs">About us</Link>
               </ListItemText>
               <ListItemText>
                 <Typography
