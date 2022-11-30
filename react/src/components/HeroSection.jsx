@@ -74,12 +74,6 @@ export default function TitleTag({ selected }) {
   ) : (
     <Box
       sx={{
-        // backgroundImage: `url('${process.env.PUBLIC_URL}/assets/cc-bg.png')`,
-        // backgroundRepeat: "no-repeat",
-        // backgroundPosition: "center",
-        // backgroundSize: "cover",
-        // height: "auto",
-        maxWidth: "100%",
         fontSize: "0.875rem",
         fontWeight: "700",
       }}
@@ -96,7 +90,7 @@ export default function TitleTag({ selected }) {
         </Typography>
       </Grid>
       <Grid container sx={{ justifyContent: "center", alignItems: "center" }}>
-        <Grid item md={5} lg={6} sx={{ my: 5, mx: 3 }}>
+        <Grid item md={5} lg={3.5} sx={{ my: 5, mx: 3 }}>
           <Typography
             sx={{
               textAlign: "center",
