@@ -91,7 +91,7 @@ export default function About() {
       </div>
 
       <img
-        src="../../assets/workpicture.png"
+        src="../../assets/workpicture1.png"
         alt="Team"
         style={{ width: "652px", height: "410px", borderRadius: "90px" }}
       />
