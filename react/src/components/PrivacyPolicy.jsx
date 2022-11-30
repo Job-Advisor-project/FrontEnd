@@ -34,6 +34,7 @@ export default function PrivacyPolicy() {
           style={{
             textAlign: "center",
             fontWeight: "700px",
+            marginBottom: "78px",
           }}
           gutterBottom
         >
@@ -41,18 +42,14 @@ export default function PrivacyPolicy() {
         </Typography>
         <Typography
           variant="subtitle1"
-          style={{ textAlign: "center", marginBottom: "78px" }}
+          style={{ textAlign: "center", marginBottom: "58px" }}
           gutterBottom
         >
           Your information is used to support you in your career.
           <br></br>
           Nothing more.Nothing less.
         </Typography>
-        <Typography
-          variant="paragrapgh"
-          style={{ textAlign: "center", marginBottom: "78px" }}
-          gutterBottom
-        >
+        <Typography variant="body1" style={{ textAlign: "left" }} gutterBottom>
           Our purpose is to help people live more fulfilling and productive
           working lives and help organisations succeed. We believe it’s
           important that you understand how your information is collected, used,

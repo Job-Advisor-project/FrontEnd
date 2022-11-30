@@ -8,6 +8,7 @@ import SearchResult from "./pages/SearchResult";
 import ContactUs from "./pages/ContactUs";
 import Privacy from "./pages/Privacy";
 import TermsofUse from "./pages/TermsofUse";
+import CareersPage from "./pages/CareersPage";
 
 export default function App() {
   const [tag, setTag] = useState("work&life");
@@ -36,6 +37,7 @@ export default function App() {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/termsofUse" element={<TermsofUse />} />
+          <Route path="/careersPage" element={<CareersPage />} />
         </Routes>
       </Router>
     </div>

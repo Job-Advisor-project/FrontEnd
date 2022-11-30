@@ -32,12 +32,12 @@ export default function Footer() {
       >
         <Grid container spacing={2} justifyContent="center">
           <Grid item md={6} lg={4}>
-            <Typography sx={{ ml: 15 }}>
+            <Typography sx={{ ml: 16 }}>
               <img
                 src="../assets/ja-logo.png"
                 alt="jobadvisorlogo"
                 width={170}
-                height={170}
+                height={150}
                 onClick={() => navigate("/")}
               />
             </Typography>
@@ -153,7 +153,7 @@ export default function Footer() {
                     },
                   }}
                 >
-                  <Link href="Careers">Careers</Link>
+                  <Link href="CareersPage">Careers</Link>
                 </Typography>
               </ListItemText>
             </List>

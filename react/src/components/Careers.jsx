@@ -1,7 +1,8 @@
 import { Grid, Box, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import { Button, CardActions } from "@mui/material";
+import { Link } from "@mui/material";
 
 export default function Careers() {
   return (
@@ -67,6 +68,13 @@ export default function Careers() {
                   align="center"
                 >
                   <h6>Brussels</h6>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      <Link href="mailto:jobadvisor2022@gmail.com">
+                        Apply here
+                      </Link>
+                    </Button>
+                  </CardActions>
                 </Typography>
               </CardContent>
             </Card>
@@ -101,6 +109,13 @@ export default function Careers() {
                   align="center"
                 >
                   <h6>Ghent</h6>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      <Link href="mailto:jobadvisor2022@gmail.com">
+                        Apply here
+                      </Link>
+                    </Button>
+                  </CardActions>
                 </Typography>
               </CardContent>
             </Card>
@@ -135,20 +150,17 @@ export default function Careers() {
                   align="center"
                 >
                   <h6>Antwerp</h6>
+                  <CardActions>
+                    <Button size="small" color="primary">
+                      <Link href="mailto:jobadvisor2022@gmail.com">
+                        Apply here
+                      </Link>
+                    </Button>
+                  </CardActions>
                 </Typography>
               </CardContent>
             </Card>
           </Grid>
-          <CardActions>
-            <Button
-              size="small"
-              color="primary"
-              target="_top"
-              rel="noopener noreferrer"
-            >
-              Apply here
-            </Button>
-          </CardActions>
         </div>
       </Grid>
     </Box>
