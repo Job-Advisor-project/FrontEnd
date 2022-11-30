@@ -17,8 +17,14 @@ export default function Footer() {
           flexDirection: "row",
           alignItems: "stretch",
           mt: 5,
+          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/footer-bg.png')`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          height: "auto",
+          maxWidth: "100%",
           bgcolor: (theme) =>
-            theme.palette.mode === "amber" ? "yellow.30" : "#fffde7",
+            theme.palette.mode === "dark" ? "#101010" : "#fff",
           color: (theme) =>
             theme.palette.mode === "dark" ? "grey.300" : "grey.800",
           border: "1px solid",
@@ -192,6 +198,14 @@ export default function Footer() {
         sx={{
           flexDirection: "row",
           textAlign: "center",
+          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/footer-bg.png')`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          height: "auto",
+          maxWidth: "100%",
+          bgcolor: (theme) =>
+            theme.palette.mode === "dark" ? "#101010" : "#fff",
           bgcolor: (theme) =>
             theme.palette.mode === "amber" ? "yellow.50" : "#fffde7",
           color: (theme) =>
