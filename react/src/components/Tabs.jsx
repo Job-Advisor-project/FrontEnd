@@ -206,6 +206,7 @@ export default function BasicTabs({ company }) {
                   <CardMedia
                     component="img"
                     height="300"
+                    sx={{ objectFit: "contain" }}
                     image={`${w.attributes.image.data.map(
                       (i) => i.attributes.url
                     )}`}
