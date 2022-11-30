@@ -112,7 +112,7 @@ export default function Footer() {
             <List>
               <ListItemText>
                 <Typography
-                  lineHeight={4}
+                  lineHeight={3}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
