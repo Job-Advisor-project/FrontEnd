@@ -6,7 +6,7 @@ import { TagButtons } from "../components/TagButtons";
 import TitleTag from "../components/HeroSection";
 import Footer from "../components/Footer";
 
-export default function SearchResult({ tag }) {
+export default function SearchResult({ tag, setCompany }) {
   const [selected, setSelected] = useState(tag);
   const [companyList, setCompanyList] = useState([]);
 
@@ -32,7 +32,7 @@ export default function SearchResult({ tag }) {
       >
         <TitleTag selected={selected}></TitleTag>
         <TagButtons onClick={handleClick} selected={selected}></TagButtons>
-        <Cards companies={companyList}></Cards>
+        <Cards setCompany={setCompany} companies={companyList}></Cards>
       </Box>
       <Footer></Footer>
     </>

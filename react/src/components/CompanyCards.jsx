@@ -7,8 +7,10 @@ import Typography from "@mui/material/Typography";
 import CardHeader from "@mui/material/CardHeader";
 import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
+import { useNavigate } from "react-router-dom";
 
-export default function Cards({ companies }) {
+export default function Cards({ companies, setCompany }) {
+  const navigate = useNavigate();
   return (
     <Box
       sx={{
@@ -68,7 +70,15 @@ export default function Cards({ companies }) {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Read More</Button>
+              <Button
+                onClick={() => {
+                  setCompany(item.attributes.company.data.attributes.name);
+                  navigate("/companyOverview");
+                }}
+                size="small"
+              >
+                Read More
+              </Button>
             </CardActions>
           </Card>
         ))}

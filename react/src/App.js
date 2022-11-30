@@ -16,6 +16,7 @@ export default function App() {
   const handleSelection = (selectedTag) => {
     selectedTag && setTag(selectedTag);
   };
+  console.log(company);
 
   return (
     <div>
@@ -27,7 +28,10 @@ export default function App() {
               <HomePage setCompany={setCompany} onSelect={handleSelection} />
             }
           />
-          <Route path="/searchResult" element={<SearchResult tag={tag} />} />
+          <Route
+            path="/searchResult"
+            element={<SearchResult setCompany={setCompany} tag={tag} />}
+          />
           <Route
             path="/companyOverview"
             element={<CompanyOverview company={company} />}
