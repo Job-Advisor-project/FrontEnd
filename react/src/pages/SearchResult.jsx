@@ -1,11 +1,10 @@
 import Cards from "../components/CompanyCards";
 import React, { useEffect, useState } from "react";
 import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
-import { Container } from "@mui/material";
+import { Box } from "@mui/material";
 import { TagButtons } from "../components/TagButtons";
 import TitleTag from "../components/HeroSection";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 
 export default function SearchResult({ tag }) {
   const [selected, setSelected] = useState(tag);
@@ -21,12 +20,20 @@ export default function SearchResult({ tag }) {
   };
   return (
     <>
-      <Header></Header>
-      <Container sx={{ mt: "10px" }}>
+      <Box
+        sx={{
+          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/cc-bg.png')`,
+          backgroundRepeat: "repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          maxHeight: "auto",
+          maxWidth: "100%",
+        }}
+      >
         <TitleTag selected={selected}></TitleTag>
         <TagButtons onClick={handleClick} selected={selected}></TagButtons>
         <Cards companies={companyList}></Cards>
-      </Container>
+      </Box>
       <Footer></Footer>
     </>
   );

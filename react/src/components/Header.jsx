@@ -1,37 +1,36 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import { Toolbar, Typography } from "@mui/material";
+import Grid from "@mui/material/Grid";
+import { Box, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <div>
-      <AppBar
-        position="flex"
-        sx={{
-          display: "flex",
-          justifyContent: "right",
-          margin: "0px",
-          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          height: "100",
-        }}
-      >
-        <Toolbar>
-          <Typography>
-            <img
-              src="../assets/ja-logo.png"
-              alt="jobadvisorlogo"
-              width={130}
-              height={100}
-              onClick={() => navigate("/")}
-            />
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <Box
+      sx={{
+        alignItems: "stretch",
+        backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        height: "auto",
+        maxWidth: "100%",
+        fontSize: "0.875rem",
+        fontWeight: "700",
+      }}
+    >
+      <Grid item xs={6} md={4}>
+        <Typography sx={{ ml: 4 }}>
+          <img
+            src="../assets/ja-logo.png"
+            alt="jobadvisorlogo"
+            width={170}
+            height={150}
+            onClick={() => navigate("/")}
+          />
+        </Typography>
+      </Grid>
+    </Box>
   );
 };
 

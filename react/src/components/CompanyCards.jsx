@@ -15,7 +15,8 @@ export default function Cards({ companies }) {
         flexDirection: "column",
         display: "flex",
         alignItems: "stretch",
-        m: 5,
+        mt: 5,
+        mx: 10,
         bgcolor: (theme) =>
           theme.palette.mode === "dark" ? "#101010" : "#fff",
         color: (theme) =>
