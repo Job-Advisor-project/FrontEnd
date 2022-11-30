@@ -31,16 +31,16 @@ export default function Footer() {
       >
         <Grid container spacing={2} justifyContent="center">
           <Grid item md={6} lg={4}>
-            <Typography sx={{ ml: 13 }}>
+            <Typography sx={{ ml: 15 }}>
               <img
                 src="../assets/ja-logo.png"
                 alt="jobadvisorlogo"
                 width={170}
-                height={150}
+                height={170}
                 onClick={() => navigate("/")}
               />
             </Typography>
-            <Stack direction="row" spacing={2} sx={{ mx: 7, mb: 3 }}>
+            <Stack direction="row" spacing={2} sx={{ mx: 12, mb: 3 }}>
               <Avatar sx={{ width: 31, height: 31 }}>
                 <FacebookIcon />
               </Avatar>
@@ -62,7 +62,7 @@ export default function Footer() {
             <List>
               <ListItemText>
                 <Typography
-                  lineHeight={2}
+                  lineHeight={4}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -77,7 +77,7 @@ export default function Footer() {
               </ListItemText>
               <ListItemText>
                 <Typography
-                  lineHeight={2}
+                  lineHeight={4}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -92,7 +92,7 @@ export default function Footer() {
               </ListItemText>
               <ListItemText>
                 <Typography
-                  lineHeight={2}
+                  lineHeight={4}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -107,11 +107,11 @@ export default function Footer() {
               </ListItemText>
             </List>
           </Grid>
-          <Grid item md={6} lg={2} sx={{ my: 3 }}>
+          <Grid item md={6} lg={4} sx={{ my: 3 }}>
             <List>
               <ListItemText>
                 <Typography
-                  lineHeight={2}
+                  lineHeight={4}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -126,7 +126,7 @@ export default function Footer() {
               </ListItemText>
               <ListItemText>
                 <Typography
-                  lineHeight={2}
+                  lineHeight={4}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -142,7 +142,7 @@ export default function Footer() {
 
               <ListItemText>
                 <Typography
-                  lineHeight={2}
+                  lineHeight={4}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
