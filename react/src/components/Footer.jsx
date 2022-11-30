@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Grid, Typography, List, ListItemText } from "@mui/material";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -73,7 +74,19 @@ export default function Footer() {
                     },
                   }}
                 >
-                  <Link href="AboutUs">About</Link>
+                  <Button
+                    sx={{
+                      backgroundColor: "#5A85C2",
+                      fontWeight: "600",
+                      display: { xs: "none", sm: "block" },
+                    }}
+                    variant="contained"
+                    onClick={() => {
+                      navigate("/AboutUs");
+                    }}
+                  >
+                    About
+                  </Button>
                 </Typography>
               </ListItemText>
               <ListItemText>
