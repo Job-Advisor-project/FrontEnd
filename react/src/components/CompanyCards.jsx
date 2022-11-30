@@ -41,7 +41,7 @@ export default function Cards({ companies, setCompany }) {
               avatar={
                 <Avatar
                   alt="logo"
-                  src={`https://strapi-production-ed57.up.railway.app${item.attributes.company.data.attributes.image.data.attributes.formats.thumbnail.url}`}
+                  src={`${item.attributes.company.data.attributes.image.data.attributes.formats.thumbnail.url}`}
                   variant="square"
                 ></Avatar>
               }

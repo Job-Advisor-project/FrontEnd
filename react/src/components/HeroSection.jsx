@@ -55,9 +55,9 @@ import slider from "../api/slider.json";
 
 export default function TitleTag({ selected }) {
   const navigate = useNavigate();
-
   let title = slider.find((item) => item.collection === selected).title;
   let imgUrl = slider.find((item) => item.collection === selected).image;
+
   return title === undefined ? (
     <Box
       sx={{
