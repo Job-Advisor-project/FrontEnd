@@ -102,7 +102,7 @@ export default function Footer() {
                     },
                   }}
                 >
-                  <Link href="ContactUs">Contact us</Link>
+                  <Link href="Contact">Contact us</Link>
                 </Typography>
               </ListItemText>
             </List>
