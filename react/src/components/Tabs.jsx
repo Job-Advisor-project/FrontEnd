@@ -76,7 +76,7 @@ export default function BasicTabs({ company }) {
         avatar={
           <Avatar
             variant="square"
-            src={`https://strapi-production-ed57.up.railway.app${c.attributes.image.data.attributes.formats.thumbnail.url}`}
+            src={`${c.attributes.image.data.attributes.formats.thumbnail.url}`}
             sx={{ width: 100, height: 100 }}
           ></Avatar>
         }

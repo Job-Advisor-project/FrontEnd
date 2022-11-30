@@ -50,7 +50,7 @@ export default function Cards({ companies, setCompany }) {
                   {item.attributes.company.data.attributes.name}
                 </Typography>
               }
-              subheader="Business consulting and services"
+              subheader={item.attributes.company.data.attributes.industry}
             />
             <CardContent key={item.attributes.company.data.attributes.name}>
               <Typography
