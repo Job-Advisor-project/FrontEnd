@@ -206,8 +206,6 @@ export default function Footer() {
           maxWidth: "100%",
           bgcolor: (theme) =>
             theme.palette.mode === "dark" ? "#101010" : "#fff",
-          bgcolor: (theme) =>
-            theme.palette.mode === "amber" ? "yellow.50" : "#fffde7",
           color: (theme) =>
             theme.palette.mode === "dark" ? "grey.300" : "grey.800",
           border: "1px solid",
