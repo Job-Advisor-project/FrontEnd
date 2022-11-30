@@ -35,55 +35,42 @@ export default function Terms() {
           Site Terms
         </Typography>
         <Typography
-          variant="subtitle1"
-          style={{ textAlign: "center", marginBottom: "78px" }}
+          variant="h5"
+          style={{ textAlign: "center" }}
           gutterBottom
-        >
-          These Terms of Use were updated effective 20th November 2022.
-          Understanding your rights and responsibilities as a CareerOne user
+        ></Typography>
+        These Terms of Use were updated effective 20th November 2022.
+        <Typography variant="subtitle2" style={{}} gutterBottom>
+          <br></br>
+          Understanding your rights and responsibilities as a JobAdvisor user.
+          <br></br>
         </Typography>
-        <Typography
-          variant="subtitle2"
-          style={{ textAlign: "center", marginBottom: "78px" }}
-          gutterBottom
-        >
-          Understanding your rights and responsibilities as a CareerOne user
-        </Typography>
-        <Typography
-          variant="paragrapgh"
-          style={{ textAlign: "center", marginBottom: "78px" }}
-          gutterBottom
-        >
+        <Typography variant="body1" style={{}} gutterBottom>
           This page states the Terms of Use (“Terms”) under which You (“You”)
           may use the JobAdvisor Sites and the JobAdvisor Services (each as
           defined below)
         </Typography>
         <Typography
-          variant="paragrapgh"
-          style={{ textAlign: "center", marginBottom: "78px" }}
+          variant="paragraph"
+          style={{ textAlign: "left", marginBottom: "78px" }}
           gutterBottom
         >
-          These Terms include the JobAdvisor Privacy Statement, which is
+          <br></br>
+          These Terms include the JobAdvisor Privacy Statement, which is
           incorporated into these Terms by reference. Please read these Terms
           carefully. If You do not accept the Terms stated here, do not use the
           JobAdvisor Sites and the JobAdvisor Services. By using the JobAdvisor
           Sites and/or JobAdvisor Services, You agree to be bound by these
-          Terms, including the CareerOne Privacy Statement. JobAdvisor may
-          revise these Terms at any time by posting an updated version to this
-          Web page.who violate these Terms may have their access and use of the
-          JobAdvisor Sites suspended or terminated, at JobAdvisor discretion.
-          <br></br>
-          <ul>
-            <li>Eligibility.</li>
-            If You are under the age of 18 or the age of majority as that is
-            defined in Your jurisdiction, You must use any JobAdvisor Site under
-            the supervision of a parent, legal guardian, or other responsible
-            adult.
-            <li>Use ofJobAdvisor Content.</li>
-            JobAdvisor authorises You to view and access a single copy of the
-            content available on or from the CareerOne Sites solely for Your
-            personal use.
-          </ul>
+          Terms, including the JobAdvisor Privacy Statement.
+          <li>Eligibility.</li>
+          If You are under the age of 18 or the age of majority as that is
+          defined in Your jurisdiction, You must use any JobAdvisor Site under
+          the supervision of a parent, legal guardian, or other responsible
+          adult.
+          <li>Use ofJobAdvisor Content.</li>
+          JobAdvisor authorises You to view and access a single copy of the
+          content available on or from the JobAdvidor Sites solely for Your
+          personal use.
         </Typography>
       </div>
     </Box>

@@ -137,7 +137,7 @@ export default function Footer() {
                     },
                   }}
                 >
-                  <Link href="Terms">Terms of use</Link>
+                  <Link href="TermsofUse">Terms of use</Link>
                 </Typography>
               </ListItemText>
 
