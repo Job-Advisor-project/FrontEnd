@@ -17,7 +17,7 @@ export default function Footer() {
     <>
       <Box
         sx={{
-          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
+          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/footer-bg.png')`,
           alignItems: "stretch",
           backgroundPosition: "center",
           backgroundSize: "cover",
