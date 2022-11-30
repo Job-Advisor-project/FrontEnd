@@ -77,7 +77,8 @@ export default function BasicTabs({ company }) {
           <Avatar
             variant="square"
             src={`${c.attributes.image.data.attributes.formats.thumbnail.url}`}
-            sx={{ width: 100, height: 100 }}
+            sx={{ width: 200, height: 100 }}
+            style={{ objectFit: "cover" }}
           ></Avatar>
         }
         action={
