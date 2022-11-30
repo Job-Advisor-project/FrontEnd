@@ -79,7 +79,7 @@ export default function TitleTag({ selected }) {
       }}
     >
       <Grid item xs={4} md={4}>
-        <Typography>
+        <Typography sx={{ ml: 5 }}>
           <img
             src="../assets/ja-logo.png"
             alt="jobadvisorlogo"
