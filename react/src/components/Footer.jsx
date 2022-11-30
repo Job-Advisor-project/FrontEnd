@@ -8,24 +8,25 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Avatar from "@mui/material/Avatar";
 import { Stack } from "@mui/system";
+import { useNavigate } from "react-router-dom";
+import { Link } from "@mui/material";
 
 export default function Footer() {
+  const navigate = useNavigate();
   return (
     <>
       <Box
         sx={{
-          flexDirection: "row",
+          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
           alignItems: "stretch",
-          mt: 5,
-          bgcolor: (theme) =>
-            theme.palette.mode === "amber" ? "yellow.30" : "#fffde7",
-          color: (theme) =>
-            theme.palette.mode === "dark" ? "grey.300" : "grey.800",
-          border: "1px solid",
-          borderColor: (theme) =>
-            theme.palette.mode === "dark" ? "grey.800" : "grey.300",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          height: "auto",
+          maxWidth: "100%",
           fontSize: "0.875rem",
           fontWeight: "700",
+          flexDirection: "row",
+          mt: 5,
         }}
       >
         <Grid container spacing={2} justifyContent="center">
@@ -34,8 +35,9 @@ export default function Footer() {
               <img
                 src="../assets/ja-logo.png"
                 alt="jobadvisorlogo"
-                width={130}
-                height={100}
+                width={170}
+                height={150}
+                onClick={() => navigate("/")}
               />
             </Typography>
             <Stack direction="row" spacing={2} sx={{ mx: 7, mb: 3 }}>
@@ -57,131 +59,100 @@ export default function Footer() {
             </Stack>
           </Grid>
           <Grid item md={6} lg={2} sx={{ my: 3 }}>
-            <Typography
-              sx={{
-                fontWeight: "750",
-                fontSize: {
-                  lg: 12,
-                  md: 10,
-                  xs: 8,
-                },
-              }}
-            >
-              INFORMATION
-            </Typography>
             <List>
               <ListItemText>
                 <Typography
                   lineHeight={2}
                   sx={{
+                    fontFamily: "sans-serif",
                     fontSize: {
-                      lg: 12,
+                      lg: 20,
                       md: 10,
-                      xs: 8,
+                      xs: 10,
                     },
                   }}
                 >
-                  About Us
+                  <Link href="AboutUs">About</Link>
                 </Typography>
               </ListItemText>
               <ListItemText>
                 <Typography
                   lineHeight={2}
                   sx={{
+                    fontFamily: "sans-serif",
                     fontSize: {
-                      lg: 12,
+                      lg: 20,
                       md: 10,
-                      xs: 8,
+                      xs: 10,
                     },
                   }}
                 >
-                  FAQ
+                  <Link href="Team">Team</Link>
                 </Typography>
               </ListItemText>
               <ListItemText>
                 <Typography
                   lineHeight={2}
                   sx={{
+                    fontFamily: "sans-serif",
                     fontSize: {
-                      lg: 12,
+                      lg: 20,
                       md: 10,
-                      xs: 8,
+                      xs: 10,
                     },
                   }}
                 >
-                  Privacy &amp; Policy
-                </Typography>
-              </ListItemText>
-              <ListItemText>
-                <Typography
-                  lineHeight={2}
-                  sx={{
-                    fontSize: {
-                      lg: 12,
-                      md: 10,
-                      xs: 8,
-                    },
-                  }}
-                >
-                  Terms &amp; Conditions
+                  <Link href="ContactUs">Contact us</Link>
                 </Typography>
               </ListItemText>
             </List>
           </Grid>
           <Grid item md={6} lg={2} sx={{ my: 3 }}>
-            <Typography
-              sx={{
-                fontWeight: "750",
-                fontSize: {
-                  lg: 12,
-                  md: 10,
-                  xs: 8,
-                },
-              }}
-            >
-              WORK WITH US
-            </Typography>
             <List>
               <ListItemText>
                 <Typography
                   lineHeight={2}
                   sx={{
+                    fontFamily: "sans-serif",
                     fontSize: {
-                      lg: 12,
+                      lg: 20,
                       md: 10,
-                      xs: 8,
+                      xs: 10,
                     },
                   }}
                 >
-                  Advertiser
+                  <Link href="Privacy">Privacy &amp; Policy</Link>
                 </Typography>
               </ListItemText>
               <ListItemText>
                 <Typography
                   lineHeight={2}
                   sx={{
+                    fontFamily: "sans-serif",
                     fontSize: {
-                      lg: 12,
+                      lg: 20,
                       md: 10,
-                      xs: 8,
+                      xs: 10,
                     },
                   }}
                 >
-                  Developers
+                  <Link href="Terms">Terms of use</Link>
                 </Typography>
               </ListItemText>
+
               <ListItemText>
                 <Typography
                   lineHeight={2}
                   sx={{
+                    fontFamily: "sans-serif",
                     fontSize: {
-                      lg: 12,
+                      lg: 20,
                       md: 10,
-                      xs: 8,
+                      xs: 10,
                     },
                   }}
                 >
-                  Careers
+                  <Link href="Careers">Careers</Link>
                 </Typography>
               </ListItemText>
             </List>
@@ -192,15 +163,15 @@ export default function Footer() {
         sx={{
           flexDirection: "row",
           textAlign: "center",
-          bgcolor: (theme) =>
-            theme.palette.mode === "amber" ? "yellow.50" : "#fffde7",
-          color: (theme) =>
-            theme.palette.mode === "dark" ? "grey.300" : "grey.800",
-          border: "1px solid",
-          borderColor: (theme) =>
-            theme.palette.mode === "dark" ? "grey.800" : "grey.300",
-          fontSize: "0.800rem",
-          fontWeight: "300",
+          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
+          alignItems: "stretch",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          height: "auto",
+          maxWidth: "100%",
+          fontSize: "0.875rem",
+          fontWeight: "700",
+          mt: 3,
         }}
       >
         &reg; {new Date().getFullYear()} All Right Reserved

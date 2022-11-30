@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Team from "./pages/Team";
+import AboutUs from "./pages/AboutUs";
 import CompanyOverview from "./pages/CompanyOverview";
 import HomePage from "./pages/Home";
 import SearchResult from "./pages/SearchResult";
@@ -26,6 +28,8 @@ export default function App() {
             path="/companyOverview"
             element={<CompanyOverview company={company} />}
           />
+          <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
       </Router>
     </div>
