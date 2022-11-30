@@ -33,7 +33,7 @@ export default function OpenJobs({ company }) {
                   key={j.attributes.title}
                   sx={{ objectFit: "cover", height: "20vh" }}
                   component="img"
-                  image={`https://strapi-production-ed57.up.railway.app${job.attributes.image.data.attributes.formats.thumbnail.url}`}
+                  image={`${job.attributes.image.data.attributes.formats.thumbnail.url}`}
                   alt="green iguana"
                 />
                 <CardContent>
