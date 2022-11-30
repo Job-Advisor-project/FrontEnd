@@ -42,7 +42,21 @@ export default function Banner({ setCompany }) {
               },
             }}
           >
-            Find Your Dream Workplace with Us Easily
+            Discover company DNA
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            sx={{
+              textAlign: "center",
+              fontFamily: "sans-serif",
+              typography: {
+                md: "h3",
+                sm: "h4",
+                xs: "h5",
+              },
+            }}
+          >
+            to find perfect match for YOU!
           </Typography>
           <List>
             <ListItemText>
@@ -54,9 +68,8 @@ export default function Banner({ setCompany }) {
                   typography: { md: "body1", sm: "body2" },
                 }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam,
+                Job Advisor helps companies promote the right values and job
+                seekers make the right career chose.
               </Typography>
             </ListItemText>
             <SearchBar setCompany={setCompany}></SearchBar>
