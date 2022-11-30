@@ -69,7 +69,7 @@ export default function Banner({ setCompany }) {
                 }}
               >
                 Job Advisor helps companies promote the right values and job
-                seekers make the right career chose.
+                seekers make the right career choice.
               </Typography>
             </ListItemText>
             <SearchBar setCompany={setCompany}></SearchBar>
