@@ -18,6 +18,7 @@ export default function Footer() {
       <Box
         sx={{
           backgroundImage: `url('${process.env.PUBLIC_URL}/assets/footer-bg.png')`,
+          backgroundRepeat: "no-repeat",
           alignItems: "stretch",
           backgroundPosition: "center",
           backgroundSize: "cover",
@@ -62,7 +63,7 @@ export default function Footer() {
             <List>
               <ListItemText>
                 <Typography
-                  lineHeight={4}
+                  lineHeight={3}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -77,7 +78,7 @@ export default function Footer() {
               </ListItemText>
               <ListItemText>
                 <Typography
-                  lineHeight={4}
+                  lineHeight={3}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -92,7 +93,7 @@ export default function Footer() {
               </ListItemText>
               <ListItemText>
                 <Typography
-                  lineHeight={4}
+                  lineHeight={3}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -126,7 +127,7 @@ export default function Footer() {
               </ListItemText>
               <ListItemText>
                 <Typography
-                  lineHeight={4}
+                  lineHeight={3}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -142,7 +143,7 @@ export default function Footer() {
 
               <ListItemText>
                 <Typography
-                  lineHeight={4}
+                  lineHeight={3}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {

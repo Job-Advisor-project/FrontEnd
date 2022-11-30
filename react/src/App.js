@@ -6,6 +6,7 @@ import CompanyOverview from "./pages/CompanyOverview";
 import HomePage from "./pages/Home";
 import SearchResult from "./pages/SearchResult";
 import ContactUs from "./pages/ContactUs";
+import Privacy from "./pages/Privacy";
 
 export default function App() {
   const [tag, setTag] = useState("work&life");
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </Router>
     </div>
