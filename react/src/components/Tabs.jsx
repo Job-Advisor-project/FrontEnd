@@ -206,7 +206,7 @@ export default function BasicTabs({ company }) {
                   <CardMedia
                     component="img"
                     height="300"
-                    image={`https://strapi-production-ed57.up.railway.app${w.attributes.image.data.map(
+                    image={`${w.attributes.image.data.map(
                       (i) => i.attributes.url
                     )}`}
                     alt="Paella dish"
@@ -256,7 +256,7 @@ export default function BasicTabs({ company }) {
                     sx={{
                       objectFit: "stretch",
                     }}
-                    image={`https://strapi-production-ed57.up.railway.app${w.attributes.image.data.map(
+                    image={`${w.attributes.image.data.map(
                       (i) => i.attributes.url
                     )}`}
                     alt="diversity"
