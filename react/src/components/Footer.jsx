@@ -10,7 +10,6 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Avatar from "@mui/material/Avatar";
 import { Stack } from "@mui/system";
 import { useNavigate } from "react-router-dom";
-import { Link } from "@mui/material";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -194,10 +193,10 @@ export default function Footer() {
                     }}
                     variant="contained"
                     onClick={() => {
-                      navigate("/");
+                      navigate("/TermsofUse");
                     }}
                   >
-                    TermsofUse Terms of use
+                    TermsofUse
                   </Button>
                 </Typography>
               </ListItemText>
@@ -220,9 +219,9 @@ export default function Footer() {
                       fontWeight: "600",
                       display: { xs: "none", sm: "block" },
                     }}
-                    variant="contained"
+                    variant="outlined"
                     onClick={() => {
-                      navigate("/ContactUs");
+                      navigate("/CareersPage");
                     }}
                   >
                     Careers
