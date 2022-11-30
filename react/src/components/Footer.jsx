@@ -101,7 +101,19 @@ export default function Footer() {
                     },
                   }}
                 >
-                  <Link href="Team">Team</Link>
+                  <Button
+                    sx={{
+                      backgroundColor: "#5A85C2",
+                      fontWeight: "600",
+                      display: { xs: "none", sm: "block" },
+                    }}
+                    variant="contained"
+                    onClick={() => {
+                      navigate("/Team");
+                    }}
+                  >
+                    Our Team
+                  </Button>
                 </Typography>
               </ListItemText>
               <ListItemText>
@@ -116,7 +128,19 @@ export default function Footer() {
                     },
                   }}
                 >
-                  <Link href="Contact">Contact us</Link>
+                  <Button
+                    sx={{
+                      backgroundColor: "#5A85C2",
+                      fontWeight: "600",
+                      display: { xs: "none", sm: "block" },
+                    }}
+                    variant="contained"
+                    onClick={() => {
+                      navigate("/ContactUs");
+                    }}
+                  >
+                    Contact Us
+                  </Button>
                 </Typography>
               </ListItemText>
             </List>
@@ -135,7 +159,19 @@ export default function Footer() {
                     },
                   }}
                 >
-                  <Link href="Privacy">Privacy &amp; Policy</Link>
+                  <Button
+                    sx={{
+                      backgroundColor: "#5A85C2",
+                      fontWeight: "600",
+                      display: { xs: "none", sm: "block" },
+                    }}
+                    variant="contained"
+                    onClick={() => {
+                      navigate("/Privacy");
+                    }}
+                  >
+                    Privacy &amp; Policy
+                  </Button>
                 </Typography>
               </ListItemText>
               <ListItemText>
@@ -150,7 +186,19 @@ export default function Footer() {
                     },
                   }}
                 >
-                  <Link href="TermsofUse">Terms of use</Link>
+                  <Button
+                    sx={{
+                      backgroundColor: "#5A85C2",
+                      fontWeight: "600",
+                      display: { xs: "none", sm: "block" },
+                    }}
+                    variant="contained"
+                    onClick={() => {
+                      navigate("/");
+                    }}
+                  >
+                    TermsofUse Terms of use
+                  </Button>
                 </Typography>
               </ListItemText>
 
@@ -166,7 +214,19 @@ export default function Footer() {
                     },
                   }}
                 >
-                  <Link href="CareersPage">Careers</Link>
+                  <Button
+                    sx={{
+                      backgroundColor: "#5A85C2",
+                      fontWeight: "600",
+                      display: { xs: "none", sm: "block" },
+                    }}
+                    variant="contained"
+                    onClick={() => {
+                      navigate("/ContactUs");
+                    }}
+                  >
+                    Careers
+                  </Button>
                 </Typography>
               </ListItemText>
             </List>
