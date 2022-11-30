@@ -5,7 +5,7 @@ import HomePage from "./pages/Home";
 import SearchResult from "./pages/SearchResult";
 
 export default function App() {
-  const [tag, setTag] = useState("work&life");
+  const [tag, setTag] = useState("work-life-balances");
   const [company, setCompany] = useState("");
   const handleSelection = (selectedTag) => {
     selectedTag && setTag(selectedTag);
