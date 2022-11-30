@@ -77,7 +77,8 @@ export default function BasicTabs({ company }) {
           <Avatar
             variant="square"
             src={`${c.attributes.image.data.attributes.formats.thumbnail.url}`}
-            sx={{ width: 100, height: 100 }}
+            sx={{ width: 200, height: 100 }}
+            style={{ objectFit: "cover" }}
           ></Avatar>
         }
         action={
@@ -206,7 +207,8 @@ export default function BasicTabs({ company }) {
                   <CardMedia
                     component="img"
                     height="300"
-                    image={`https://strapi-production-ed57.up.railway.app${w.attributes.image.data.map(
+                    sx={{ objectFit: "contain" }}
+                    image={`${w.attributes.image.data.map(
                       (i) => i.attributes.url
                     )}`}
                     alt="Paella dish"
@@ -256,7 +258,7 @@ export default function BasicTabs({ company }) {
                     sx={{
                       objectFit: "stretch",
                     }}
-                    image={`https://strapi-production-ed57.up.railway.app${w.attributes.image.data.map(
+                    image={`${w.attributes.image.data.map(
                       (i) => i.attributes.url
                     )}`}
                     alt="diversity"
