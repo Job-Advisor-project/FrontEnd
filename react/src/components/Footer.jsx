@@ -219,7 +219,7 @@ export default function Footer() {
                       fontWeight: "600",
                       display: { xs: "none", sm: "block" },
                     }}
-                    variant="outlined"
+                    variant="contained"
                     onClick={() => {
                       navigate("/CareersPage");
                     }}
