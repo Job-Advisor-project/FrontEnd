@@ -19,7 +19,7 @@ export default function SearchBar({ setCompany }) {
       }}
     >
       <Grid container sx={{ justifyContent: "center" }}>
-        <Grid item xs={6} md={6} lg={8} sx={{ mr: 1 }}>
+        <Grid item xs={6} md={6} lg={6} sx={{ mr: 1 }}>
           <Autocomplete
             disablePortal
             inputValue={inputValue}
@@ -41,6 +41,7 @@ export default function SearchBar({ setCompany }) {
         </Grid>
         <Button
           sx={{
+            textAlign: "left",
             backgroundColor: "#5A85C2",
             fontWeight: "600",
             display: { xs: "none", sm: "block" },
@@ -53,6 +54,7 @@ export default function SearchBar({ setCompany }) {
         >
           Search
         </Button>
+
         <Button
           variant="contained"
           sx={{

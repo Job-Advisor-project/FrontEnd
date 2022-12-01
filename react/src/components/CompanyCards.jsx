@@ -19,13 +19,7 @@ export default function Cards({ companies, setCompany }) {
         alignItems: "stretch",
         mt: 5,
         mx: 10,
-        bgcolor: (theme) =>
-          theme.palette.mode === "dark" ? "#101010" : "#fff",
-        color: (theme) =>
-          theme.palette.mode === "dark" ? "grey.300" : "grey.800",
-        border: "1px solid",
-        borderColor: (theme) =>
-          theme.palette.mode === "dark" ? "grey.800" : "grey.300",
+
         borderRadius: 2,
         fontSize: "0.875rem",
         fontWeight: "700",
@@ -35,7 +29,19 @@ export default function Cards({ companies, setCompany }) {
         companies.map((item) => (
           <Card
             key={item.attributes.company.data.attributes.name}
-            sx={{ mt: 0.1, px: 3, maxWidth: 10100 }}
+            sx={{
+              my: 0.5,
+              px: 3,
+              maxWidth: 10100,
+              border: "1px solid",
+              bgcolor: (theme) =>
+                theme.palette.mode === "dark" ? "#101010" : "#fff",
+              color: (theme) =>
+                theme.palette.mode === "dark" ? "grey.300" : "grey.800",
+
+              borderColor: (theme) =>
+                theme.palette.mode === "dark" ? "grey.800" : "grey.300",
+            }}
           >
             <CardHeader
               avatar={
