@@ -45,7 +45,7 @@ export default function TitleTag({ selected }) {
               textAlign: "center",
               fontFamily: "sans-serif",
               typography: {
-                md: "h5",
+                md: "h6",
                 sm: "h6",
                 xs: "subtitle1",
               },
