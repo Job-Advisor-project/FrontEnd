@@ -141,7 +141,7 @@ export default function Footer() {
               </ListItemText>
             </List>
           </Grid>
-          <Grid item md={6} lg={4} sx={{ my: 3 }}>
+          <Grid item md={8} xs={6} lg={2} sx={{ my: 5, mx: 3, mr: 1 }}>
             <List>
               <ListItemText>
                 <Typography
