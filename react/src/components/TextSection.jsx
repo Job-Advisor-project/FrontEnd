@@ -30,7 +30,7 @@ export default function TextSection() {
         justifyContent: "center",
         alignItems: "center",
         height: "20vh",
-        mb: 2,
+        my: 2,
       }}
     >
       <Typography
@@ -38,7 +38,7 @@ export default function TextSection() {
         variant="subtitle1"
         style={{
           color: "#EC615B",
-          lineHeight: "35px",
+          lineHeight: "30px",
           maxWidth: "35%",
         }}
       >
@@ -46,7 +46,7 @@ export default function TextSection() {
       </Typography>
       <Typography
         theme={theme}
-        variant="h4"
+        variant="h6"
         sx={{
           lineHeight: "42px",
           maxWidth: "35%",
