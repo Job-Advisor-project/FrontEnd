@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Team from "./pages/Team";
-import AboutUs from "./pages/AboutUs";
+import Team from "./pages/Other/Team";
+import AboutUs from "./pages/Other/AboutUs";
 import CompanyOverview from "./pages/CompanyOverview";
 import HomePage from "./pages/Home";
 import SearchResult from "./pages/SearchResult";
-import ContactUs from "./pages/ContactUs";
-import Privacy from "./pages/Privacy";
-import TermsofUse from "./pages/TermsofUse";
-import CareersPage from "./pages/CareersPage";
+import ContactUs from "./pages/Other/ContactUs";
+import Privacy from "./pages/Other/Privacy";
+import TermsofUse from "./pages/Other/TermsofUse";
+import CareersPage from "./pages/Other/CareersPage";
 
 export default function App() {
   const [tag, setTag] = useState("work-life-balances");

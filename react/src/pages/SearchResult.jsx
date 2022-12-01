@@ -4,7 +4,7 @@ import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
 import { Box } from "@mui/material";
 import { TagButtons } from "../components/TagButtons";
 import TitleTag from "../components/HeroSection";
-import Footer from "../components/Footer";
+import Footer from "../components/footer/Footer";
 
 export default function SearchResult({ tag, setCompany }) {
   const [selected, setSelected] = useState(tag);
