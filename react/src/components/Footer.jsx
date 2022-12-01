@@ -63,7 +63,7 @@ export default function Footer() {
             <List>
               <ListItemText>
                 <Typography
-                  lineHeight={3}
+                  lineHeight={2}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -75,11 +75,10 @@ export default function Footer() {
                 >
                   <Button
                     sx={{
-                      backgroundColor: "#5A85C2",
-                      fontWeight: "600",
-                      display: { xs: "none", sm: "block" },
+                      fontWeight: "200",
+                      color: "#66cdaa",
                     }}
-                    variant="contained"
+                    variant="Text"
                     onClick={() => {
                       navigate("/AboutUs");
                     }}
@@ -90,7 +89,7 @@ export default function Footer() {
               </ListItemText>
               <ListItemText>
                 <Typography
-                  lineHeight={3}
+                  lineHeight={2}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -102,11 +101,10 @@ export default function Footer() {
                 >
                   <Button
                     sx={{
-                      backgroundColor: "#5A85C2",
-                      fontWeight: "600",
-                      display: { xs: "none", sm: "block" },
+                      fontWeight: "200",
+                      color: "#66cdaa",
                     }}
-                    variant="contained"
+                    variant="Text"
                     onClick={() => {
                       navigate("/Team");
                     }}
@@ -117,7 +115,7 @@ export default function Footer() {
               </ListItemText>
               <ListItemText>
                 <Typography
-                  lineHeight={3}
+                  lineHeight={2}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -129,11 +127,10 @@ export default function Footer() {
                 >
                   <Button
                     sx={{
-                      backgroundColor: "#5A85C2",
-                      fontWeight: "600",
-                      display: { xs: "none", sm: "block" },
+                      fontWeight: "200",
+                      color: "#66cdaa",
                     }}
-                    variant="contained"
+                    variant="Text"
                     onClick={() => {
                       navigate("/ContactUs");
                     }}
@@ -148,7 +145,7 @@ export default function Footer() {
             <List>
               <ListItemText>
                 <Typography
-                  lineHeight={3}
+                  lineHeight={2}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -160,11 +157,10 @@ export default function Footer() {
                 >
                   <Button
                     sx={{
-                      backgroundColor: "#5A85C2",
-                      fontWeight: "600",
-                      display: { xs: "none", sm: "block" },
+                      fontWeight: "200",
+                      color: "#66cdaa",
                     }}
-                    variant="contained"
+                    variant="Text"
                     onClick={() => {
                       navigate("/Privacy");
                     }}
@@ -175,7 +171,7 @@ export default function Footer() {
               </ListItemText>
               <ListItemText>
                 <Typography
-                  lineHeight={3}
+                  lineHeight={2}
                   sx={{
                     fontFamily: "sans-serif",
                     fontSize: {
@@ -187,11 +183,10 @@ export default function Footer() {
                 >
                   <Button
                     sx={{
-                      backgroundColor: "#5A85C2",
-                      fontWeight: "600",
-                      display: { xs: "none", sm: "block" },
+                      fontWeight: "200",
+                      color: "#66cdaa",
                     }}
-                    variant="contained"
+                    variant="Text"
                     onClick={() => {
                       navigate("/TermsofUse");
                     }}
@@ -201,7 +196,33 @@ export default function Footer() {
                 </Typography>
               </ListItemText>
 
-              <Button href="/CareersPage">Careers</Button>
+              <ListItemText>
+                <Typography
+                  lineHeight={2}
+                  sx={{
+                    fontFamily: "sans-serif",
+
+                    fontSize: {
+                      lg: 20,
+                      md: 10,
+                      xs: 10,
+                    },
+                  }}
+                >
+                  <Button
+                    sx={{
+                      fontWeight: "200",
+                      color: "#66cdaa",
+                    }}
+                    variant="Text"
+                    onClick={() => {
+                      navigate("/CareersPage");
+                    }}
+                  >
+                    Careers
+                  </Button>
+                </Typography>
+              </ListItemText>
             </List>
           </Grid>
         </Grid>
