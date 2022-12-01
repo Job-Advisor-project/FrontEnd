@@ -11,7 +11,7 @@ import TermsofUse from "./pages/TermsofUse";
 import CareersPage from "./pages/CareersPage";
 
 export default function App() {
-  const [tag, setTag] = useState("work&life");
+  const [tag, setTag] = useState("work-life-balances");
   const [company, setCompany] = useState("");
   const handleSelection = (selectedTag) => {
     selectedTag && setTag(selectedTag);
