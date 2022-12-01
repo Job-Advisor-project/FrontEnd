@@ -23,6 +23,7 @@ export default function CompanyOverview({ company }) {
         <img
           src="../assets/ja-logo.png"
           alt="jobadvisorlogo"
+          style={{ cursor: "pointer" }}
           width={170}
           height={150}
           onClick={() => navigate("/")}
