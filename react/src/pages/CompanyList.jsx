@@ -9,7 +9,7 @@ import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import { companiesByDisplay } from "../api/companiesByDisplay";
 
-export default function CompanyList() {
+export default function getCompanyListVm() {
   const { data } = companiesByDisplay();
   console.log("inside companylist", data);
   return (
