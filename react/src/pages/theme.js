@@ -18,7 +18,10 @@ export const theme = createTheme({
   //   },
   // },
   typography: {
-    fontFamily: ["Poppins", "sans-serif"].join(","),
+    fontFamily: ["Open Sans", "sans-serif", "Poppins", "sans-serif"].join(","),
+    h3: { fontWeight: 800, fontSize: 50, fontFamily: "Poppins" },
+    h4: { fontWeight: 700, fontSize: 35 },
+    h5: { fontWeight: 600, fontSize: 25 },
+    body1: { fontWeight: 200, fontSize: 18 },
   },
-  h3: { fontWeight: 600 },
 });
