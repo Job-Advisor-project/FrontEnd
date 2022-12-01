@@ -35,6 +35,7 @@ export default function Footer() {
             <Typography sx={{ ml: 16 }}>
               <img
                 src="../assets/ja-logo.png"
+                style={{ cursor: "pointer" }}
                 alt="jobadvisorlogo"
                 width={170}
                 height={150}
