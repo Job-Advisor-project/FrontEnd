@@ -201,33 +201,7 @@ export default function Footer() {
                 </Typography>
               </ListItemText>
 
-              <ListItemText>
-                <Typography
-                  lineHeight={3}
-                  sx={{
-                    fontFamily: "sans-serif",
-                    fontSize: {
-                      lg: 20,
-                      md: 10,
-                      xs: 10,
-                    },
-                  }}
-                >
-                  <Button
-                    sx={{
-                      backgroundColor: "#5A85C2",
-                      fontWeight: "600",
-                      display: { xs: "none", sm: "block" },
-                    }}
-                    variant="contained"
-                    onClick={() => {
-                      navigate("/CareersPage");
-                    }}
-                  >
-                    Careers
-                  </Button>
-                </Typography>
-              </ListItemText>
+              <Button href="/CareersPage">Careers</Button>
             </List>
           </Grid>
         </Grid>
