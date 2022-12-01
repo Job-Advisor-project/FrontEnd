@@ -15,6 +15,7 @@ export default function Item({ item, onSelect }) {
         justifyContent: "center",
         width: "350px",
         height: "350px",
+        cursor: "pointer",
       }}
       onClick={() => {
         onSelect(item.collection);

@@ -10,6 +10,7 @@ export const TagButtons = ({ onClick, selected }) => {
           <Button
             sx={{ m: 2 }}
             variant="outlined"
+            cursor="pointer"
             key={item.name}
             onClick={() => {
               onClick(item.collection);
@@ -18,7 +19,13 @@ export const TagButtons = ({ onClick, selected }) => {
             {item.title}
           </Button>
         ) : (
-          <Button sx={{ m: 2 }} variant="outlined" disabled key={item.name}>
+          <Button
+            sx={{ m: 2 }}
+            style={{ color: "#EC615B", borderColor: "#EC615B" }}
+            variant="outlined"
+            disabled
+            key={item.name}
+          >
             {item.title}
           </Button>
         )

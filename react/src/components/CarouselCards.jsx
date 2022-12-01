@@ -50,7 +50,7 @@ export default function CarouselSlide({ onSelect }) {
       clipBehavior="Clip.none"
     >
       {slider.map((item) => (
-        <Item key={item.id} item={item} onSelect={onSelect} />
+        <Item cursor="pointer" key={item.id} item={item} onSelect={onSelect} />
       ))}
     </Carousel>
   );
