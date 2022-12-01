@@ -12,19 +12,20 @@ export default function CarouselSlide({ onSelect }) {
       slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 700 },
+      breakpoint: { max: 1024, min: 576 },
+
       items: 2,
       slidesToSlide: 2, // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 700, min: 0 },
+      breakpoint: { max: 576, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
   return (
     <Carousel
-      swipeable={false}
+      swipeable={true}
       draggable={false}
       showDots={false}
       responsive={responsive}
@@ -39,6 +40,7 @@ export default function CarouselSlide({ onSelect }) {
       rewindWithAnimation={false}
       rtl={false}
       shouldResetAutoplay
+      //autoPlay={this.props.deviceType !== "mobile" ? true : false}
       //transitionDuration={1000}
       itemClass="item-container"
       sliderClass="slider-container"
