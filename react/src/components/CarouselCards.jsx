@@ -40,7 +40,6 @@ export default function CarouselSlide({ onSelect }) {
       rtl={false}
       shouldResetAutoplay
       //transitionDuration={1000}
-      removeArrowOnDeviceType={["tablet", "mobile"]}
       itemClass="item-container"
       sliderClass="slider-container"
       backgroundRepeat="no-repeat"
