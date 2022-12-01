@@ -27,6 +27,7 @@ const Header = () => {
             width={170}
             height={150}
             onClick={() => navigate("/")}
+            style={{ cursor: "pointer" }}
           />
         </Typography>
       </Grid>
