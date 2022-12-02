@@ -1,4 +1,12 @@
-import { Box, Checkbox, Grid, Typography, Button, Rating } from "@mui/material";
+import {
+  Box,
+  Checkbox,
+  Grid,
+  Typography,
+  Button,
+  Rating,
+  FormControlLabel,
+} from "@mui/material";
 import TextField from "@mui/material/TextField";
 import * as React from "react";
 import { useState } from "react";
@@ -43,31 +51,45 @@ export default function ReviewForm({ companyId }) {
           />
         </Typography>
       </Grid>
-      <Box sx={{}}>
+      <Box
+        sx={{ display: "flex", alignItems: "center", flexDirection: "column" }}
+      >
+        <Typography textAlign="center" variant="h4" sx={{ my: 3 }} gutterBottom>
+          Your first-hand experience will help other job seekers.<br></br> Thank
+          you!
+        </Typography>
         <form
           style={{
+            border: "2px solid #52D1A8",
             display: "flex",
             flexDirection: "column",
-            minWidth: "50%",
+            minWidth: "30%",
+            margin: "auto",
             height: "600px",
-            border: "bold",
             alignItems: "center",
             justifyContent: "space-around",
           }}
           onSubmit={handleSubmit}
         >
-          <Checkbox
-            name="employee"
-            value={review.employee}
-            sx={{ m: 2 }}
-            defaultChecked
-            onChange={(e) => {
-              setReview({
-                ...review,
-                employee: !review.employee,
-              });
-            }}
+          <FormControlLabel
+            control={
+              <Checkbox
+                name="employee"
+                value={review.employee}
+                sx={{ m: 2 }}
+                defaultChecked
+                onChange={(e) => {
+                  setReview({
+                    ...review,
+                    employee: !review.employee,
+                  });
+                }}
+              />
+            }
+            label="Are you current or former employee of the company?"
+            labelPlacement="start"
           />
+
           <TextField
             id="outlined-name"
             name="jobTitle"
@@ -92,7 +114,9 @@ export default function ReviewForm({ companyId }) {
               });
             }}
           />
-          <Typography component="legend">Rate</Typography>
+          <Typography component="legend">
+            Your overall rating of the company
+          </Typography>
           <Rating
             name="stars"
             value={review.stars}
@@ -105,7 +129,6 @@ export default function ReviewForm({ companyId }) {
           />
           <TextField
             name="feedback"
-            id="outlined-multiline-flexible"
             label="Your review"
             multiline
             maxRows={4}
@@ -118,7 +141,14 @@ export default function ReviewForm({ companyId }) {
             }}
           />
 
-          <Button type="submit">Submit</Button>
+          <Button
+            sx={{ m: 2 }}
+            variant="outlined"
+            cursor="pointer"
+            type="submit"
+          >
+            Submit
+          </Button>
         </form>
       </Box>
     </Box>
