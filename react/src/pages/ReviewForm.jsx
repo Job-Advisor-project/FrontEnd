@@ -12,6 +12,7 @@ import * as React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAddReview } from "../api/addReview";
+import Footer from "../components/footer/Footer";
 
 export default function ReviewForm({ companyId }) {
   const navigate = useNavigate();
@@ -68,6 +69,7 @@ export default function ReviewForm({ companyId }) {
             height: "600px",
             alignItems: "center",
             justifyContent: "space-around",
+            padding: "20px",
           }}
           onSubmit={handleSubmit}
         >
@@ -151,6 +153,7 @@ export default function ReviewForm({ companyId }) {
           </Button>
         </form>
       </Box>
+      <Footer></Footer>;
     </Box>
   );
 }
