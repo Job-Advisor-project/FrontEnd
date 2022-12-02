@@ -3,7 +3,7 @@ import BasicTabs from "../components/Tabs";
 import { Box, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-export default function CompanyOverview({ company }) {
+export default function CompanyOverview({ company, setCompanyId }) {
   const navigate = useNavigate();
   return (
     <Box
@@ -48,7 +48,7 @@ export default function CompanyOverview({ company }) {
           fontWeight: "700",
         }}
       >
-        <BasicTabs company={company}></BasicTabs>
+        <BasicTabs company={company} setCompanyId={setCompanyId}></BasicTabs>
       </Box>
       <Footer></Footer>
     </Box>
