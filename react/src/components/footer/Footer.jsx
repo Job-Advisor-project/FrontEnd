@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Grid, Typography, List, ListItemText } from "@mui/material";
+import { Grid, Typography, List, ListItem } from "@mui/material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -31,18 +31,17 @@ export default function Footer() {
         }}
       >
         <Grid container spacing={2} justifyContent="center">
-          <Grid item md={6} lg={4}>
-            <Typography sx={{ ml: 16 }}>
+          <Grid item md={4} lg={4}>
+            <Typography sx={{ ml: 13 }}>
               <img
                 src="../assets/ja-logo.png"
-                style={{ cursor: "pointer" }}
                 alt="jobadvisorlogo"
                 width={170}
                 height={150}
                 onClick={() => navigate("/")}
               />
             </Typography>
-            <Stack direction="row" spacing={2} sx={{ mx: 12, mb: 3 }}>
+            <Stack direction="row" spacing={2} sx={{ mx: 10, mb: 3 }}>
               <Avatar sx={{ width: 31, height: 31 }}>
                 <FacebookIcon />
               </Avatar>
@@ -60,170 +59,97 @@ export default function Footer() {
               </Avatar>
             </Stack>
           </Grid>
-          <Grid item md={8} xs={6} lg={2} sx={{ my: 5, mx: 3, mr: 1 }}>
+          <Grid item md={4} lg={2} sx={{ my: 5 }}>
             <List>
-              <ListItemText>
-                <Typography
-                  lineHeight={2}
+              <ListItem>
+                <Button
                   sx={{
-                    fontFamily: "sans-serif",
-                    fontSize: {
-                      lg: 20,
-                      md: 10,
-                      xs: 10,
-                    },
+                    fontWeight: "200",
+                    color: "#66cdaa",
+                  }}
+                  variant="Text"
+                  onClick={() => {
+                    navigate("/AboutUs");
                   }}
                 >
-                  <Button
-                    sx={{
-                      fontWeight: "200",
-                      color: "#66cdaa",
-                    }}
-                    variant="Text"
-                    onClick={() => {
-                      navigate("/AboutUs");
-                    }}
-                  >
-                    About
-                  </Button>
-                </Typography>
-              </ListItemText>
-              <ListItemText>
-                <Typography
-                  lineHeight={2}
+                  About
+                </Button>
+              </ListItem>
+              <ListItem>
+                <Button
                   sx={{
-                    fontFamily: "sans-serif",
-                    fontSize: {
-                      lg: 20,
-                      md: 10,
-                      xs: 10,
-                    },
+                    fontWeight: "200",
+                    color: "#66cdaa",
+                  }}
+                  variant="Text"
+                  onClick={() => {
+                    navigate("/Team");
                   }}
                 >
-                  <Button
-                    sx={{
-                      fontWeight: "200",
-                      color: "#66cdaa",
-                    }}
-                    variant="Text"
-                    onClick={() => {
-                      navigate("/Team");
-                    }}
-                  >
-                    Our Team
-                  </Button>
-                </Typography>
-              </ListItemText>
-              <ListItemText>
-                <Typography
-                  lineHeight={2}
+                  Our Team
+                </Button>
+              </ListItem>
+              <ListItem>
+                <Button
                   sx={{
-                    fontFamily: "sans-serif",
-                    fontSize: {
-                      lg: 20,
-                      md: 10,
-                      xs: 10,
-                    },
+                    fontWeight: "200",
+                    color: "#66cdaa",
+                  }}
+                  variant="Text"
+                  onClick={() => {
+                    navigate("/ContactUs");
                   }}
                 >
-                  <Button
-                    sx={{
-                      fontWeight: "200",
-                      color: "#66cdaa",
-                    }}
-                    variant="Text"
-                    onClick={() => {
-                      navigate("/ContactUs");
-                    }}
-                  >
-                    Contact Us
-                  </Button>
-                </Typography>
-              </ListItemText>
+                  Contact Us
+                </Button>
+              </ListItem>
             </List>
           </Grid>
-          <Grid item md={8} xs={6} lg={2} sx={{ my: 5, mx: 3, mr: 1 }}>
+          <Grid item md={4} lg={2} sx={{ my: 5 }}>
             <List>
-              <ListItemText>
-                <Typography
-                  lineHeight={2}
+              <ListItem>
+                <Button
                   sx={{
-                    fontFamily: "sans-serif",
-                    fontSize: {
-                      lg: 20,
-                      md: 10,
-                      xs: 10,
-                    },
+                    fontWeight: "200",
+                    color: "#66cdaa",
+                  }}
+                  variant="Text"
+                  onClick={() => {
+                    navigate("/Privacy");
                   }}
                 >
-                  <Button
-                    sx={{
-                      fontWeight: "200",
-                      color: "#66cdaa",
-                    }}
-                    variant="Text"
-                    onClick={() => {
-                      navigate("/Privacy");
-                    }}
-                  >
-                    Privacy &amp; Policy
-                  </Button>
-                </Typography>
-              </ListItemText>
-              <ListItemText>
-                <Typography
-                  lineHeight={2}
+                  Privacy &amp; Policy
+                </Button>
+              </ListItem>
+              <ListItem>
+                <Button
                   sx={{
-                    fontFamily: "sans-serif",
-                    fontSize: {
-                      lg: 20,
-                      md: 10,
-                      xs: 10,
-                    },
+                    fontWeight: "200",
+                    color: "#66cdaa",
+                  }}
+                  variant="Text"
+                  onClick={() => {
+                    navigate("/TermsofUse");
                   }}
                 >
-                  <Button
-                    sx={{
-                      fontWeight: "200",
-                      color: "#66cdaa",
-                    }}
-                    variant="Text"
-                    onClick={() => {
-                      navigate("/TermsofUse");
-                    }}
-                  >
-                    TermsofUse
-                  </Button>
-                </Typography>
-              </ListItemText>
+                  Terms of Use
+                </Button>
+              </ListItem>
 
-              <ListItemText>
-                <Typography
-                  lineHeight={2}
+              <ListItem>
+                <Button
                   sx={{
-                    fontFamily: "sans-serif",
-
-                    fontSize: {
-                      lg: 20,
-                      md: 10,
-                      xs: 10,
-                    },
+                    fontWeight: "200",
+                    color: "#66cdaa",
+                  }}
+                  variant="Text"
+                  onClick={() => {
+                    navigate("/CareersPage");
                   }}
                 >
-                  <Button
-                    sx={{
-                      fontWeight: "200",
-                      color: "#66cdaa",
-                    }}
-                    variant="Text"
-                    onClick={() => {
-                      navigate("/CareersPage");
-                    }}
-                  >
-                    Careers
-                  </Button>
-                </Typography>
-              </ListItemText>
+                  Careers
+                </Button>
+              </ListItem>
             </List>
           </Grid>
         </Grid>
