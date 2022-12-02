@@ -9,6 +9,7 @@ import ContactUs from "./pages/Other/ContactUs";
 import Privacy from "./pages/Other/Privacy";
 import TermsofUse from "./pages/Other/TermsofUse";
 import CareersPage from "./pages/Other/CareersPage";
+import ReviewForm from "./pages/ReviewForm";
 
 export default function App() {
   const [tag, setTag] = useState("work-life-balances");
@@ -36,6 +37,7 @@ export default function App() {
             path="/companyOverview"
             element={<CompanyOverview company={company} />}
           />
+          <Route path="/reviews" element={<ReviewForm />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contactUs" element={<ContactUs />} />
