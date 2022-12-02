@@ -9,10 +9,12 @@ import ContactUs from "./pages/Other/ContactUs";
 import Privacy from "./pages/Other/Privacy";
 import TermsofUse from "./pages/Other/TermsofUse";
 import CareersPage from "./pages/Other/CareersPage";
+import ReviewForm from "./pages/ReviewForm";
 
 export default function App() {
   const [tag, setTag] = useState("work-life-balances");
   const [company, setCompany] = useState("");
+  const [companyId, setCompanyId] = useState(null);
   const handleSelection = (selectedTag) => {
     selectedTag && setTag(selectedTag);
   };
@@ -34,7 +36,13 @@ export default function App() {
           />
           <Route
             path="/companyOverview"
-            element={<CompanyOverview company={company} />}
+            element={
+              <CompanyOverview company={company} setCompanyId={setCompanyId} />
+            }
+          />
+          <Route
+            path="/reviews"
+            element={<ReviewForm companyId={companyId} />}
           />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/team" element={<Team />} />

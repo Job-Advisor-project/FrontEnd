@@ -20,6 +20,7 @@ import AddIcon from "@mui/icons-material/Add";
 import { getCompanyDataVm } from "../api/viewModelels/companyDataVm";
 import { useEffect, useState } from "react";
 import OpenJobs from "./Jobs";
+import { useNavigate } from "react-router-dom";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -53,7 +54,8 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs({ company }) {
+export default function BasicTabs({ company, setCompanyId }) {
+  const navigate = useNavigate();
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -97,6 +99,10 @@ export default function BasicTabs({ company }) {
               sx={{ bgcolor: "#5A85C2" }}
               variant="contained"
               endIcon={<AddIcon />}
+              onClick={() => {
+                setCompanyId(c.id);
+                navigate("/reviews");
+              }}
             >
               Review
             </Button>
