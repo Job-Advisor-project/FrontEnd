@@ -1,12 +1,6 @@
-import {
-  Box,
-  Checkbox,
-  FormControlLabel,
-  Grid,
-  Rating,
-  Select,
-  Typography,
-} from "@mui/material";
+import { Box, Checkbox, Grid, Rating, Select, Typography } from "@mui/material";
+import slider from "../api/slider.json";
+import TextField from "@mui/material/TextField";
 
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
@@ -17,11 +11,14 @@ import * as React from "react";
 import { getCompanyListVm } from "../api/viewModelels/companyListVm";
 
 export default function ReviewForm() {
+  const [jobTitle, setJobTitle] = React.useState("");
   const [companyList, setCompanyList] = React.useState([]);
   const [selectedCompany, setSelectedCompany] = React.useState([]);
   const [employee, setEmployee] = React.useState(false);
   const [value, setValue] = React.useState(null);
-  console.log(selectedCompany, employee, value);
+  const [review, setReview] = React.useState("");
+  const [tag, setTag] = React.useState("");
+  console.log(selectedCompany, employee, value, jobTitle, review);
   const handleChange = (event) => {
     const {
       target: { value },
@@ -50,10 +47,21 @@ export default function ReviewForm() {
           />
         </Typography>
       </Grid>
-      <div>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          minWidth: "50%",
+          height: "600px",
+          border: "bold",
+          alignItems: "center",
+          justifyContent: "space-around",
+        }}
+      >
         <FormControl sx={{ m: 1, width: 300 }}>
           <InputLabel>Name</InputLabel>
           <Select
+            sx={{ m: 2 }}
             multiple
             value={selectedCompany}
             onChange={handleChange}
@@ -66,16 +74,21 @@ export default function ReviewForm() {
               </MenuItem>
             ))}
           </Select>
-          <FormControlLabel
-            control={
-              <Checkbox
-                defaultChecked
-                onChange={() => setEmployee(!employee)}
-              />
-            }
-            label="Are you employee/ former employee?"
+
+          <Checkbox
+            sx={{ m: 2 }}
+            defaultChecked
+            onChange={() => setEmployee(!employee)}
+          />
+
+          <TextField
+            id="outlined-name"
+            label="Name"
+            value={jobTitle}
+            onChange={(event) => setJobTitle(event.target.value)}
           />
           <Typography component="legend">Rate</Typography>
+
           <Rating
             name="simple-controlled"
             value={value}
@@ -84,7 +97,7 @@ export default function ReviewForm() {
             }}
           />
         </FormControl>
-      </div>
+      </Box>
     </Box>
   );
 }
