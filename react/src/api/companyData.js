@@ -11,9 +11,9 @@ export async function getCompanyData(input, value) {
 
   value === 4 &&
     (url = `https://strapi-production-ed57.up.railway.app/api/companies?filters[name][$eq]=${input}&populate[0]=image&populate[1]=diversity_inclusions.image`);
+  value === 5 &&
+    (url = `https://strapi-production-ed57.up.railway.app/api/companies?filters[name][$eq]=${input}&populate[0]=image&populate[1]=reviews`);
   console.log(url);
-  // value === 5 &&
-  //   (url = `https://strapi-production-ed57.up.railway.app/api/companies?filters[name][$eq]=${input}&populate[0]=diversity_inclusions&populate=*`);
   const response = await fetch(url);
   const result = await response.json();
   const data = result.data;
