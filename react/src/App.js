@@ -14,6 +14,7 @@ import ReviewForm from "./pages/ReviewForm";
 export default function App() {
   const [tag, setTag] = useState("work-life-balances");
   const [company, setCompany] = useState("");
+  const [companyId, setCompanyId] = useState(null);
   const handleSelection = (selectedTag) => {
     selectedTag && setTag(selectedTag);
   };
@@ -35,9 +36,14 @@ export default function App() {
           />
           <Route
             path="/companyOverview"
-            element={<CompanyOverview company={company} />}
+            element={
+              <CompanyOverview company={company} setCompanyId={setCompanyId} />
+            }
           />
-          <Route path="/reviews" element={<ReviewForm />} />
+          <Route
+            path="/reviews"
+            element={<ReviewForm companyId={companyId} />}
+          />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contactUs" element={<ContactUs />} />

@@ -4,7 +4,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-
 import {
   Card,
   CardHeader,
@@ -55,7 +54,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs({ company }) {
+export default function BasicTabs({ company, setCompanyId }) {
   const navigate = useNavigate();
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
@@ -102,6 +101,7 @@ export default function BasicTabs({ company }) {
               variant="contained"
               endIcon={<AddIcon />}
               onClick={() => {
+                setCompanyId(c.id);
                 navigate("/reviews");
               }}
             >

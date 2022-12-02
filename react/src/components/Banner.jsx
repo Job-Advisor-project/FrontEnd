@@ -42,7 +42,7 @@ export default function Banner({ setCompany }) {
               },
             }}
           >
-            Discover company DNA
+            Discover a company DNA
           </Typography>
           <Typography
             variant="subtitle1"
