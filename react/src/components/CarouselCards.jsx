@@ -12,19 +12,20 @@ export default function CarouselSlide({ onSelect }) {
       slidesToSlide: 1, // optional, default to 1.
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 576 },
+
       items: 2,
       slidesToSlide: 2, // optional, default to 1.
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 576, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
   return (
     <Carousel
-      swipeable={false}
+      swipeable={true}
       draggable={false}
       showDots={false}
       responsive={responsive}
@@ -39,8 +40,8 @@ export default function CarouselSlide({ onSelect }) {
       rewindWithAnimation={false}
       rtl={false}
       shouldResetAutoplay
+      //autoPlay={this.props.deviceType !== "mobile" ? true : false}
       //transitionDuration={1000}
-      removeArrowOnDeviceType={["desktop"]}
       itemClass="item-container"
       sliderClass="slider-container"
       backgroundRepeat="no-repeat"
@@ -49,53 +50,8 @@ export default function CarouselSlide({ onSelect }) {
       clipBehavior="Clip.none"
     >
       {slider.map((item) => (
-        <Item key={item.id} item={item} onSelect={onSelect} />
+        <Item cursor="pointer" key={item.id} item={item} onSelect={onSelect} />
       ))}
     </Carousel>
   );
 }
-
-//============================minju's comment=============================
-// export default function Carousel({ onInput }) {
-//   return (
-//     <div
-//       style={{
-//         display: "flex",
-//         justifyContent: "space-evenly",
-//       }}
-//     >
-//       <span
-//         style={{ alignSelf: "center", border: "solid", padding: "20px" }}
-//         onClick={() => {
-//           onInput("work-life-balances");
-//         }}
-//       >
-//         Work life balance
-//       </span>
-//       <span
-//         style={{ alignSelf: "center", border: "solid", padding: "20px" }}
-//         onClick={() => {
-//           onInput("diversity-inclusions");
-//         }}
-//       >
-//         Diversity and inclusion
-//       </span>
-//       <span
-//         style={{ alignSelf: "center", border: "solid", padding: "20px" }}
-//         onClick={() => {
-//           onInput("benefits-compensations");
-//         }}
-//       >
-//         Benefits and Compensation
-//       </span>
-//       <span
-//         style={{ alignSelf: "center", border: "solid", padding: "20px" }}
-//         onClick={() => {
-//           onInput("social-responsibilities");
-//         }}
-//       >
-//         Sustainability
-//       </span>
-//     </div>
-//   );
-// }

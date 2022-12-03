@@ -43,16 +43,11 @@ export default function Item({ item, onSelect }) {
       sx={{
         flexDirection: "row",
         display: "flex",
-        bgcolor: (theme) =>
-          theme.palette.mode === "amber" ? "yellow.50" : "#fffde7",
-        color: (theme) =>
-          theme.palette.mode === "dark" ? "grey.300" : "grey.800",
-        border: "1px solid",
-        borderColor: (theme) =>
-          theme.palette.mode === "dark" ? "grey.800" : "grey.300",
-        borderRadius: 2,
-        fontSize: "0.875rem",
-        fontWeight: "700",
+        flexDirection: "column",
+        justifyContent: "center",
+        width: "350px",
+        height: "350px",
+        cursor: "pointer",
       }}
       onClick={() => {
         onSelect(item.collection);

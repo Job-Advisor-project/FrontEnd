@@ -1,13 +1,12 @@
 import Cards from "../components/CompanyCards";
 import React, { useEffect, useState } from "react";
 import { getCompaniesByTagVm } from "../api/viewModelels/companiesByTagVm";
-import { Container } from "@mui/material";
+import { Box } from "@mui/material";
 import { TagButtons } from "../components/TagButtons";
 import TitleTag from "../components/HeroSection";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../components/footer/Footer";
 
-export default function SearchResult({ tag }) {
+export default function SearchResult({ tag, setCompany }) {
   const [selected, setSelected] = useState(tag);
   const [companyList, setCompanyList] = useState([]);
 
@@ -21,12 +20,20 @@ export default function SearchResult({ tag }) {
   };
   return (
     <>
-      <Header></Header>
-      <Container sx={{ mt: "10px" }}>
+      <Box
+        sx={{
+          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/cc-bg.png')`,
+          backgroundRepeat: "repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          maxHeight: "auto",
+          maxWidth: "100%",
+        }}
+      >
         <TitleTag selected={selected}></TitleTag>
-        <TagButtons onClick={handleClick}></TagButtons>
-        <Cards companies={companyList}></Cards>
-      </Container>
+        <TagButtons onClick={handleClick} selected={selected}></TagButtons>
+        <Cards setCompany={setCompany} companies={companyList}></Cards>
+      </Box>
       <Footer></Footer>
     </>
   );
