@@ -12,9 +12,11 @@ import * as React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAddReview } from "../api/addReview";
+import Footer from "../components/footer/Footer";
 
 export default function ReviewForm({ companyId }) {
   const navigate = useNavigate();
+
   const [review, setReview] = useState({
     jobTitle: "",
     stars: 0,
@@ -26,9 +28,18 @@ export default function ReviewForm({ companyId }) {
     },
   });
   const handleSubmit = (e) => {
+    console.log("handleSubmit ran");
     e.preventDefault();
     getAddReview(review);
+    setReview({
+      jobTitle: "",
+      stars: 0,
+      employee: true,
+      reviewTitle: "",
+      feedback: "",
+    });
   };
+
   return (
     <Box
       sx={{
@@ -64,10 +75,11 @@ export default function ReviewForm({ companyId }) {
             display: "flex",
             flexDirection: "column",
             minWidth: "30%",
-            margin: "auto",
+            margin: "0,auto",
             height: "600px",
             alignItems: "center",
             justifyContent: "space-around",
+            padding: "20px",
           }}
           onSubmit={handleSubmit}
         >
@@ -89,7 +101,6 @@ export default function ReviewForm({ companyId }) {
             label="Are you current or former employee of the company?"
             labelPlacement="start"
           />
-
           <TextField
             id="outlined-name"
             name="jobTitle"
@@ -151,6 +162,7 @@ export default function ReviewForm({ companyId }) {
           </Button>
         </form>
       </Box>
+      <Footer></Footer>;
     </Box>
   );
 }
