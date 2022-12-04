@@ -43,17 +43,26 @@ export default function About() {
             About JobAdvisor
           </Typography>
         </Grid>
-        <Grid item md={5} lg={6} sx={{ my: 28, mx: 2, marginBottom: "28px" }}>
-          <Typography
-            variant="h5"
-            style={{ textAlign: "left", marginTop: "-5px" }}
-            gutterBottom
-          >
-            We are here to help the motivated students and job seekers to
-            kickstart their career and also search their dream job without
-            registration.
-          </Typography>
-        </Grid>
+        <div>
+          <Grid item md={5} lg={4} sx={{ mb: 5 }}>
+            <img
+              src="../../assets/workpicture1.png"
+              alt="Team"
+              style={{ width: "500px", height: "410px", borderRadius: "70px" }}
+            />
+          </Grid>
+          <Grid item md={5} lg={6} sx={{ my: 28, mx: 2, margin: "28px" }}>
+            <Typography
+              variant="h5"
+              style={{ textAlign: "left", marginTop: "-5px" }}
+              gutterBottom
+            >
+              We are here to help the motivated students and job seekers to
+              kickstart their career and also search their dream job without
+              registration.
+            </Typography>
+          </Grid>
+        </div>
         <div>
           <Grid item md={5} lg={6} sx={{ my: 5, mx: 3 }}>
             <Typography
@@ -90,13 +99,6 @@ export default function About() {
           </Grid>
         </div>
       </div>
-      <Grid item md={5} lg={4} sx={{ mb: 5 }}>
-        <img
-          src="../../assets/workpicture1.png"
-          alt="Team"
-          style={{ width: "500px", height: "410px", borderRadius: "90px" }}
-        />
-      </Grid>
     </Box>
   );
 }
