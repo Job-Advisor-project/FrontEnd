@@ -1,3 +1,1 @@
-# Public
-
-any other images, fonts, ...
+# Planning
