@@ -90,11 +90,11 @@ export default function About() {
           </Grid>
         </div>
       </div>
-      <Grid item md={5} lg={12}>
+      <Grid item md={5} lg={4} sx={{ mb: 5 }}>
         <img
           src="../../assets/workpicture1.png"
           alt="Team"
-          style={{ width: "700px", height: "410px", borderRadius: "90px" }}
+          style={{ width: "500px", height: "410px", borderRadius: "90px" }}
         />
       </Grid>
     </Box>
