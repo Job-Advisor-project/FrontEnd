@@ -13,22 +13,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getAddReview } from "../api/addReview";
 import Footer from "../components/footer/Footer";
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 
 export default function ReviewForm({ companyId }) {
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   const navigate = useNavigate();
 
   const [review, setReview] = useState({
@@ -45,10 +31,6 @@ export default function ReviewForm({ companyId }) {
     console.log("handleSubmit ran");
     e.preventDefault();
     getAddReview(review);
-  };
-
-  // reset input values
-  const handleClick = () => {
     setReview({
       jobTitle: "",
       stars: 0,
@@ -57,6 +39,7 @@ export default function ReviewForm({ companyId }) {
       feedback: "",
     });
   };
+
   return (
     <Box
       sx={{
@@ -118,7 +101,6 @@ export default function ReviewForm({ companyId }) {
             label="Are you current or former employee of the company?"
             labelPlacement="start"
           />
-
           <TextField
             id="outlined-name"
             name="jobTitle"
@@ -169,32 +151,15 @@ export default function ReviewForm({ companyId }) {
               });
             }}
           />
+
           <Button
             sx={{ m: 2 }}
             variant="outlined"
             cursor="pointer"
             type="submit"
-            onClick={handleClickOpen}
           >
             Submit
           </Button>
-          <Dialog
-            open={open}
-            onClose={handleClose}
-            aria-describedby="alert-dialog-description"
-          >
-            <DialogContent>
-              <DialogContentText id="alert-dialog-description">
-                Thanks for submitting the revirew
-              </DialogContentText>
-            </DialogContent>
-            <DialogActions>
-              <Button onClick={handleClick}>Reset</Button>
-              <Button onClick={handleClose} autoFocus>
-                close
-              </Button>
-            </DialogActions>
-          </Dialog>
         </form>
       </Box>
       <Footer></Footer>;
