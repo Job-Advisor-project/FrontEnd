@@ -75,7 +75,6 @@ export default function BasicTabs({ company, setCompanyId }) {
   return companyData.map((c) => (
     <Card sx={{ mt: 0.1, px: 2, maxWidth: 10100 }}>
       <CardHeader
-        // sx={{ bgcolor: "#64d2ae" }}
         avatar={
           <Avatar
             variant="square"
