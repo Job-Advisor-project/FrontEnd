@@ -221,7 +221,8 @@ paste the link here
 - `npm run accessibility -- ./path/to/file.html`: Runs an accessibility analysis
   on all HTML files in the given path and writes the report to
   `/accessibility_report`
-- ## Authors
+
+## Authors
 
 ![Yoshimalaise](https://wise.vub.ac.be/sites/default/files/members/2021-09/yoshi.png)
 
