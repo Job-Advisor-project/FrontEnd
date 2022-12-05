@@ -1,7 +1,7 @@
 # Job Advisor
 
-> Job Advisor website is for motivated students and job seekers to help them to
-> kickstart their career and also search their dream job without registration.
+> Job Advisor helps organisations promote right values and job seekers to make
+> right choices for their career.
 
 ## Table of contents
 
@@ -14,8 +14,6 @@
     - [Frontend](#frontend)
     - [Backend](#backend)
     - [Devops](#devops)
-  - [Screenshots](#screenshots)
-  - [Setup](#setup)
   - [Sample React code](#sample-react-code)
   - [App demo video](#app-demo-video)
   - [Inspiration](#inspiration)
@@ -32,7 +30,7 @@
 
 ## Design protoype
 
-[Our project prototype on FIGMA](https://www.figma.com/file/oAfz0ikoib20hxwG07WjiB/Job-Advisor?node-id=0%3A1&t=ovPyTH7TTB26kSq2-0)
+[Our project prototype on FIGMA](https://www.figma.com/proto/JK9J0bDxJJN7OaA8TQm2xh/JA-design?node-id=3%3A1945)
 
 ## Tools and Technologies
 
@@ -59,15 +57,6 @@
 - Netlify
 - Railway
 - Github
-
-## Screenshots
-
-![JobAdvisor screenshot](./planning/jobAdvisorhomepage.png)
-
-## Setup
-
-- To run the app, type `npm start` in the CLI, which will run frontend and type
-  `npm run develop` for backend after cloning the repo
 
 ## Sample React code
 
@@ -183,7 +172,7 @@ paste the link here
 
 - [You deserve a job that loves you back. The website where current and former employees anonymously review companies.](https://www.glassdoor.com.au/index.htm)
 
-- [How to help migrants in Belgium – list of organizations with contacts](https://www.cire.be/publication/comment-aider-les-migrants-en-belgique-voici-idees-concretes/)
+- [The online travel company that operates a website and mobile app with user-generated content and a comparison shopping website. It also offers online hotel reservations and bookings for transportation, lodging, travel experiences, and restaurants](https://www.tripadvisor.com/)
 
 ## Contact
 
