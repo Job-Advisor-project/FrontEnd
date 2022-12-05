@@ -166,6 +166,15 @@ export default function BasicTabs({ company, setCompanyId }) {
           {/* Benefits & Compensation */}
           <TabPanel value={value} index={1}>
             {value === 1 &&
+            c.attributes.benefits_compensations &&
+            c.attributes.benefits_compensations.data.length === 0 ? (
+              <Typography>
+                No information available. If you are a company representative
+                and interested in sharing your knowledge, please contact us by{" "}
+                <a href="jobadvisor2022@gmail.com">jobadvisor2022@gmail.com </a>
+              </Typography>
+            ) : (
+              value === 1 &&
               c.attributes.benefits_compensations &&
               c.attributes.benefits_compensations.data.map((w) => (
                 <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -188,11 +197,21 @@ export default function BasicTabs({ company, setCompanyId }) {
                     {w.attributes.seniority && w.attributes.seniority}
                   </Typography>
                 </Box>
-              ))}
+              ))
+            )}
           </TabPanel>
           {/* Sustainability */}
           <TabPanel value={value} index={2}>
             {value === 2 &&
+            c.attributes.social_responsibilities &&
+            c.attributes.social_responsibilities.data.length === 0 ? (
+              <Typography>
+                No information available. If you are a company representative
+                and interested in sharing your knowledge, please contact us by{" "}
+                <a href="jobadvisor2022@gmail.com">jobadvisor2022@gmail.com </a>
+              </Typography>
+            ) : (
+              value === 2 &&
               c.attributes.social_responsibilities &&
               c.attributes.social_responsibilities.data.map((w) => (
                 <Box sx={{ display: "flex", flexDirection: "column", m: 3 }}>
@@ -222,11 +241,21 @@ export default function BasicTabs({ company, setCompanyId }) {
                     {console.log(w.attributes.image)}
                   </CardMedia>
                 </Box>
-              ))}
+              ))
+            )}
           </TabPanel>
           {/* Work&Life balance */}
           <TabPanel value={value} index={3}>
             {value === 3 &&
+            c.attributes.work_life_balances &&
+            c.attributes.work_life_balances.data.length === 0 ? (
+              <Typography>
+                No information available. If you are a company representative
+                and interested in sharing your knowledge, please contact us by{" "}
+                <a href="jobadvisor2022@gmail.com">jobadvisor2022@gmail.com </a>
+              </Typography>
+            ) : (
+              value === 3 &&
               c.attributes.work_life_balances &&
               c.attributes.work_life_balances.data.map((w) => (
                 <Box sx={{ display: "flex", flexDirection: "column", m: 3 }}>
@@ -243,11 +272,21 @@ export default function BasicTabs({ company, setCompanyId }) {
                     {w.attributes.description && w.attributes.description}
                   </Typography>
                 </Box>
-              ))}
+              ))
+            )}
           </TabPanel>
           {/* Diversity &Inclusion */}
           <TabPanel value={value} index={4}>
             {value === 4 &&
+            c.attributes.diversity_inclusions &&
+            c.attributes.diversity_inclusions.data.length === 0 ? (
+              <Typography>
+                No information available. If you are a company representative
+                and interested in sharing your knowledge, please contact us by{" "}
+                <a href="jobadvisor2022@gmail.com">jobadvisor2022@gmail.com </a>
+              </Typography>
+            ) : (
+              value === 4 &&
               c.attributes.diversity_inclusions &&
               c.attributes.diversity_inclusions.data.map((w) => (
                 <Box sx={{ display: "flex", flexDirection: "column", m: 3 }}>
@@ -270,7 +309,8 @@ export default function BasicTabs({ company, setCompanyId }) {
                     alt="diversity"
                   ></CardMedia>
                 </Box>
-              ))}
+              ))
+            )}
           </TabPanel>
           {/* Review */}
           <TabPanel value={value} index={5}>
