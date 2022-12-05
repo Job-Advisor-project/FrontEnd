@@ -184,13 +184,13 @@ paste the link here
 
 ### A guide to use FrontEnd repository
 
-1. git clone `https://github.com/Job-Advisor-project/FrontEnd.git`
+1. git clone`https://github.com/Job-Advisor-project/FrontEnd.git`
 2. `cd react`
 3. `npm start`
 
 ### A guide to use BackEnd repository
 
-1. git clone ` https://github.com/Job-Advisor-project/Job-Advisor-backend.git`
+1. git clone`https://github.com/Job-Advisor-project/Job-Advisor-backend.git`
 2. `npm run develop`
 
 ## Code Quality Checks
