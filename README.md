@@ -31,7 +31,7 @@
 
 ## Design protoype
 
-[Our project prototype on FIGMA](https://www.figma.com/file/oAfz0ikoib20hxwG07WjiB/Job-Advisor?node-id=0%3A1&t=fRbs6Jy8xEf8rDD9-0)
+[Our project prototype on FIGMA](https://www.figma.com/proto/JK9J0bDxJJN7OaA8TQm2xh/JA-design?node-id=4%3A1946&starting-point-node-id=4%3A1946)
 
 ## Tools and Technologies
 
@@ -190,13 +190,13 @@ paste the link here
 
 ### A guide to use FrontEnd repository
 
-1. `git clone https://github.com/Job-Advisor-project/FrontEnd.git`
+1. git clone `https://github.com/Job-Advisor-project/FrontEnd.git`
 2. `cd react`
 3. `npm start`
 
 ### A guide to use BackEnd repository
 
-1. `git clone https://github.com/Job-Advisor-project/Job-Advisor-backend.git`
+1. git clone `https://github.com/Job-Advisor-project/Job-Advisor-backend.git`
 2. `npm run develop`
 
 ## Code Quality Checks
