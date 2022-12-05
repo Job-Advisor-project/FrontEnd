@@ -14,7 +14,6 @@
     - [Frontend](#frontend)
     - [Backend](#backend)
     - [Devops](#devops)
-  - [Screenshots](#screenshots)
   - [Setup](#setup)
   - [Sample React code](#sample-react-code)
   - [App demo video](#app-demo-video)
