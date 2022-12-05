@@ -1,7 +1,7 @@
 # Job Advisor
 
-> Job Advisor website is for motivated students and job seekers to help them to
-> kickstart their career and also search their dream job without registration.
+> Job Advisor helps organisations promote right values and job seekers to make
+> right choices for their career.
 
 ## Table of contents
 
@@ -32,7 +32,7 @@
 
 ## Design protoype
 
-[Our project prototype on FIGMA](https://www.figma.com/file/oAfz0ikoib20hxwG07WjiB/Job-Advisor?node-id=0%3A1&t=ovPyTH7TTB26kSq2-0)
+[Our project prototype on FIGMA](https://www.figma.com/proto/JK9J0bDxJJN7OaA8TQm2xh/JA-design?node-id=4%3A1946&starting-point-node-id=4%3A1946)
 
 ## Tools and Technologies
 
@@ -62,7 +62,7 @@
 
 ## Screenshots
 
-![JobAdvisor screenshot](./planning/jobAdvisorhomepage.png)
+![JobAdvisor screenshot](planning/jobAdvisorhomepage.png)
 
 ## Setup
 
@@ -179,11 +179,11 @@ paste the link here
 
 - [The platform is used for professional networking and career development, and allows job seekers to post their CVs and employers to post jobs](https://www.linkedin.com)
 
+- [The online travel company that operates a website and mobile app with user-generated content and a comparison shopping website. It also offers online hotel reservations and bookings for transportation, lodging, travel experiences, and restaurants](https://www.tripadvisor.com/)
+
 - [The website for job listings and allowing job seekers to apply directly to jobs on its site and offering resume posting and storage.](https://au.indeed.com/)
 
 - [You deserve a job that loves you back. The website where current and former employees anonymously review companies.](https://www.glassdoor.com.au/index.htm)
-
-- [How to help migrants in Belgium – list of organizations with contacts](https://www.cire.be/publication/comment-aider-les-migrants-en-belgique-voici-idees-concretes/)
 
 ## Contact
 
@@ -236,7 +236,7 @@ paste the link here
 
 - [Fenny](https://github.com/FennyWilriani) // UI/UX Designer, Frontend & DevOps
 
-![Maria](https://avatars.githubusercontent.com/u/98428800?v=4>)
+<img style="border-radius: 50%" width="100px" margin-left="2rem" src="https://avatars.githubusercontent.com/u/98428800?v=4">
 
 - [Maria](https://github.com/MMikhailova) // Project Manager Frontend , Backend
   & DevOps
