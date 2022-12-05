@@ -224,23 +224,23 @@ paste the link here
 
 - ## Authors
 
-<img style="border-radius: 50%; width: 100px; margin-left: 2rem" src="react/public/assets/yoshi.png">
+![Yoshimalaise](https://wise.vub.ac.be/sites/default/files/members/2021-09/yoshi.png)
 
 - [YoshiMalaise](https://github.com/yoshimalaise) // Coach
 
-<img style="border-radius: 50%; width: 100px; margin-left: 2rem" src="https://avatars.githubusercontent.com/u/78535490?v=4">
+![Yoshimalaise](https://avatars.githubusercontent.com/u/78535490?v=4)
 
 - [Daniel](https://github.com/danielhalasz) // Coach
 
-<img style="border-radius: 50%; width: 100px; margin-left: 2rem" src="https://avatars.githubusercontent.com/u/97218974?v=4">
+![Fenny](https://avatars.githubusercontent.com/u/97218974?v=4)
 
 - [Fenny](https://github.com/FennyWilriani) // UI/UX Designer, Frontend & DevOps
 
-<img style="border-radius: 50%; width: 100px; margin-left: 2rem" src="https://avatars.githubusercontent.com/u/98428800?v=4">
+![Maria](https://avatars.githubusercontent.com/u/98428800?v=4>)
 
 - [Maria](https://github.com/MMikhailova) // Project Manager Frontend , Backend
   & DevOps
 
-<img style="border-radius: 50%; width: 100px; margin-left: 2rem" src="https://avatars.githubusercontent.com/u/32439811?v=4">
+![Minju ](https://avatars.githubusercontent.com/u/32439811?v=4)
 
 - [Minju](https://github.com/minjupgeorge) // Team Leader Frontend & DevOps
