@@ -236,7 +236,7 @@ paste the link here
 
 - [Fenny](https://github.com/FennyWilriani) // UI/UX Designer, Frontend & DevOps
 
-<img style="border-radius: 50%" width="100px" margin-left="2rem" src="https://avatars.githubusercontent.com/u/98428800?v=4">
+![Maria](https://avatars.githubusercontent.com/u/98428800?v=4>)
 
 - [Maria](https://github.com/MMikhailova) // Project Manager Frontend , Backend
   & DevOps
