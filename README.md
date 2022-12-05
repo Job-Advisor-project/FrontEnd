@@ -60,10 +60,6 @@
 - Railway
 - Github
 
-## Screenshots
-
-![JobAdvisor screenshot](planning/jobAdvisorhomepage.png)
-
 ## Setup
 
 - To run the app, type `npm start` in the CLI, which will run frontend and type
