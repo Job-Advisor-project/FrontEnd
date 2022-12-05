@@ -224,7 +224,7 @@ paste the link here
 
 ## Authors
 
-![Yoshimalaise](https://wise.vub.ac.be/sites/default/files/members/2021-09/yoshi.png)
+![Yoshimalaise](https://avatars.githubusercontent.com/u/17066273?v=4)
 
 - [YoshiMalaise](https://github.com/yoshimalaise) // Coach
 
