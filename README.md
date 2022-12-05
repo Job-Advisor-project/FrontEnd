@@ -31,7 +31,7 @@
 
 ## Design protoype
 
-[Our project prototype on FIGMA](https://www.figma.com/proto/JK9J0bDxJJN7OaA8TQm2xh/JA-design?node-id=4%3A1946&starting-point-node-id=4%3A1946)
+[Our project prototype on FIGMA](https://www.figma.com/file/oAfz0ikoib20hxwG07WjiB/Job-Advisor?node-id=0%3A1&t=fRbs6Jy8xEf8rDD9-0)
 
 ## Tools and Technologies
 
