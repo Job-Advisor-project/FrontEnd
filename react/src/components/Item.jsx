@@ -43,7 +43,7 @@ export default function Item({ item, onSelect }) {
       sx={{
         flexDirection: "row",
         display: "flex",
-        flexDirection: "column",
+        //flexDirection: "column",
         justifyContent: "center",
         width: "350px",
         height: "350px",
