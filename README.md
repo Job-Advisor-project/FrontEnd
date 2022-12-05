@@ -1,87 +1,208 @@
-# Name of project
+# Job Advisor
 
-> A longer description
+> Job Advisor website is for motivated students and job seekers to help them to
+> kickstart their career and also search their dream job without registration.
 
 ## Table of contents
 
-- [Name of project](#name-of-project)
+- [Name of project](#job-advisor)
   - [Table of contents](#table-of-contents)
   - [General info](#general-info)
+  - [Design protoype](#design-protoype)
+  - [Tools and Technologies](#tools-and-technologies)
+    - [UX/UI](#uxui)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+    - [Devops](#devops)
   - [Screenshots](#screenshots)
-  - [Technologies](#technologies)
   - [Setup](#setup)
-  - [Code Examples](#code-examples)
-  - [Features](#features)
-  - [Status](#status)
+  - [Sample React code](#sample-react-code)
+  - [App demo video](#app-demo-video)
   - [Inspiration](#inspiration)
   - [Contact](#contact)
   - [Instructions for use](#instructions-for-use)
   - [Code Quality Checks](#code-quality-checks)
-  - [Continuous Integration (CI)](#continuous-integration-ci)
-  - [Repo Setup](#repo-setup)
+  - [Authors](#authors)
 
 ## General info
 
-> A short description
+> At Job Advisor, We help people to get jobs. We believe financialindependence
+> can help people live up to their potential and get back control of their own
+> lives .
 
-## Screenshots
+## Design protoype
 
-![Example screenshot](./planning/screenshot.jpg)
+[Our project prototype on FIGMA](https://www.figma.com/file/oAfz0ikoib20hxwG07WjiB/Job-Advisor?node-id=0%3A1&t=ovPyTH7TTB26kSq2-0)
 
-## Technologies
+## Tools and Technologies
+
+### UX/UI
+
+- Figma
+
+### Frontend
 
 - Node 14.16.0
 - VSC code
 - JavaScript
-- ...
-- ...
+- React Material UI
+- Cloudinary photo upload
+
+### Backend
+
+- Node
+- Strapi
+- Postman
+
+### Devops
+
+- Netlify
+- Railway
+- Github
+
+## Screenshots
+
+![JobAdvisor screenshot](./planning/jobAdvisorhomepage.png)
 
 ## Setup
 
-- `npm run start`
+- To run the app, type `npm start` in the CLI, which will run frontend and type
+  `npm run develop` for backend after cloning the repo
 
-## Code Examples
+## Sample React code
+
+The frontend is using React material UI components. Here is a look at the script
+tag for the banner component:
 
 ```js
-// the hello world program
-console.log("Hello World");
+import { Box, Grid, Typography, List, ListItemText } from "@mui/material";
+import SearchBar from "./SearchBar";
+import { useNavigate } from "react-router-dom";
+
+export default function Banner({ setCompany }) {
+  const navigate = useNavigate();
+  return (
+    <Box
+      sx={{
+        alignItems: "stretch",
+        backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        height: "auto",
+        maxWidth: "100%",
+        fontSize: "0.875rem",
+        fontWeight: "700",
+      }}
+    >
+      <Grid item xs={6} md={4}>
+        <Typography sx={{ ml: 4 }}>
+          <img
+            src="../assets/ja-logo.png"
+            alt="jobadvisorlogo"
+            width={170}
+            height={150}
+            onClick={() => navigate("/")}
+          />
+        </Typography>
+      </Grid>
+      <Grid container sx={{ justifyContent: "center" }}>
+        <Grid item md={5} lg={6} sx={{ my: 5, mx: 3 }}>
+          <Typography
+            sx={{
+              textAlign: "center",
+              fontFamily: "sans-serif",
+              typography: {
+                md: "h3",
+                sm: "h4",
+                xs: "h5",
+              },
+            }}
+          >
+            Discover a company DNA
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            sx={{
+              textAlign: "center",
+              fontFamily: "sans-serif",
+              typography: {
+                md: "h3",
+                sm: "h4",
+                xs: "h5",
+              },
+            }}
+          >
+            to find perfect match for YOU!
+          </Typography>
+          <List>
+            <ListItemText>
+              <Typography
+                lineHeight={2}
+                sx={{
+                  mt: 3,
+                  textAlign: "center",
+                  typography: { md: "body1", sm: "body2" },
+                }}
+              >
+                Job Advisor helps companies promote the right values and job
+                seekers make the right career choice.
+              </Typography>
+            </ListItemText>
+            <SearchBar setCompany={setCompany}></SearchBar>
+          </List>
+        </Grid>
+        <Grid item md={5} lg={4} sx={{ mb: 5 }}>
+          <Typography>
+            <img
+              src="../../assets/figma download/edited-idea.png"
+              alt="women"
+              style={{
+                width: "100%",
+                height: "auto",
+                textAlign: "center",
+              }}
+            />
+          </Typography>
+        </Grid>
+      </Grid>
+    </Box>
+  );
+}
 ```
 
-## Features
+## App demo video
 
-List of features ready and Todos for future development
-
--
--
--
-
-To-do list:
-
--
--
-
-## Status
-
-Project is: _in progress_
+paste the link here
 
 ## Inspiration
 
-Project by freeCodeCamp.org
+- [The platform is used for professional networking and career development, and allows job seekers to post their CVs and employers to post jobs](https://www.linkedin.com)
+
+- [The website for job listings and allowing job seekers to apply directly to jobs on its site and offering resume posting and storage.](https://au.indeed.com/)
+
+- [You deserve a job that loves you back. The website where current and former employees anonymously review companies.](https://www.glassdoor.com.au/index.htm)
+
+- [How to help migrants in Belgium – list of organizations with contacts](https://www.cire.be/publication/comment-aider-les-migrants-en-belgique-voici-idees-concretes/)
 
 ## Contact
 
-By [Name]
+<mailto:jobadvisor2022@gmail.com>
 
 ## Instructions for use
 
-<details>
   <summary>Getting Started</summary>
 
-<!-- a guide to using this repository -->
+### A guide to use FrontEnd repository
 
-1. `git clone git@github.com:HackYourFutureBelgium/template-markdown.git`
-2. `cd template-markdown`
-3. `npm install`
+1. `git clone https://github.com/Job-Advisor-project/FrontEnd.git`
+2. `cd react`
+3. `npm start`
+
+### A guide to use BackEnd repository
+
+1. `git clone https://github.com/Job-Advisor-project/Job-Advisor-backend.git`
+2. `npm run develop`
 
 ## Code Quality Checks
 
@@ -101,28 +222,25 @@ By [Name]
   on all HTML files in the given path and writes the report to
   `/accessibility_report`
 
-## Continuous Integration (CI)
+- ## Authors
 
-When you open a PR to `main`/`master` in your repository, GitHub will
-automatically do a linting check on the code in this repository, you can see
-this in the[./.github/workflows/lint.yml](./.github/workflows/lint.yml) file.
+<img style="border-radius: 50%; width: 100px; margin-left: 2rem" src="react/public/assets/yoshi.png">
 
-If the linting fails, you will not be able to merge the PR. You can double check
-that your code will pass before pushing by running the code quality scripts
-locally.
+- [YoshiMalaise](https://github.com/yoshimalaise) // Coach
 
-## Repo Setup
+<img style="border-radius: 50%; width: 100px; margin-left: 2rem" src="https://avatars.githubusercontent.com/u/78535490?v=4">
 
-- Give each member _write_ access to the repo (if it's a group project)
-- Turn on GitHub Pages and put a link to your website in the repo's description
-- Turn on GitHub Actions
-- in the _Branches_ section of your repo's settings make sure:
-  - The repository
-    [requires a review](https://github.blog/2018-03-23-require-multiple-reviewers/)
-    before pull requests can be merged.
-  - The `master`/`main` branch must "_Require status checks to pass before
-    merging_"
-  - The `master`/`main` branch must "_Require require branches to be up to date
-    before merging_"
+- [Daniel](https://github.com/danielhalasz) // Coach
 
-</details>
+<img style="border-radius: 50%; width: 100px; margin-left: 2rem" src="https://avatars.githubusercontent.com/u/97218974?v=4">
+
+- [Fenny](https://github.com/FennyWilriani) // UI/UX Designer, Frontend & DevOps
+
+<img style="border-radius: 50%; width: 100px; margin-left: 2rem" src="https://avatars.githubusercontent.com/u/98428800?v=4">
+
+- [Maria](https://github.com/MMikhailova) // Project Manager Frontend , Backend
+  & DevOps
+
+<img style="border-radius: 50%; width: 100px; margin-left: 2rem" src="https://avatars.githubusercontent.com/u/32439811?v=4">
+
+- [Minju](https://github.com/minjupgeorge) // Team Leader Frontend & DevOps
