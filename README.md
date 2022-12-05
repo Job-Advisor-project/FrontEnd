@@ -18,7 +18,6 @@
   - [App demo video](#app-demo-video)
   - [Inspiration](#inspiration)
   - [Contact](#contact)
-  - [Instructions for use](#instructions-for-use)
   - [Code Quality Checks](#code-quality-checks)
   - [Authors](#authors)
 
@@ -30,7 +29,7 @@
 
 ## Design protoype
 
-Our project prototype on FIGMA
+[Our project prototype on FIGMA](https://www.figma.com/proto/JK9J0bDxJJN7OaA8TQm2xh/JA-design?node-id=3%3A1945)
 
 ## Tools and Technologies
 
@@ -177,21 +176,6 @@ paste the link here
 ## Contact
 
 <mailto:jobadvisor2022@gmail.com>
-
-## Instructions for use
-
-  <summary>Getting Started</summary>
-
-### A guide to use FrontEnd repository
-
-1. git clone`https://github.com/Job-Advisor-project/FrontEnd.git`
-2. `cd react`
-3. `npm start`
-
-### A guide to use BackEnd repository
-
-1. git clone`https://github.com/Job-Advisor-project/Job-Advisor-backend.git`
-2. `npm run develop`
 
 ## Code Quality Checks
 
