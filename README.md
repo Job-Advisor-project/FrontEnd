@@ -24,7 +24,7 @@
 
 ## General info
 
-> At Job Advisor, We help people to get jobs. We believe financialindependence
+> At Job Advisor, We help people to get jobs. We believe financial independence
 > can help people live up to their potential and get back control of their own
 > lives .
 
@@ -166,13 +166,22 @@ paste the link here
 
 ## Inspiration
 
-- [The platform is used for professional networking and career development, and allows job seekers to post their CVs and employers to post jobs](https://www.linkedin.com)
+- [linkedIn](https://www.linkedin.com) The platform is used for professional
+  networking and career development, and allows job seekers to post their CVs
+  and employers to post jobs
 
-- [The website for job listings and allowing job seekers to apply directly to jobs on its site and offering resume posting and storage.](https://au.indeed.com/)
+- [Indeed](https://au.indeed.com/)The website for job listings and allowing job
+  seekers to apply directly to jobs on its site and offering resume posting and
+  storage.
 
-- [You deserve a job that loves you back. The website where current and former employees anonymously review companies.](https://www.glassdoor.com.au/index.htm)
+- [Glassdoor](https://www.glassdoor.com.au/index.htm)You deserve a job that
+  loves you back. The website where current and former employees anonymously
+  review companies.
 
-- [The online travel company that operates a website and mobile app with user-generated content and a comparison shopping website. It also offers online hotel reservations and bookings for transportation, lodging, travel experiences, and restaurants](https://www.tripadvisor.com/)
+- [Tripadvisor](https://www.tripadvisor.com/) The online travel company that
+  operates a website and mobile app with user-generated content and a comparison
+  shopping website. It also offers online hotel reservations and bookings for
+  transportation, lodging, travel experiences, and restaurants
 
 ## Contact
 
@@ -217,7 +226,7 @@ paste the link here
 
 - [YoshiMalaise](https://github.com/yoshimalaise) // Coach
 
-![Yoshimalaise](https://avatars.githubusercontent.com/u/78535490?v=4)
+![Daniel](https://avatars.githubusercontent.com/u/78535490?v=4)
 
 - [Daniel](https://github.com/danielhalasz) // Coach
 
