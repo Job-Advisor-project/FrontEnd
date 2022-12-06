@@ -33,7 +33,7 @@ export default function SearchBar({ setCompany }) {
               <TextField
                 sx={{ backgroundColor: "white", maxWidth: "100%" }}
                 {...params}
-                label="Search by company name..."
+                label="company name"
                 onClick={() => getCompanyListVm().then((v) => setData(v))}
               />
             )}
