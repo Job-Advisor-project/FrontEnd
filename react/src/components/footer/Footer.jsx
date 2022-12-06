@@ -153,22 +153,6 @@ export default function Footer() {
             </List>
           </Grid>
         </Grid>
-      </Box>
-      <Box
-        sx={{
-          flexDirection: "row",
-          textAlign: "center",
-          backgroundImage: `url('${process.env.PUBLIC_URL}/assets/background.png')`,
-          alignItems: "stretch",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          height: "auto",
-          maxWidth: "100%",
-          fontSize: "0.875rem",
-          fontWeight: "700",
-          mt: 3,
-        }}
-      >
         &reg; {new Date().getFullYear()} All Right Reserved
       </Box>
     </>
