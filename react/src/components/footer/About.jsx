@@ -48,7 +48,7 @@ export default function About() {
             <img
               src="../../assets/workpicture1.png"
               alt="Team"
-              style={{ width: "500px", height: "410px", borderRadius: "70px" }}
+              style={{ width: "500px", borderRadius: "70px" }}
             />
           </Grid>
           <Grid item md={5} lg={6} sx={{ my: 28, mx: 2, margin: "28px" }}>
