@@ -26,7 +26,7 @@ export default function About() {
           marginLeft: "3rem",
         }}
       >
-        <Grid item xs={6} md={4} sx={{ my: 8, mx: 2 }}>
+        <Grid item xs={6} md={8} lg={6} sx={{ my: 5, mx: 3 }}>
           <Typography
             sx={{
               ml: 4,
@@ -44,11 +44,15 @@ export default function About() {
           </Typography>
         </Grid>
         <div>
-          <Grid item md={5} lg={4} sx={{ mb: 5 }}>
+          <Grid item md={5} lg={4} sx={{ my: 5, mx: 3 }}>
             <img
               src="../../assets/workpicture1.png"
               alt="Team"
-              style={{ width: "500px", borderRadius: "70px" }}
+              style={{
+                height: "400px",
+                marginLeft: "90px",
+                borderRadius: "70px",
+              }}
             />
           </Grid>
           <Grid item md={5} lg={6} sx={{ my: 28, mx: 2, margin: "28px" }}>
@@ -57,9 +61,8 @@ export default function About() {
               style={{ textAlign: "left", marginTop: "-5px" }}
               gutterBottom
             >
-              We are here to help the motivated students and job seekers to
-              kickstart their career and also search their dream job without
-              registration.
+              Job Advisor helps organisations promote right values and job
+              seekers to make right choices for their career.
             </Typography>
           </Grid>
         </div>
