@@ -2,14 +2,11 @@ import * as React from "react";
 import { Grid, Typography, List, ListItem } from "@mui/material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
-import Avatar from "@mui/material/Avatar";
 import { Stack } from "@mui/system";
 import { useNavigate } from "react-router-dom";
+import Link from "@mui/material/Link";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -41,22 +38,18 @@ export default function Footer() {
                 onClick={() => navigate("/")}
               />
             </Typography>
-            <Stack direction="row" spacing={2} sx={{ mx: 10, mb: 3 }}>
-              <Avatar sx={{ width: 31, height: 31 }}>
-                <FacebookIcon />
-              </Avatar>
-              <Avatar sx={{ width: 31, height: 31 }}>
+            <Stack
+              direction="row"
+              spacing={2}
+              sx={{ mx: 10, mb: 3, marginLeft: 19 }}
+            >
+              <Link href="https://github.com/Job-Advisor-project">
+                <GitHubIcon />
+              </Link>
+
+              <Link href="https://www.youtube.com/watch?v=2pmx9FF3mdI">
                 <YouTubeIcon />
-              </Avatar>
-              <Avatar sx={{ width: 31, height: 31 }}>
-                <TwitterIcon />
-              </Avatar>
-              <Avatar sx={{ width: 31, height: 31 }}>
-                <InstagramIcon />
-              </Avatar>
-              <Avatar sx={{ width: 31, height: 31 }}>
-                <LinkedInIcon />
-              </Avatar>
+              </Link>
             </Stack>
           </Grid>
           <Grid item md={4} lg={2} sx={{ my: 5 }}>
