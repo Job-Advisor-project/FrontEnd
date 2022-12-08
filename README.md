@@ -162,7 +162,7 @@ export default function Banner({ setCompany }) {
 
 ## App demo video
 
-[Job Advisor Video]("https://www.youtube.com/watch?v=2pmx9FF3mdI")
+[Job Advisor Video](https://www.youtube.com/watch?v=2pmx9FF3mdI)
 
 ## Inspiration
 
