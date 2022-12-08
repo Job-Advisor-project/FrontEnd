@@ -49,8 +49,8 @@ export default function About() {
               src="../../assets/workpicture1.png"
               alt="Team"
               style={{
-                height: "400px",
-                marginLeft: "90px",
+                height: "450px",
+                marginLeft: "180px",
                 borderRadius: "70px",
               }}
             />
