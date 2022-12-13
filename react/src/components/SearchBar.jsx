@@ -2,13 +2,14 @@ import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import { getCompanyListVm } from "../api/viewModelels/companyListVm";
-import { Box, Button, Grid } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import SearchIcon from "@mui/icons-material/Search";
-
+import * as React from "react";
 export default function SearchBar({ setCompany }) {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
+  const [value, setValue] = useState("");
+
   const [inputValue, setInputValue] = useState("");
   return (
     <Box
@@ -21,10 +22,16 @@ export default function SearchBar({ setCompany }) {
       <Grid container sx={{ justifyContent: "center" }}>
         <Grid item xs={6} md={6} lg={8} sx={{ mr: 1 }}>
           <Autocomplete
+            value={value}
+            onChange={(event, newValue) => {
+              setValue(newValue);
+            }}
             disablePortal
             inputValue={inputValue}
             onInputChange={(event, newInputValue) => {
               setInputValue(newInputValue);
+              setCompany(newInputValue);
+              navigate("/companyOverview");
             }}
             id="combo-box-demo"
             options={data}
@@ -39,7 +46,7 @@ export default function SearchBar({ setCompany }) {
             )}
           />
         </Grid>
-        <Button
+        {/* <Button
           sx={{
             backgroundColor: "#5A85C2",
             fontWeight: "600",
@@ -65,7 +72,7 @@ export default function SearchBar({ setCompany }) {
           }}
         >
           <SearchIcon />
-        </Button>
+        </Button> */}
       </Grid>
     </Box>
   );
