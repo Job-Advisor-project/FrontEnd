@@ -8,9 +8,8 @@ import * as React from "react";
 export default function SearchBar({ setCompany }) {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
-  const [value, setValue] = useState("");
-
-  const [inputValue, setInputValue] = useState("");
+  const [value, setValue] = useState(undefined);
+  const [inputValue, setInputValue] = useState();
   return (
     <Box
       sx={{
@@ -24,16 +23,16 @@ export default function SearchBar({ setCompany }) {
           <Autocomplete
             value={value}
             onChange={(event, newValue) => {
-              setValue(newValue);
+              data.includes(newValue) && setValue(newValue);
+              setCompany(newValue);
+              navigate("/companyOverview");
             }}
             disablePortal
             inputValue={inputValue}
             onInputChange={(event, newInputValue) => {
               setInputValue(newInputValue);
-              setCompany(newInputValue);
-              navigate("/companyOverview");
             }}
-            id="combo-box-demo"
+            id="controllable-states-demo"
             options={data}
             sx={{ alignSelf: "center" }}
             renderInput={(params) => (
@@ -46,33 +45,6 @@ export default function SearchBar({ setCompany }) {
             )}
           />
         </Grid>
-        {/* <Button
-          sx={{
-            backgroundColor: "#5A85C2",
-            fontWeight: "600",
-            display: { xs: "none", sm: "block" },
-          }}
-          variant="contained"
-          onClick={() => {
-            setCompany(inputValue);
-            navigate("/companyOverview");
-          }}
-        >
-          Search
-        </Button>
-        <Button
-          variant="contained"
-          sx={{
-            backgroundColor: "#5A85C2",
-            display: { xs: "block", sm: "none" },
-          }}
-          onClick={() => {
-            setCompany(inputValue);
-            navigate("/companyOverview");
-          }}
-        >
-          <SearchIcon />
-        </Button> */}
       </Grid>
     </Box>
   );
