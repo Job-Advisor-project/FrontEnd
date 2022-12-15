@@ -11,31 +11,26 @@ import { useNavigate } from "react-router-dom";
 
 export default function Cards({ companies, setCompany }) {
   const navigate = useNavigate();
+  const responsive = {
+    flex: { xs: "100%", sm: "calc(50% - 20px)", md: "calc(33% - 20px)" },
+    mx: { xs: "auto", sm: "auto", md: 5, lg: 10 },
+    mt: { xs: 0.5, sm: 0.5, md: 1, lg: 1 },
+  };
   return (
     <Box
       sx={{
         flexDirection: "column",
+        flexWrap: "wrap",
+        justifyItems: "center",
         display: "flex",
-        alignItems: "stretch",
-        mt: 5,
-        mx: 10,
-        bgcolor: (theme) =>
-          theme.palette.mode === "dark" ? "#101010" : "#fff",
-        color: (theme) =>
-          theme.palette.mode === "dark" ? "grey.300" : "grey.800",
-        border: "1px solid",
-        borderColor: (theme) =>
-          theme.palette.mode === "dark" ? "grey.800" : "grey.300",
         borderRadius: 2,
-        fontSize: "0.875rem",
-        fontWeight: "700",
       }}
     >
       {companies &&
         companies.map((item) => (
           <Card
             key={item.attributes.company.data.attributes.name}
-            sx={{ mt: 0.1, px: 3, maxWidth: 10100 }}
+            sx={responsive}
           >
             <CardHeader
               avatar={

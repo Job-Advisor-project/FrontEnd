@@ -48,7 +48,7 @@ export default function TitleTag({ selected }) {
               typography: {
                 md: "h6",
                 sm: "h6",
-                xs: "subtitle1",
+                xs: "p",
               },
             }}
           >
