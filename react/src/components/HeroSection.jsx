@@ -47,8 +47,8 @@ export default function TitleTag({ selected }) {
               fontFamily: "sans-serif",
               typography: {
                 md: "h6",
-                sm: "h6",
-                xs: "p",
+                sm: "h7",
+                xs: "subtitle",
               },
             }}
           >

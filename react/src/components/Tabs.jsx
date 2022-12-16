@@ -55,6 +55,11 @@ function a11yProps(index) {
 }
 
 export default function BasicTabs({ company, setCompanyId }) {
+  const responsiveHeader = {
+    display: "flex",
+    flexDirection: { xs: "column", sm: "row", md: "row", lg: "row" },
+    justifyContent: "center",
+  };
   const navigate = useNavigate();
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
@@ -75,6 +80,7 @@ export default function BasicTabs({ company, setCompanyId }) {
   return companyData.map((c) => (
     <Card sx={{ mt: 0.1, px: 2, maxWidth: 10100 }}>
       <CardHeader
+        sx={responsiveHeader}
         avatar={
           <Avatar
             variant="square"
@@ -84,7 +90,7 @@ export default function BasicTabs({ company, setCompanyId }) {
           ></Avatar>
         }
         action={
-          <Stack spacing={3} direction="row" sx={{ mt: 3 }}>
+          <Stack spacing={3} direction="row" sx={{ mt: 3, mx: 2 }}>
             <Button
               sx={{ bgcolor: "#5A85C2" }}
               onClick={() =>
@@ -123,8 +129,11 @@ export default function BasicTabs({ company, setCompanyId }) {
           >
             <Tabs
               value={value}
+              variant="scrollable"
+              scrollButtons
+              allowScrollButtonsMobile
+              aria-label="scrollable auto tabs example"
               onChange={handleChange}
-              aria-label="basic tabs example"
               // sx={{ display: "flex", textAlign: "center" }}
             >
               <Tab label="About" {...a11yProps(0)} />
@@ -147,6 +156,12 @@ export default function BasicTabs({ company, setCompanyId }) {
             <Box
               sx={{
                 display: "flex",
+                flexDirection: {
+                  xs: "column",
+                  sm: "column",
+                  md: "row",
+                  lg: "row",
+                },
                 justifyContent: "space-between",
                 mb: 3,
               }}
@@ -154,7 +169,7 @@ export default function BasicTabs({ company, setCompanyId }) {
               <Typography subtitle1="h5" gutterBottom>
                 {c.attributes.industry && c.attributes.industry}
               </Typography>
-              <Typography subtitle1="h5" gutterBottom>
+              <Typography variant="caption" gutterBottom>
                 {c.attributes.industry && c.attributes.location}
               </Typography>
             </Box>

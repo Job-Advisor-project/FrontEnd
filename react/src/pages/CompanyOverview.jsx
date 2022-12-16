@@ -4,6 +4,13 @@ import { Box, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 export default function CompanyOverview({ company, setCompanyId }) {
+  const responsive = {
+    flexDirection: "column",
+    display: "flex",
+    alignItems: "stretch",
+    mx: { xs: 0.1, sm: 0.1, md: 5, lg: 10 },
+    mt: 3,
+  };
   const navigate = useNavigate();
   return (
     <Box
@@ -29,25 +36,7 @@ export default function CompanyOverview({ company, setCompanyId }) {
           onClick={() => navigate("/")}
         />
       </Typography>
-      <Box
-        sx={{
-          flexDirection: "column",
-          display: "flex",
-          alignItems: "stretch",
-          mx: 10,
-          mt: 3,
-          bgcolor: (theme) =>
-            theme.palette.mode === "dark" ? "#101010" : "#fff",
-          color: (theme) =>
-            theme.palette.mode === "dark" ? "grey.300" : "grey.800",
-          border: "1px solid",
-          borderColor: (theme) =>
-            theme.palette.mode === "dark" ? "grey.800" : "grey.300",
-          borderRadius: 2,
-          fontSize: "0.875rem",
-          fontWeight: "700",
-        }}
-      >
+      <Box sx={responsive}>
         <BasicTabs company={company} setCompanyId={setCompanyId}></BasicTabs>
       </Box>
       <Footer></Footer>
